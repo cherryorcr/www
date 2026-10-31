@@ -1,0 +1,85 @@
+{
+ "dataset": "bookchild",
+ "n": 76875,
+ "n_pool": 61499,
+ "k": 3074,
+ "rate": 0.05,
+ "student_seeds": [
+  700,
+  701,
+  702,
+  703,
+  704,
+  705
+ ],
+ "confirmation_accessed": true,
+ "access_reason": "one-time test read after method freeze (no X optimisation)",
+ "test_rule": "node_id % 10 == 2",
+ "method": "frozen_v1 constructive (no ASM, no jitter)",
+ "dev": {
+  "macro_f1_mean": 13.814085698638094,
+  "macro_f1_std": 0.6581628011228559,
+  "accuracy_mean": 16.06833159902879,
+  "accuracy_std": 1.9922764473807009,
+  "n": 7688,
+  "per_student": [
+   {
+    "macro_f1": 14.071488758932633,
+    "accuracy": 16.792403746097815
+   },
+   {
+    "macro_f1": 14.006662547823193,
+    "accuracy": 15.946930280957336
+   },
+   {
+    "macro_f1": 14.981910353191735,
+    "accuracy": 19.77107180020812
+   },
+   {
+    "macro_f1": 13.595647550779447,
+    "accuracy": 15.257544224765867
+   },
+   {
+    "macro_f1": 13.343623592129875,
+    "accuracy": 15.50468262226847
+   },
+   {
+    "macro_f1": 12.885181388971672,
+    "accuracy": 13.13735691987513
+   }
+  ]
+ },
+ "test": {
+  "macro_f1_mean": 15.226880826165981,
+  "macro_f1_std": 0.6114190000637628,
+  "accuracy_mean": 17.236819285466524,
+  "accuracy_std": 1.2507394023461678,
+  "n": 7688,
+  "per_student": [
+   {
+    "macro_f1": 14.38846867787337,
+    "accuracy": 15.43964620187305
+   },
+   {
+    "macro_f1": 15.839211939907774,
+    "accuracy": 18.470343392299686
+   },
+   {
+    "macro_f1": 14.922686499610851,
+    "accuracy": 16.5582726326743
+   },
+   {
+    "macro_f1": 15.41578538002772,
+    "accuracy": 18.3792924037461
+   },
+   {
+    "macro_f1": 14.698056149168934,
+    "accuracy": 16.09001040582726
+   },
+   {
+    "macro_f1": 16.097076310407235,
+    "accuracy": 18.48335067637877
+   }
+  ]
+ }
+}

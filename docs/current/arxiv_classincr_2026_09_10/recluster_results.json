@@ -1,0 +1,175 @@
+{
+ "arming": "recluster",
+ "split_prefix": "ogbn_arxiv_full_classincr3",
+ "continual": [
+  {
+   "arm_stage": "recluster_s0",
+   "roots": 2259,
+   "cum_mean": 24.47849486183776,
+   "cur_mean": 24.47849486183776,
+   "old_mean": null,
+   "per_student": [
+    {
+     "per_stage": [
+      {
+       "macro_f1": 24.652535788693157,
+       "n": 5691
+      }
+     ],
+     "cumulative_macro_f1": 24.652535788693157,
+     "cumulative_accuracy": 15.463011772974872,
+     "current_f1": 24.652535788693157
+    },
+    {
+     "per_stage": [
+      {
+       "macro_f1": 29.42870764516495,
+       "n": 5691
+      }
+     ],
+     "cumulative_macro_f1": 29.42870764516495,
+     "cumulative_accuracy": 17.641890704621332,
+     "current_f1": 29.42870764516495
+    },
+    {
+     "per_stage": [
+      {
+       "macro_f1": 19.35424115165517,
+       "n": 5691
+      }
+     ],
+     "cumulative_macro_f1": 19.35424115165517,
+     "cumulative_accuracy": 12.669126691266912,
+     "current_f1": 19.35424115165517
+    }
+   ]
+  },
+  {
+   "arm_stage": "recluster_s1",
+   "roots": 4516,
+   "cum_mean": 22.66030369218484,
+   "cur_mean": 24.95904262929454,
+   "old_mean": 33.83476781265177,
+   "per_student": [
+    {
+     "per_stage": [
+      {
+       "macro_f1": 28.903910879446226,
+       "n": 5691
+      },
+      {
+       "macro_f1": 25.242698761797556,
+       "n": 5569
+      }
+     ],
+     "cumulative_macro_f1": 21.26349291169572,
+     "cumulative_accuracy": 20.683836589698046,
+     "current_f1": 25.242698761797556,
+     "old_mean_f1": 28.903910879446226
+    },
+    {
+     "per_stage": [
+      {
+       "macro_f1": 33.360715919712575,
+       "n": 5691
+      },
+      {
+       "macro_f1": 23.26528443213138,
+       "n": 5569
+      }
+     ],
+     "cumulative_macro_f1": 21.220159709075986,
+     "cumulative_accuracy": 21.91829484902309,
+     "current_f1": 23.26528443213138,
+     "old_mean_f1": 33.360715919712575
+    },
+    {
+     "per_stage": [
+      {
+       "macro_f1": 39.239676638796496,
+       "n": 5691
+      },
+      {
+       "macro_f1": 26.369144693954677,
+       "n": 5569
+      }
+     ],
+     "cumulative_macro_f1": 25.497258455782813,
+     "cumulative_accuracy": 30.52397868561279,
+     "current_f1": 26.369144693954677,
+     "old_mean_f1": 39.239676638796496
+    }
+   ]
+  },
+  {
+   "arm_stage": "recluster_s2",
+   "roots": 6773,
+   "cum_mean": 19.18448858597228,
+   "cur_mean": 21.83027668101114,
+   "old_mean": 31.531073761051108,
+   "per_student": [
+    {
+     "per_stage": [
+      {
+       "macro_f1": 38.75809632883737,
+       "n": 5691
+      },
+      {
+       "macro_f1": 28.674264369650427,
+       "n": 5569
+      },
+      {
+       "macro_f1": 22.600278686008444,
+       "n": 5675
+      }
+     ],
+     "cumulative_macro_f1": 20.109217537867643,
+     "cumulative_accuracy": 29.35931502804842,
+     "current_f1": 22.600278686008444,
+     "old_mean_f1": 33.7161803492439
+    },
+    {
+     "per_stage": [
+      {
+       "macro_f1": 34.80019424656155,
+       "n": 5691
+      },
+      {
+       "macro_f1": 28.198367479513703,
+       "n": 5569
+      },
+      {
+       "macro_f1": 24.712914534816907,
+       "n": 5675
+      }
+     ],
+     "cumulative_macro_f1": 19.764708412952963,
+     "cumulative_accuracy": 25.01919102450546,
+     "current_f1": 24.712914534816907,
+     "old_mean_f1": 31.499280863037626
+    },
+    {
+     "per_stage": [
+      {
+       "macro_f1": 32.747192830311164,
+       "n": 5691
+      },
+      {
+       "macro_f1": 26.008327311432446,
+       "n": 5569
+      },
+      {
+       "macro_f1": 18.17763682220806,
+       "n": 5675
+      }
+     ],
+     "cumulative_macro_f1": 17.67953980709623,
+     "cumulative_accuracy": 22.527310304103924,
+     "current_f1": 18.17763682220806,
+     "old_mean_f1": 29.377760070871805
+    }
+   ]
+  }
+ ],
+ "test_accessed": false
+}

@@ -1,0 +1,345 @@
+{
+  "protocol": {
+    "source_id_hash": "ead2b7f516b3ac58f95ee130645dd83b368a83f12682ec3cb7d9bc0b01321f35",
+    "rows": 43,
+    "seed": 271006,
+    "native_selector_hash": "b2e2b28138b22cfa9e387024799a1d992d7db58fe28af2ea9290cc6acf99164d",
+    "source_hashes": {
+      "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+      "unified_q_multimodal.py": "f621d4575a9bb660fad8031e4d7135e2570cc72c02d16145c08aa989bee99525",
+      "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+      "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+      "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+      "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+      "run_unified_q_inloop_cat_20261007.py": "970783502188122b452778276d0de938d47956a1b9698bd18659cd4c0dc18097",
+      "run_unified_q_diagnostics_20261007.py": "2e34734682d3de3211e95c129d0c6c0d00f27025412f2c6e2cfd5b36522bcfc1",
+      "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+      "common.py": "00b6fab4fbbd2bdb5188824f51fe923fde7920afd70569a0d8102503891f523f"
+    }
+  },
+  "selector": {
+    "native_source": {
+      "commit": "d812f06fd16db3cd4d497804a8e504d2c738faa8",
+      "files": {
+        "model.py": "57d4462472b20f277479afd8cd7b1834fac97707a7a3c571c955a18df334c25b",
+        "selection.py": "c6e3c67e8317a38d172a48759037e358b476271642bdbbc294a9ff16de7f50e0",
+        "distill.py": "09a031cc88925d2ca4fab57faaf45c80484981c47d8dd21124d5fcdca8540227",
+        "dataset.py": "401419f5bc86bdb6d4cb80043bfa3d676a1997a287fcf1cd64a6c4ae650421ab",
+        "epoch.py": "d75342eaf71bfbf202b6dc3e84e6f3b5caabf1f243e77d4cf5324eca6185a359"
+      },
+      "official_reproduction": false
+    },
+    "selector": "native GPT2-large word-probability PMI + greedy redundancy",
+    "center_ids": [
+      2648,
+      2208,
+      625,
+      1615,
+      2524,
+      609,
+      1928,
+      897,
+      2314,
+      659,
+      1014,
+      124,
+      1405,
+      1268,
+      696,
+      770,
+      557,
+      2676,
+      1020,
+      570,
+      1555,
+      1787,
+      1934,
+      1795,
+      1677,
+      746,
+      828,
+      1079,
+      407,
+      1929,
+      2117,
+      2567,
+      975,
+      1817,
+      1624,
+      336,
+      2608,
+      1295,
+      1947,
+      1366,
+      2438,
+      1298,
+      1879
+    ],
+    "source_ids": [
+      [
+        350,
+        730,
+        770,
+        1889
+      ],
+      [
+        126,
+        2208,
+        2234,
+        2235
+      ],
+      [
+        397,
+        625,
+        659,
+        747
+      ],
+      [
+        809,
+        1229,
+        1615,
+        1639
+      ],
+      [
+        260,
+        1527,
+        1894,
+        2088
+      ],
+      [
+        18,
+        26,
+        104,
+        110
+      ],
+      [
+        74,
+        667,
+        1928,
+        2114
+      ],
+      [
+        84,
+        897,
+        950,
+        987
+      ],
+      [
+        2187,
+        2314
+      ],
+      [
+        397,
+        625,
+        659,
+        747
+      ],
+      [
+        576,
+        676,
+        1014,
+        1056
+      ],
+      [
+        124,
+        127,
+        745,
+        747
+      ],
+      [
+        18,
+        146,
+        205,
+        230
+      ],
+      [
+        788,
+        976,
+        1186,
+        1268
+      ],
+      [
+        427,
+        579,
+        696,
+        747
+      ],
+      [
+        350,
+        730,
+        770,
+        1285
+      ],
+      [
+        376,
+        557,
+        558,
+        905
+      ],
+      [
+        359,
+        1787,
+        2385,
+        2499
+      ],
+      [
+        1020,
+        1328,
+        1644,
+        2577
+      ],
+      [
+        59,
+        169,
+        570,
+        576
+      ],
+      [
+        376,
+        557,
+        558,
+        905
+      ],
+      [
+        359,
+        1787,
+        2499,
+        2676
+      ],
+      [
+        76,
+        250,
+        345,
+        376
+      ],
+      [
+        1788,
+        1794,
+        1795,
+        2178
+      ],
+      [
+        1120,
+        1677,
+        2268,
+        2275
+      ],
+      [
+        0,
+        8,
+        14,
+        258
+      ],
+      [
+        826,
+        828,
+        1457,
+        1606
+      ],
+      [
+        864,
+        975,
+        1079,
+        1315
+      ],
+      [
+        407,
+        409,
+        1285,
+        1298
+      ],
+      [
+        1929,
+        2349
+      ],
+      [
+        2117,
+        2639
+      ],
+      [
+        330,
+        359,
+        808,
+        1068
+      ],
+      [
+        74,
+        76,
+        608,
+        668
+      ],
+      [
+        1817,
+        2464
+      ],
+      [
+        1624
+      ],
+      [
+        18,
+        26,
+        104,
+        110
+      ],
+      [
+        10,
+        190,
+        280,
+        420
+      ],
+      [
+        886,
+        1295
+      ],
+      [
+        1947,
+        2557
+      ],
+      [
+        1366,
+        2239,
+        2374,
+        2414
+      ],
+      [
+        2438
+      ],
+      [
+        407,
+        409,
+        1285,
+        1298
+      ],
+      [
+        217,
+        427,
+        1760,
+        1879
+      ]
+    ],
+    "summary_ratio": 0.6,
+    "max_sources": 4,
+    "max_hops": 4,
+    "sentence_group_size": 5,
+    "diagnostics": {
+      "probability_floors": 0,
+      "ordered_pairs": 384,
+      "tail_batch_pairs": 136,
+      "duplicate_neighborhood_hits": 4
+    },
+    "label_rule": "current-delta random center label; not stratified quota labels",
+    "adaptations": [
+      "current delta only; frozen prefix",
+      "candidate and final text cap 320 characters",
+      "common MiniLM replaces native BERT",
+      "normalize whitespace before native word alignment",
+      "flush native missing trailing PMI pair batch",
+      "empty-source groups contribute zero feature weight",
+      "zero rounded probabilities use float64 tiny before log"
+    ],
+    "official_reproduction": false
+  },
+  "seconds": 8.917593021993525,
+  "peak_mb": 5071.5205078125,
+  "memory_hash": "6a6ce5076fc971c2a4bbf005069efa75e6a3257f1c37768e84f1e4bead1a1f90"
+}

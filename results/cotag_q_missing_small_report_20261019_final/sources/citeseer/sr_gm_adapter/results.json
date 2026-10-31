@@ -1,0 +1,321 @@
+{
+  "protocol": {
+    "name": "cotag-q-missing-small-baselines-20261019-v1",
+    "dataset": "citeseer",
+    "arm": "sr_gm_adapter",
+    "groups": [
+      [
+        0,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "budgets": [
+      44,
+      84,
+      111
+    ],
+    "stage_raw_rows": [
+      874,
+      801,
+      554
+    ],
+    "class_floor_adjustments": [],
+    "memory_rate": 0.05,
+    "actual_final_rate": 0.04979811574697174,
+    "order_seed": 9101,
+    "construction_seed": 7000,
+    "construction_seed_rule": "7000 + stage",
+    "student_seeds": [
+      150,
+      151,
+      152
+    ],
+    "student_steps": 1024,
+    "student_batch": 24,
+    "student": "run_multiscale_asm single-positive legacy",
+    "encoder": "/home/pc/research/TAGSAM/graphclip_native_work/minilm_from_graphclip",
+    "pool_mask_hash": "dc0a6f0b55bc2afed720ad745f1403c8f23d4bcde6f22ee4ca6c8597800d1829",
+    "report_mask_hash": "22bd5c78bc6fd4c3c461a66170fe1ae5024073e2a5b8e64b46423b2d0ada3169",
+    "test_mask_hash": "8867701ef126f654f7c579f6e778d994e4b4777e56f2521da7800a81cf4b0f3f",
+    "stage_id_hashes": [
+      "db7c5c92ac6cf691638bec7b74da89eab8ad3b01853ff3b71d03e8ef502832f1",
+      "3bd22d0c88f856b613c7e9d824ae0906a0435f741b2e8c96a90f1ef3bd431939",
+      "aef6ac5ac501ce09964cea4dd7dcea2f446a75c5ea1056606ef93a9035685d1f"
+    ],
+    "source_hashes": {
+      "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+      "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+      "run_uq_baseline_expansion_20261013.py": "09d6047c53797412a7c7282c2e7801c839086dfb89c7ce53117f6439176b92be",
+      "uq_stad_native_core_20261012.py": "75af643e7a856077a9d56cb910db3bf5846e90ad4b533ac35ef0bd5931f89fc5",
+      "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+      "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+      "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+      "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+      "run_external_large_adapters_20261011.py": "05a648133cb50773d7e71d03317808b45ce42c1ef52b39b860948f66f50cb205"
+    },
+    "runner_hash": "2ebc9bb4c16205c4032d7268f7c347d676a461de3f3b6491328ba26d98b62bfb",
+    "official_reproduction": false,
+    "access": "current delta only; frozen synthetic prefix; no historical raw reads",
+    "evaluation": "report-dev; additionally historical test mask for common-Student arms",
+    "test_status": "previously inspected dataset masks; not a newly blind sealed confirmation",
+    "method_selection_from_test": false,
+    "rank_with_common_student": false,
+    "dispersion": "sample SD across three Students; one order/construction cell",
+    "stage_evaluation": "final only",
+    "adaptations": "legacy inspired constructor and Student; exact shared row quotas",
+    "gradient_projection": "shared 128-D latent outputs; explicit dimension adaptation"
+  },
+  "rows": [
+    {
+      "arm": "sr_gm_adapter",
+      "stage": 0,
+      "raw_rows": 874,
+      "new_rows": 44,
+      "memory_rows": 44,
+      "scores": null,
+      "score": null,
+      "construction_seconds": 0.24250122893135995,
+      "construction_peak_mb": 149.87744140625,
+      "student_seconds": 4.154990892857313e-05,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "5149fdc7b3048b25701e012a46b21cc5bc5ab09d2c9269d309a9c4892de10e79",
+      "audit": {
+        "method": "sr_gm_adapter",
+        "seed": 7000,
+        "allocation": {
+          "0": 20,
+          "3": 24
+        },
+        "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+        "source_ids_hash": "db7c5c92ac6cf691638bec7b74da89eab8ad3b01853ff3b71d03e8ef502832f1",
+        "historical_raw_reads": 0,
+        "external_labels_used_for_selection": false,
+        "official_reproduction": false,
+        "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+        "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+        "refinement": {
+          "steps": 3,
+          "active_rows": 44,
+          "projection_space": "shared 128-D latent outputs",
+          "reason": "source X and MiniLM dimensions differ; coordinatewise raw-gradient projection is undefined",
+          "optimized": "X only; fixed real-source text payload",
+          "trajectory": [
+            {
+              "update": 1,
+              "objective": 0.679902970790863,
+              "gradient_matching": 0.6799007058143616,
+              "damping": 4.5023742131888866e-05,
+              "feature_gradient_norm": 0.5435934662818909
+            },
+            {
+              "update": 2,
+              "objective": 0.5986200571060181,
+              "gradient_matching": 0.5986055135726929,
+              "damping": 0.00011095527588622645,
+              "feature_gradient_norm": 0.22684213519096375
+            },
+            {
+              "update": 3,
+              "objective": 0.5190858840942383,
+              "gradient_matching": 0.5190512537956238,
+              "damping": 0.0002444154233671725,
+              "feature_gradient_norm": 0.08955588936805725
+            }
+          ],
+          "official_reproduction": false
+        }
+      }
+    },
+    {
+      "arm": "sr_gm_adapter",
+      "stage": 1,
+      "raw_rows": 801,
+      "new_rows": 40,
+      "memory_rows": 84,
+      "scores": null,
+      "score": null,
+      "construction_seconds": 0.04730850399937481,
+      "construction_peak_mb": 192.86669921875,
+      "student_seconds": 3.849796485155821e-05,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "d0a60b30373bb363c5174584203d03061d778690cbd7e1775197436e715299c3",
+      "audit": {
+        "method": "sr_gm_adapter",
+        "seed": 7001,
+        "allocation": {
+          "2": 23,
+          "4": 17
+        },
+        "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+        "source_ids_hash": "3bd22d0c88f856b613c7e9d824ae0906a0435f741b2e8c96a90f1ef3bd431939",
+        "historical_raw_reads": 0,
+        "external_labels_used_for_selection": false,
+        "official_reproduction": false,
+        "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+        "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+        "refinement": {
+          "steps": 3,
+          "active_rows": 40,
+          "projection_space": "shared 128-D latent outputs",
+          "reason": "source X and MiniLM dimensions differ; coordinatewise raw-gradient projection is undefined",
+          "optimized": "X only; fixed real-source text payload",
+          "trajectory": [
+            {
+              "update": 1,
+              "objective": 0.6568828821182251,
+              "gradient_matching": 0.6568801403045654,
+              "damping": 5.428131771623157e-05,
+              "feature_gradient_norm": 0.5048732161521912
+            },
+            {
+              "update": 2,
+              "objective": 0.4803852140903473,
+              "gradient_matching": 0.48036640882492065,
+              "damping": 0.00019605290435720235,
+              "feature_gradient_norm": 0.1221928745508194
+            },
+            {
+              "update": 3,
+              "objective": 0.44305741786956787,
+              "gradient_matching": 0.44302594661712646,
+              "damping": 0.00016259292897302657,
+              "feature_gradient_norm": 0.07813578099012375
+            }
+          ],
+          "official_reproduction": false
+        }
+      }
+    },
+    {
+      "arm": "sr_gm_adapter",
+      "stage": 2,
+      "raw_rows": 554,
+      "new_rows": 27,
+      "memory_rows": 111,
+      "scores": {
+        "report_dev": {
+          "stage": 2,
+          "rows": 111,
+          "per_seed": [
+            {
+              "seed": 150,
+              "macro_f1": 46.28356067842207,
+              "accuracy": 51.09717868338558
+            },
+            {
+              "seed": 151,
+              "macro_f1": 48.309134717948005,
+              "accuracy": 51.724137931034484
+            },
+            {
+              "seed": 152,
+              "macro_f1": 52.226589951843984,
+              "accuracy": 57.68025078369906
+            }
+          ],
+          "macro_f1": 48.939761782738024,
+          "macro_f1_std": 3.0212856712534983,
+          "accuracy": 53.500522466039705,
+          "accuracy_std": 3.6332996135242857
+        }
+      },
+      "score": {
+        "stage": 2,
+        "rows": 111,
+        "per_seed": [
+          {
+            "seed": 150,
+            "macro_f1": 46.28356067842207,
+            "accuracy": 51.09717868338558
+          },
+          {
+            "seed": 151,
+            "macro_f1": 48.309134717948005,
+            "accuracy": 51.724137931034484
+          },
+          {
+            "seed": 152,
+            "macro_f1": 52.226589951843984,
+            "accuracy": 57.68025078369906
+          }
+        ],
+        "macro_f1": 48.939761782738024,
+        "macro_f1_std": 3.0212856712534983,
+        "accuracy": 53.500522466039705,
+        "accuracy_std": 3.6332996135242857
+      },
+      "construction_seconds": 0.038060293067246675,
+      "construction_peak_mb": 134.60400390625,
+      "student_seconds": 6.4802579750539735,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "fe87a43ecc1b8d5e8a60682a32a026ded08625f8dd0d476977d144f4e3404125",
+      "audit": {
+        "method": "sr_gm_adapter",
+        "seed": 7002,
+        "allocation": {
+          "1": 18,
+          "5": 9
+        },
+        "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+        "source_ids_hash": "aef6ac5ac501ce09964cea4dd7dcea2f446a75c5ea1056606ef93a9035685d1f",
+        "historical_raw_reads": 0,
+        "external_labels_used_for_selection": false,
+        "official_reproduction": false,
+        "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+        "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+        "refinement": {
+          "steps": 3,
+          "active_rows": 27,
+          "projection_space": "shared 128-D latent outputs",
+          "reason": "source X and MiniLM dimensions differ; coordinatewise raw-gradient projection is undefined",
+          "optimized": "X only; fixed real-source text payload",
+          "trajectory": [
+            {
+              "update": 1,
+              "objective": 0.7596848607063293,
+              "gradient_matching": 0.7596793174743652,
+              "damping": 0.00011077924136770889,
+              "feature_gradient_norm": 0.8676761388778687
+            },
+            {
+              "update": 2,
+              "objective": 0.639102041721344,
+              "gradient_matching": 0.6390830874443054,
+              "damping": 0.00019882518972735852,
+              "feature_gradient_norm": 0.13682244718074799
+            },
+            {
+              "update": 3,
+              "objective": 0.6103986501693726,
+              "gradient_matching": 0.6103564500808716,
+              "damping": 0.0003743184788618237,
+              "feature_gradient_norm": 0.08620200306177139
+            }
+          ],
+          "official_reproduction": false
+        }
+      }
+    }
+  ],
+  "status": "complete"
+}

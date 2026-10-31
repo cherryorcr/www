@@ -1,0 +1,1388 @@
+{
+  "protocol": {
+    "name": "cotag-q-missing-small-baselines-20261019-repair-v2",
+    "dataset": "citeseer",
+    "arm": "stad_native_local",
+    "groups": [
+      [
+        0,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "budgets": [
+      44,
+      84,
+      111
+    ],
+    "stage_raw_rows": [
+      874,
+      801,
+      554
+    ],
+    "class_floor_adjustments": [],
+    "memory_rate": 0.05,
+    "actual_final_rate": 0.04979811574697174,
+    "order_seed": 9101,
+    "construction_seed": 271006,
+    "construction_seed_rule": "271006, native stage offsets",
+    "student_seeds": [
+      150,
+      151,
+      152
+    ],
+    "student_steps": 2048,
+    "student_batch": 24,
+    "student": {
+      "name": "GraphTextPromptStudent",
+      "graph_encoder": "two-layer symmetric-normalized GCN",
+      "text_encoder": "frozen MiniLM embeddings",
+      "classifier_head": "none; prompt cosine only",
+      "pair_loss": "symmetric multi-positive graph-text InfoNCE",
+      "prompt_loss": "cross-entropy over encoded class prompts",
+      "margin_loss": "multiclass prompt margin",
+      "lambda_pair": 0.5,
+      "lambda_prompt": 1.0,
+      "lambda_margin": 0.1,
+      "margin": 0.2,
+      "same_class_rows_are_positive": true
+    },
+    "encoder": "/home/pc/research/TAGSAM/graphclip_native_work/minilm_from_graphclip",
+    "pool_mask_hash": "dc0a6f0b55bc2afed720ad745f1403c8f23d4bcde6f22ee4ca6c8597800d1829",
+    "report_mask_hash": "22bd5c78bc6fd4c3c461a66170fe1ae5024073e2a5b8e64b46423b2d0ada3169",
+    "test_mask_hash": "8867701ef126f654f7c579f6e778d994e4b4777e56f2521da7800a81cf4b0f3f",
+    "stage_id_hashes": [
+      "db7c5c92ac6cf691638bec7b74da89eab8ad3b01853ff3b71d03e8ef502832f1",
+      "3bd22d0c88f856b613c7e9d824ae0906a0435f741b2e8c96a90f1ef3bd431939",
+      "aef6ac5ac501ce09964cea4dd7dcea2f446a75c5ea1056606ef93a9035685d1f"
+    ],
+    "source_hashes": {
+      "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+      "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+      "run_uq_baseline_expansion_20261013.py": "09d6047c53797412a7c7282c2e7801c839086dfb89c7ce53117f6439176b92be",
+      "uq_stad_native_core_20261012.py": "4c998b331a15bee441817b52d8381f2d138a94760ab2620f9862c21a009562e1",
+      "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+      "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+      "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+      "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256"
+    },
+    "runner_hash": "09c937c23f1da18fa76c52fdc2112b12fe352b4712e2721fa018b90be494fc51",
+    "official_reproduction": false,
+    "access": "current delta only; frozen synthetic prefix; no historical raw reads",
+    "evaluation": "report-dev; additionally historical test mask for common-Student arms",
+    "test_status": "previously inspected dataset masks; not a newly blind sealed confirmation",
+    "method_selection_from_test": false,
+    "rank_with_common_student": true,
+    "dispersion": "sample SD across three Students; one order/construction cell",
+    "stage_evaluation": "every stage",
+    "compatibility_repairs": {
+      "stad_module": "explicit tools source; avoids frozen module name shadowing"
+    },
+    "official_source": {
+      "commit": "5aaf1a06e44638499373b1358c85d1546187edae",
+      "file_hashes": {
+        "models/GNN.py": {
+          "actual_sha256": "923249e0b6f55eb58f4a504eabeb4b71ae1cc5088b2ce144087e5cb10ee772d8",
+          "canonical_sha256": "c3f71c4503551c231998f6ccd4bdc1bdf9d6f9f6b9b5637c31eefe1f7d7112c2"
+        },
+        "utils_gdd.py": {
+          "actual_sha256": "e65df66b8c160c9b00d18d75d8d008a97cd56b607a791cbae37c6ff817b2c5f6",
+          "canonical_sha256": "94972bf2f201bad18ee971fa7ce0474df4259813bfbd612c31c50069436b1bd5"
+        },
+        "deep_robust_utils.py": {
+          "actual_sha256": "e5fdb3aca56f5d0c8ed644d7304a0889e4e39820b919641987de7123a10c181a",
+          "canonical_sha256": "c06af29863f03624d70cfb26084795ca0a4fd0ac0b05913daba2cd120aa6bf18"
+        },
+        "tagcond.py": {
+          "actual_sha256": "01c53b8ddf501636d9020076f5f664e126d72861b13e54cd5736e265e4e9be62",
+          "canonical_sha256": "5c422892603d16059cdd46ca2f624477f147a28f9505aac8e364b512d8de94c1"
+        },
+        "prompt.py": {
+          "actual_sha256": "a8158a190eb2c1ebf5e591e1cabc0948f2d53a53c81ce398c3bf598afb610cd6",
+          "canonical_sha256": "7fbca453f0df4a4676e785878670c439b22f2ff6288fb38a6ef5b340ff93de81"
+        }
+      },
+      "official_reproduction": false,
+      "ast_change": "disable unused final test scoring; never import keys or official entrypoints"
+    },
+    "generator": {
+      "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "path": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/models/qwen2.5-1.5b",
+      "download_endpoint": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct/resolve/master/model.safetensors",
+      "tls_verification": true,
+      "weight_expected_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "weight_expected_bytes": 3087467144,
+      "file_sha256": {
+        "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+        "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+        "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+      },
+      "transfer": "trusted ModelScope HTTPS mirror; no TLS bypass; official Hugging Face pinned LFS SHA-256 and byte count verified at destination",
+      "native_generator": "qwen3-max API",
+      "adapted_generator": "local transformers Qwen2.5-1.5B-Instruct",
+      "rationale": "explicit lower-capacity adaptation; no external API credentials",
+      "generation": {
+        "temperature": 1.2,
+        "top_p": 0.85,
+        "max_new_tokens": 256,
+        "candidates_per_cluster": 3
+      }
+    },
+    "sparse_audit": {
+      "passed": true,
+      "coarsening_max_error": 0.0,
+      "double_smoothing_max_error": 0.0,
+      "source": {
+        "commit": "5aaf1a06e44638499373b1358c85d1546187edae",
+        "file_hashes": {
+          "models/GNN.py": {
+            "actual_sha256": "923249e0b6f55eb58f4a504eabeb4b71ae1cc5088b2ce144087e5cb10ee772d8",
+            "canonical_sha256": "c3f71c4503551c231998f6ccd4bdc1bdf9d6f9f6b9b5637c31eefe1f7d7112c2"
+          },
+          "utils_gdd.py": {
+            "actual_sha256": "e65df66b8c160c9b00d18d75d8d008a97cd56b607a791cbae37c6ff817b2c5f6",
+            "canonical_sha256": "94972bf2f201bad18ee971fa7ce0474df4259813bfbd612c31c50069436b1bd5"
+          },
+          "deep_robust_utils.py": {
+            "actual_sha256": "e5fdb3aca56f5d0c8ed644d7304a0889e4e39820b919641987de7123a10c181a",
+            "canonical_sha256": "c06af29863f03624d70cfb26084795ca0a4fd0ac0b05913daba2cd120aa6bf18"
+          },
+          "tagcond.py": {
+            "actual_sha256": "01c53b8ddf501636d9020076f5f664e126d72861b13e54cd5736e265e4e9be62",
+            "canonical_sha256": "5c422892603d16059cdd46ca2f624477f147a28f9505aac8e364b512d8de94c1"
+          },
+          "prompt.py": {
+            "actual_sha256": "a8158a190eb2c1ebf5e591e1cabc0948f2d53a53c81ce398c3bf598afb610cd6",
+            "canonical_sha256": "7fbca453f0df4a4676e785878670c439b22f2ff6288fb38a6ef5b340ff93de81"
+          }
+        },
+        "official_reproduction": false,
+        "ast_change": "disable unused final test scoring; never import keys or official entrypoints"
+      },
+      "dense_projection_avoided": true
+    },
+    "internal_split_policy": "classwise-10pct-sparse-v1",
+    "adaptations": "native core and selection; local Qwen2.5-1.5B; shared MiniLM/Student; binary stored support"
+  },
+  "rows": [
+    {
+      "arm": "stad_native_local",
+      "stage": 0,
+      "raw_rows": 874,
+      "new_rows": 44,
+      "memory_rows": 44,
+      "scores": {
+        "report_dev": {
+          "split": "report_dev",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 126,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 95.13888888888889,
+              "accuracy": 95.23809523809523,
+              "old_f1": null,
+              "new_f1": 95.13888888888889
+            },
+            {
+              "seed": 151,
+              "final_f1": 95.95817027009687,
+              "accuracy": 96.03174603174604,
+              "old_f1": null,
+              "new_f1": 95.95817027009687
+            },
+            {
+              "seed": 152,
+              "final_f1": 93.57142857142857,
+              "accuracy": 93.65079365079364,
+              "old_f1": null,
+              "new_f1": 93.57142857142857
+            }
+          ],
+          "final_f1": 94.88949591013811,
+          "final_f1_std": 1.2127578601799094,
+          "accuracy": 94.97354497354497,
+          "accuracy_std": 1.212321612422185,
+          "old_f1": null,
+          "old_f1_std": 0.0,
+          "new_f1": 94.88949591013811,
+          "new_f1_std": 1.2127578601799094
+        },
+        "sealed_test": {
+          "split": "sealed_test",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 123,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 96.65032679738562,
+              "accuracy": 96.7479674796748,
+              "old_f1": null,
+              "new_f1": 96.65032679738562
+            },
+            {
+              "seed": 151,
+              "final_f1": 95.82456378572883,
+              "accuracy": 95.9349593495935,
+              "old_f1": null,
+              "new_f1": 95.82456378572883
+            },
+            {
+              "seed": 152,
+              "final_f1": 95.82456378572883,
+              "accuracy": 95.9349593495935,
+              "old_f1": null,
+              "new_f1": 95.82456378572883
+            }
+          ],
+          "final_f1": 96.09981812294775,
+          "final_f1_std": 0.47675449706688355,
+          "accuracy": 96.2059620596206,
+          "accuracy_std": 0.46939046275579305,
+          "old_f1": null,
+          "old_f1_std": 0.0,
+          "new_f1": 96.09981812294775,
+          "new_f1_std": 0.47675449706688355
+        }
+      },
+      "score": {
+        "split": "report_dev",
+        "student_steps": 2048,
+        "student_batch": 24,
+        "student_seeds": [
+          150,
+          151,
+          152
+        ],
+        "eval_rows": 126,
+        "per_student": [
+          {
+            "seed": 150,
+            "final_f1": 95.13888888888889,
+            "accuracy": 95.23809523809523,
+            "old_f1": null,
+            "new_f1": 95.13888888888889
+          },
+          {
+            "seed": 151,
+            "final_f1": 95.95817027009687,
+            "accuracy": 96.03174603174604,
+            "old_f1": null,
+            "new_f1": 95.95817027009687
+          },
+          {
+            "seed": 152,
+            "final_f1": 93.57142857142857,
+            "accuracy": 93.65079365079364,
+            "old_f1": null,
+            "new_f1": 93.57142857142857
+          }
+        ],
+        "final_f1": 94.88949591013811,
+        "final_f1_std": 1.2127578601799094,
+        "accuracy": 94.97354497354497,
+        "accuracy_std": 1.212321612422185,
+        "old_f1": null,
+        "old_f1_std": 0.0,
+        "new_f1": 94.88949591013811,
+        "new_f1_std": 1.2127578601799094
+      },
+      "construction_seconds": 69.96560523298103,
+      "construction_peak_mb": 5285.65771484375,
+      "student_seconds": 21.75631803891156,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "51a99cac226f87b49575ce8f5b18ef1d60c537c590e1c6ad014627c9ea69b007",
+      "audit": {
+        "native_source": {
+          "commit": "5aaf1a06e44638499373b1358c85d1546187edae",
+          "file_hashes": {
+            "models/GNN.py": {
+              "actual_sha256": "923249e0b6f55eb58f4a504eabeb4b71ae1cc5088b2ce144087e5cb10ee772d8",
+              "canonical_sha256": "c3f71c4503551c231998f6ccd4bdc1bdf9d6f9f6b9b5637c31eefe1f7d7112c2"
+            },
+            "utils_gdd.py": {
+              "actual_sha256": "e65df66b8c160c9b00d18d75d8d008a97cd56b607a791cbae37c6ff817b2c5f6",
+              "canonical_sha256": "94972bf2f201bad18ee971fa7ce0474df4259813bfbd612c31c50069436b1bd5"
+            },
+            "deep_robust_utils.py": {
+              "actual_sha256": "e5fdb3aca56f5d0c8ed644d7304a0889e4e39820b919641987de7123a10c181a",
+              "canonical_sha256": "c06af29863f03624d70cfb26084795ca0a4fd0ac0b05913daba2cd120aa6bf18"
+            },
+            "tagcond.py": {
+              "actual_sha256": "01c53b8ddf501636d9020076f5f664e126d72861b13e54cd5736e265e4e9be62",
+              "canonical_sha256": "5c422892603d16059cdd46ca2f624477f147a28f9505aac8e364b512d8de94c1"
+            },
+            "prompt.py": {
+              "actual_sha256": "a8158a190eb2c1ebf5e591e1cabc0948f2d53a53c81ce398c3bf598afb610cd6",
+              "canonical_sha256": "7fbca453f0df4a4676e785878670c439b22f2ff6288fb38a6ef5b340ff93de81"
+            }
+          },
+          "official_reproduction": false,
+          "ast_change": "disable unused final test scoring; never import keys or official entrypoints"
+        },
+        "generator": {
+          "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+          "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+          "path": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/models/qwen2.5-1.5b",
+          "download_endpoint": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct/resolve/master/model.safetensors",
+          "tls_verification": true,
+          "weight_expected_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+          "weight_expected_bytes": 3087467144,
+          "file_sha256": {
+            "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+            "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+            "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+            "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+            "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+          },
+          "transfer": "trusted ModelScope HTTPS mirror; no TLS bypass; official Hugging Face pinned LFS SHA-256 and byte count verified at destination",
+          "native_generator": "qwen3-max API",
+          "adapted_generator": "local transformers Qwen2.5-1.5B-Instruct",
+          "rationale": "explicit lower-capacity adaptation; no external API credentials",
+          "generation": {
+            "temperature": 1.2,
+            "top_p": 0.85,
+            "max_new_tokens": 256,
+            "candidates_per_cluster": 3
+          }
+        },
+        "core_seconds": 20.646912559051998,
+        "internal_split": {
+          "policy": "classwise-10pct-sparse-v1",
+          "seed": 271006,
+          "mask_sha256": {
+            "train": "86f91ce5b64bc234ab8745368441a0799a66a501e0c6887f5257d437da135006",
+            "validation": "8cb2cf1a49499559f94ae4bdb0189ffec9c2219f5885a65fe5cc344978b9de54",
+            "unlabeled": "d7b442412291862440b9f3f1f3cb3184f26461c242a0563cfe23ec6f0cd3e492"
+          },
+          "classes": [
+            {
+              "label": 0,
+              "source_rows": 395,
+              "train_rows": 40,
+              "validation_rows": 40,
+              "unlabeled_rows": 315
+            },
+            {
+              "label": 3,
+              "source_rows": 479,
+              "train_rows": 48,
+              "validation_rows": 48,
+              "unlabeled_rows": 383
+            }
+          ],
+          "disjoint": true,
+          "external_nodes_used": false
+        },
+        "internal_val_accuracy": 0.9772727489471436,
+        "supervised_rows": 88,
+        "internal_validation_rows": 88,
+        "pseudo_pool_rows": 698,
+        "source_rows": 874,
+        "slots": 44,
+        "final_edges": 378,
+        "core_weighted_edges": 422,
+        "keyword_empty_vocabulary_repairs": 0,
+        "generation_candidates": 132,
+        "generated_schema_retries": 0,
+        "generated_schema_valid_fraction": 0.10606060606060606,
+        "wasserstein_scores": [
+          1.0488923788070679,
+          1.058532953262329,
+          1.0555853843688965,
+          1.0590355396270752,
+          1.0709991455078125,
+          1.0692639350891113,
+          1.029545783996582,
+          1.0600422620773315,
+          1.0413851737976074,
+          1.0741934776306152,
+          1.0347917079925537,
+          1.0352210998535156,
+          1.0311766862869263,
+          1.043398380279541,
+          1.0338139533996582,
+          1.0349832773208618,
+          1.0682485103607178,
+          1.0427037477493286,
+          1.0208334922790527,
+          1.073136568069458,
+          1.027825117111206,
+          1.0548888444900513,
+          1.067701816558838,
+          1.0732231140136719,
+          1.0745952129364014,
+          1.043992280960083,
+          1.0657038688659668,
+          1.0659732818603516,
+          1.0663299560546875,
+          1.0304043292999268,
+          1.0658204555511475,
+          1.0376763343811035,
+          1.0691919326782227,
+          1.0339818000793457,
+          1.0918045043945312,
+          1.0542070865631104,
+          1.0504757165908813,
+          1.055228352546692,
+          1.0643949508666992,
+          1.0391842126846313,
+          1.0821536779403687,
+          1.0491622686386108,
+          1.0557432174682617,
+          1.03868567943573,
+          1.0316872596740723,
+          1.0816078186035156,
+          1.050105333328247,
+          1.0826075077056885,
+          1.085062026977539,
+          1.0452735424041748,
+          1.0614749193191528,
+          1.0558973550796509,
+          1.0659537315368652,
+          1.015570044517517,
+          1.0327022075653076,
+          1.0667314529418945,
+          1.0341601371765137,
+          1.0800387859344482,
+          1.0587958097457886,
+          1.032806634902954,
+          1.0390740633010864,
+          1.056511402130127,
+          1.0433769226074219,
+          1.0454437732696533,
+          1.021918773651123,
+          1.0573838949203491,
+          1.0826892852783203,
+          1.0233895778656006,
+          1.0623791217803955,
+          1.0682682991027832,
+          1.029123306274414,
+          1.068619728088379,
+          1.0388462543487549,
+          1.0536916255950928,
+          1.0533432960510254,
+          1.041114330291748,
+          1.0443527698516846,
+          1.0799387693405151,
+          1.0459589958190918,
+          1.0474263429641724,
+          1.0262508392333984,
+          1.0383681058883667,
+          1.0186539888381958,
+          1.0366027355194092,
+          1.048477292060852,
+          1.0736277103424072,
+          1.0564881563186646,
+          1.070163369178772,
+          1.0472383499145508,
+          1.0519671440124512,
+          1.0713648796081543,
+          1.0531821250915527,
+          1.047831416130066,
+          1.0428037643432617,
+          1.0337426662445068,
+          1.0354697704315186,
+          1.028050184249878,
+          1.0195138454437256,
+          1.058950424194336,
+          1.0765223503112793
+        ],
+        "selection": [
+          {
+            "candidate": 53,
+            "wasserstein": 1.015570044517517,
+            "internal_val_accuracy": 0.9772727489471436,
+            "best_epoch": 4,
+            "steps": 600,
+            "seed": 278006
+          },
+          {
+            "candidate": 82,
+            "wasserstein": 1.0186539888381958,
+            "internal_val_accuracy": 0.9659091234207153,
+            "best_epoch": 3,
+            "steps": 600,
+            "seed": 278006
+          },
+          {
+            "candidate": 97,
+            "wasserstein": 1.0195138454437256,
+            "internal_val_accuracy": 0.9659091234207153,
+            "best_epoch": 1,
+            "steps": 600,
+            "seed": 278006
+          },
+          {
+            "candidate": 18,
+            "wasserstein": 1.0208334922790527,
+            "internal_val_accuracy": 0.9659091234207153,
+            "best_epoch": 3,
+            "steps": 600,
+            "seed": 278006
+          },
+          {
+            "candidate": 64,
+            "wasserstein": 1.021918773651123,
+            "internal_val_accuracy": 0.9659091234207153,
+            "best_epoch": 1,
+            "steps": 600,
+            "seed": 278006
+          }
+        ],
+        "winner": 53,
+        "label_rule": "native mean predicted logits, mapped to current global class ids",
+        "historical_raw_reads": 0,
+        "report_dev_used_for_selection": false,
+        "test_used_for_selection": false,
+        "adaptations": [
+          "current delta only; frozen block diagonal prefix",
+          "classwise 10% labeled / 10% internal val; singleton train-only; pairs train/val; remainder pseudo pool",
+          "common MiniLM semantic core; original X pooled for common Student",
+          "local Qwen2.5-1.5B rather than native qwen3-max API",
+          "native raw text candidate selection; prompt schema compliance audited, not enforced",
+          "three samples; native 100 combinations, WSD top-five, internal GCN validation",
+          "common 320-character cap before candidate scoring and final storage",
+          "sparse equivalent of native dense coarsening",
+          "binary synthetic support in common Student; weighted native candidate evaluation"
+        ],
+        "official_reproduction": false
+      }
+    },
+    {
+      "arm": "stad_native_local",
+      "stage": 1,
+      "raw_rows": 801,
+      "new_rows": 40,
+      "memory_rows": 84,
+      "scores": {
+        "report_dev": {
+          "split": "report_dev",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 231,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 81.40148227321747,
+              "accuracy": 81.81818181818183,
+              "old_f1": 83.29703569267997,
+              "new_f1": 79.50592885375494
+            },
+            {
+              "seed": 151,
+              "final_f1": 82.63195626751964,
+              "accuracy": 83.11688311688312,
+              "old_f1": 84.92203219315896,
+              "new_f1": 80.34188034188034
+            },
+            {
+              "seed": 152,
+              "final_f1": 80.72180722628973,
+              "accuracy": 80.95238095238095,
+              "old_f1": 81.68516034629923,
+              "new_f1": 79.7584541062802
+            }
+          ],
+          "final_f1": 81.58508192234228,
+          "final_f1_std": 0.9682194809530302,
+          "accuracy": 81.96248196248196,
+          "accuracy_std": 1.0894421984517682,
+          "old_f1": 83.30140941071271,
+          "old_f1_std": 1.618440355807204,
+          "new_f1": 79.86875443397183,
+          "new_f1_std": 0.4287520779441532
+        },
+        "sealed_test": {
+          "split": "sealed_test",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 233,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 83.14590154191923,
+              "accuracy": 83.2618025751073,
+              "old_f1": 87.28632478632478,
+              "new_f1": 79.00547829751369
+            },
+            {
+              "seed": 151,
+              "final_f1": 82.59963930019232,
+              "accuracy": 82.40343347639485,
+              "old_f1": 86.62087912087912,
+              "new_f1": 78.57839947950553
+            },
+            {
+              "seed": 152,
+              "final_f1": 82.3610553487278,
+              "accuracy": 82.40343347639485,
+              "old_f1": 86.05043149946061,
+              "new_f1": 78.67167919799499
+            }
+          ],
+          "final_f1": 82.70219873027979,
+          "final_f1_std": 0.40234899560787724,
+          "accuracy": 82.689556509299,
+          "accuracy_std": 0.4955796302056861,
+          "old_f1": 86.65254513555483,
+          "old_f1_std": 0.6185548532612622,
+          "new_f1": 78.75185232500473,
+          "new_f1_std": 0.22454370825899725
+        }
+      },
+      "score": {
+        "split": "report_dev",
+        "student_steps": 2048,
+        "student_batch": 24,
+        "student_seeds": [
+          150,
+          151,
+          152
+        ],
+        "eval_rows": 231,
+        "per_student": [
+          {
+            "seed": 150,
+            "final_f1": 81.40148227321747,
+            "accuracy": 81.81818181818183,
+            "old_f1": 83.29703569267997,
+            "new_f1": 79.50592885375494
+          },
+          {
+            "seed": 151,
+            "final_f1": 82.63195626751964,
+            "accuracy": 83.11688311688312,
+            "old_f1": 84.92203219315896,
+            "new_f1": 80.34188034188034
+          },
+          {
+            "seed": 152,
+            "final_f1": 80.72180722628973,
+            "accuracy": 80.95238095238095,
+            "old_f1": 81.68516034629923,
+            "new_f1": 79.7584541062802
+          }
+        ],
+        "final_f1": 81.58508192234228,
+        "final_f1_std": 0.9682194809530302,
+        "accuracy": 81.96248196248196,
+        "accuracy_std": 1.0894421984517682,
+        "old_f1": 83.30140941071271,
+        "old_f1_std": 1.618440355807204,
+        "new_f1": 79.86875443397183,
+        "new_f1_std": 0.4287520779441532
+      },
+      "construction_seconds": 64.54320489894599,
+      "construction_peak_mb": 5294.7666015625,
+      "student_seconds": 21.810127702890895,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "4dcbbc247fde36c22ffd78569836d4a992cd018b5e882a831b590eb0a207914f",
+      "audit": {
+        "native_source": {
+          "commit": "5aaf1a06e44638499373b1358c85d1546187edae",
+          "file_hashes": {
+            "models/GNN.py": {
+              "actual_sha256": "923249e0b6f55eb58f4a504eabeb4b71ae1cc5088b2ce144087e5cb10ee772d8",
+              "canonical_sha256": "c3f71c4503551c231998f6ccd4bdc1bdf9d6f9f6b9b5637c31eefe1f7d7112c2"
+            },
+            "utils_gdd.py": {
+              "actual_sha256": "e65df66b8c160c9b00d18d75d8d008a97cd56b607a791cbae37c6ff817b2c5f6",
+              "canonical_sha256": "94972bf2f201bad18ee971fa7ce0474df4259813bfbd612c31c50069436b1bd5"
+            },
+            "deep_robust_utils.py": {
+              "actual_sha256": "e5fdb3aca56f5d0c8ed644d7304a0889e4e39820b919641987de7123a10c181a",
+              "canonical_sha256": "c06af29863f03624d70cfb26084795ca0a4fd0ac0b05913daba2cd120aa6bf18"
+            },
+            "tagcond.py": {
+              "actual_sha256": "01c53b8ddf501636d9020076f5f664e126d72861b13e54cd5736e265e4e9be62",
+              "canonical_sha256": "5c422892603d16059cdd46ca2f624477f147a28f9505aac8e364b512d8de94c1"
+            },
+            "prompt.py": {
+              "actual_sha256": "a8158a190eb2c1ebf5e591e1cabc0948f2d53a53c81ce398c3bf598afb610cd6",
+              "canonical_sha256": "7fbca453f0df4a4676e785878670c439b22f2ff6288fb38a6ef5b340ff93de81"
+            }
+          },
+          "official_reproduction": false,
+          "ast_change": "disable unused final test scoring; never import keys or official entrypoints"
+        },
+        "generator": {
+          "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+          "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+          "path": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/models/qwen2.5-1.5b",
+          "download_endpoint": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct/resolve/master/model.safetensors",
+          "tls_verification": true,
+          "weight_expected_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+          "weight_expected_bytes": 3087467144,
+          "file_sha256": {
+            "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+            "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+            "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+            "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+            "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+          },
+          "transfer": "trusted ModelScope HTTPS mirror; no TLS bypass; official Hugging Face pinned LFS SHA-256 and byte count verified at destination",
+          "native_generator": "qwen3-max API",
+          "adapted_generator": "local transformers Qwen2.5-1.5B-Instruct",
+          "rationale": "explicit lower-capacity adaptation; no external API credentials",
+          "generation": {
+            "temperature": 1.2,
+            "top_p": 0.85,
+            "max_new_tokens": 256,
+            "candidates_per_cluster": 3
+          }
+        },
+        "core_seconds": 20.796424998086877,
+        "internal_split": {
+          "policy": "classwise-10pct-sparse-v1",
+          "seed": 272015,
+          "mask_sha256": {
+            "train": "1c771f2a73ae653e141281755ad22b039cb2776b8945495991e192afa4418131",
+            "validation": "195e27276834bb6f636ee60cf4d0d89f7a9a8694b77bb35e3a1953b1d9e2f973",
+            "unlabeled": "8212168985311f820b15d5e5c71854c2fdd1ee78d92293b826ab11a384680cce"
+          },
+          "classes": [
+            {
+              "label": 2,
+              "source_rows": 474,
+              "train_rows": 47,
+              "validation_rows": 47,
+              "unlabeled_rows": 380
+            },
+            {
+              "label": 4,
+              "source_rows": 327,
+              "train_rows": 33,
+              "validation_rows": 33,
+              "unlabeled_rows": 261
+            }
+          ],
+          "disjoint": true,
+          "external_nodes_used": false
+        },
+        "internal_val_accuracy": 0.9375,
+        "supervised_rows": 80,
+        "internal_validation_rows": 80,
+        "pseudo_pool_rows": 641,
+        "source_rows": 801,
+        "slots": 40,
+        "final_edges": 388,
+        "core_weighted_edges": 428,
+        "keyword_empty_vocabulary_repairs": 0,
+        "generation_candidates": 120,
+        "generated_schema_retries": 0,
+        "generated_schema_valid_fraction": 0.14166666666666666,
+        "wasserstein_scores": [
+          1.0435547828674316,
+          1.036552906036377,
+          1.048624873161316,
+          1.0383496284484863,
+          1.0468310117721558,
+          1.0344114303588867,
+          1.0398542881011963,
+          1.0614107847213745,
+          1.074980616569519,
+          1.0488626956939697,
+          1.0708885192871094,
+          1.0418756008148193,
+          1.0432913303375244,
+          1.0511785745620728,
+          1.034467101097107,
+          1.0495525598526,
+          1.0198520421981812,
+          1.070837140083313,
+          1.039856195449829,
+          1.0760860443115234,
+          1.0469249486923218,
+          1.0791231393814087,
+          1.031111717224121,
+          1.0537666082382202,
+          1.056969165802002,
+          1.0921355485916138,
+          1.0391697883605957,
+          1.03273344039917,
+          1.0599836111068726,
+          1.072852373123169,
+          1.055591106414795,
+          1.0301692485809326,
+          1.0308983325958252,
+          1.0684808492660522,
+          1.0519425868988037,
+          1.0364651679992676,
+          1.036078929901123,
+          1.0269943475723267,
+          1.0695786476135254,
+          1.067125678062439,
+          1.0675855875015259,
+          1.0677053928375244,
+          1.0497020483016968,
+          1.0184835195541382,
+          1.0368660688400269,
+          1.0128717422485352,
+          1.0318504571914673,
+          1.020154595375061,
+          1.0289978981018066,
+          1.0557093620300293,
+          1.0246659517288208,
+          1.0610870122909546,
+          1.0553330183029175,
+          1.0457532405853271,
+          1.0622410774230957,
+          1.0728480815887451,
+          1.0255688428878784,
+          1.051459789276123,
+          1.0532408952713013,
+          1.0485886335372925,
+          1.058609127998352,
+          1.033644199371338,
+          1.0418457984924316,
+          1.0420432090759277,
+          1.008172631263733,
+          1.0649137496948242,
+          1.047656774520874,
+          1.0235594511032104,
+          1.0531156063079834,
+          1.0597724914550781,
+          1.03126060962677,
+          1.0635709762573242,
+          1.0411121845245361,
+          1.0648844242095947,
+          1.0708770751953125,
+          1.0287742614746094,
+          1.0259538888931274,
+          1.0641040802001953,
+          1.0558586120605469,
+          1.0339348316192627,
+          1.067048192024231,
+          1.056506872177124,
+          1.0272578001022339,
+          1.0531610250473022,
+          1.0458959341049194,
+          1.0454261302947998,
+          1.0715383291244507,
+          1.037224531173706,
+          1.0444869995117188,
+          1.0565364360809326,
+          1.0679328441619873,
+          1.0291814804077148,
+          1.03667151927948,
+          1.0467753410339355,
+          1.0499160289764404,
+          1.0593593120574951,
+          1.033362627029419,
+          1.0150375366210938,
+          1.0426543951034546,
+          1.0640480518341064
+        ],
+        "selection": [
+          {
+            "candidate": 64,
+            "wasserstein": 1.008172631263733,
+            "internal_val_accuracy": 0.9625000357627869,
+            "best_epoch": 446,
+            "steps": 600,
+            "seed": 279015
+          },
+          {
+            "candidate": 45,
+            "wasserstein": 1.0128717422485352,
+            "internal_val_accuracy": 0.9375,
+            "best_epoch": 14,
+            "steps": 600,
+            "seed": 279015
+          },
+          {
+            "candidate": 97,
+            "wasserstein": 1.0150375366210938,
+            "internal_val_accuracy": 0.9375,
+            "best_epoch": 7,
+            "steps": 600,
+            "seed": 279015
+          },
+          {
+            "candidate": 43,
+            "wasserstein": 1.0184835195541382,
+            "internal_val_accuracy": 0.949999988079071,
+            "best_epoch": 227,
+            "steps": 600,
+            "seed": 279015
+          },
+          {
+            "candidate": 16,
+            "wasserstein": 1.0198520421981812,
+            "internal_val_accuracy": 0.9750000238418579,
+            "best_epoch": 592,
+            "steps": 600,
+            "seed": 279015
+          }
+        ],
+        "winner": 16,
+        "label_rule": "native mean predicted logits, mapped to current global class ids",
+        "historical_raw_reads": 0,
+        "report_dev_used_for_selection": false,
+        "test_used_for_selection": false,
+        "adaptations": [
+          "current delta only; frozen block diagonal prefix",
+          "classwise 10% labeled / 10% internal val; singleton train-only; pairs train/val; remainder pseudo pool",
+          "common MiniLM semantic core; original X pooled for common Student",
+          "local Qwen2.5-1.5B rather than native qwen3-max API",
+          "native raw text candidate selection; prompt schema compliance audited, not enforced",
+          "three samples; native 100 combinations, WSD top-five, internal GCN validation",
+          "common 320-character cap before candidate scoring and final storage",
+          "sparse equivalent of native dense coarsening",
+          "binary synthetic support in common Student; weighted native candidate evaluation"
+        ],
+        "official_reproduction": false
+      }
+    },
+    {
+      "arm": "stad_native_local",
+      "stage": 2,
+      "raw_rows": 554,
+      "new_rows": 27,
+      "memory_rows": 111,
+      "scores": {
+        "report_dev": {
+          "split": "report_dev",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 319,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 64.81442264498524,
+              "accuracy": 68.65203761755487,
+              "old_f1": 74.65821607695719,
+              "new_f1": 45.126835781041386
+            },
+            {
+              "seed": 151,
+              "final_f1": 67.02056247173998,
+              "accuracy": 71.47335423197492,
+              "old_f1": 76.23930446194225,
+              "new_f1": 48.58307849133538
+            },
+            {
+              "seed": 152,
+              "final_f1": 65.39074276567403,
+              "accuracy": 69.59247648902821,
+              "old_f1": 75.80280830280832,
+              "new_f1": 44.566611691405534
+            }
+          ],
+          "final_f1": 65.7419092941331,
+          "final_f1_std": 1.1442253632177712,
+          "accuracy": 69.90595611285266,
+          "accuracy_std": 1.4365441050018277,
+          "old_f1": 75.56677628056924,
+          "old_f1_std": 0.8165436038114356,
+          "new_f1": 46.09217532126076,
+          "new_f1_std": 2.1752957752149236
+        },
+        "sealed_test": {
+          "split": "sealed_test",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 319,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 67.01735999922606,
+              "accuracy": 71.47335423197492,
+              "old_f1": 76.57437711926876,
+              "new_f1": 47.90332575914068
+            },
+            {
+              "seed": 151,
+              "final_f1": 67.79831810932289,
+              "accuracy": 72.41379310344827,
+              "old_f1": 75.80462002112719,
+              "new_f1": 51.785714285714285
+            },
+            {
+              "seed": 152,
+              "final_f1": 66.47627285940672,
+              "accuracy": 71.78683385579937,
+              "old_f1": 75.82842472351385,
+              "new_f1": 47.77196913119243
+            }
+          ],
+          "final_f1": 67.09731698931856,
+          "final_f1_std": 0.6646395646551351,
+          "accuracy": 71.89132706374086,
+          "accuracy_std": 0.4788480350006066,
+          "old_f1": 76.06914062130326,
+          "old_f1_std": 0.4377094985504157,
+          "new_f1": 49.153669725349125,
+          "new_f1_std": 2.2803634725054978
+        }
+      },
+      "score": {
+        "split": "report_dev",
+        "student_steps": 2048,
+        "student_batch": 24,
+        "student_seeds": [
+          150,
+          151,
+          152
+        ],
+        "eval_rows": 319,
+        "per_student": [
+          {
+            "seed": 150,
+            "final_f1": 64.81442264498524,
+            "accuracy": 68.65203761755487,
+            "old_f1": 74.65821607695719,
+            "new_f1": 45.126835781041386
+          },
+          {
+            "seed": 151,
+            "final_f1": 67.02056247173998,
+            "accuracy": 71.47335423197492,
+            "old_f1": 76.23930446194225,
+            "new_f1": 48.58307849133538
+          },
+          {
+            "seed": 152,
+            "final_f1": 65.39074276567403,
+            "accuracy": 69.59247648902821,
+            "old_f1": 75.80280830280832,
+            "new_f1": 44.566611691405534
+          }
+        ],
+        "final_f1": 65.7419092941331,
+        "final_f1_std": 1.1442253632177712,
+        "accuracy": 69.90595611285266,
+        "accuracy_std": 1.4365441050018277,
+        "old_f1": 75.56677628056924,
+        "old_f1_std": 0.8165436038114356,
+        "new_f1": 46.09217532126076,
+        "new_f1_std": 2.1752957752149236
+      },
+      "construction_seconds": 51.34800946095493,
+      "construction_peak_mb": 5283.49365234375,
+      "student_seconds": 21.736763425986283,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "3a36db868b77b6dd17780bea1a8730f6aea931118b9524e72c244bf06fbfa658",
+      "audit": {
+        "native_source": {
+          "commit": "5aaf1a06e44638499373b1358c85d1546187edae",
+          "file_hashes": {
+            "models/GNN.py": {
+              "actual_sha256": "923249e0b6f55eb58f4a504eabeb4b71ae1cc5088b2ce144087e5cb10ee772d8",
+              "canonical_sha256": "c3f71c4503551c231998f6ccd4bdc1bdf9d6f9f6b9b5637c31eefe1f7d7112c2"
+            },
+            "utils_gdd.py": {
+              "actual_sha256": "e65df66b8c160c9b00d18d75d8d008a97cd56b607a791cbae37c6ff817b2c5f6",
+              "canonical_sha256": "94972bf2f201bad18ee971fa7ce0474df4259813bfbd612c31c50069436b1bd5"
+            },
+            "deep_robust_utils.py": {
+              "actual_sha256": "e5fdb3aca56f5d0c8ed644d7304a0889e4e39820b919641987de7123a10c181a",
+              "canonical_sha256": "c06af29863f03624d70cfb26084795ca0a4fd0ac0b05913daba2cd120aa6bf18"
+            },
+            "tagcond.py": {
+              "actual_sha256": "01c53b8ddf501636d9020076f5f664e126d72861b13e54cd5736e265e4e9be62",
+              "canonical_sha256": "5c422892603d16059cdd46ca2f624477f147a28f9505aac8e364b512d8de94c1"
+            },
+            "prompt.py": {
+              "actual_sha256": "a8158a190eb2c1ebf5e591e1cabc0948f2d53a53c81ce398c3bf598afb610cd6",
+              "canonical_sha256": "7fbca453f0df4a4676e785878670c439b22f2ff6288fb38a6ef5b340ff93de81"
+            }
+          },
+          "official_reproduction": false,
+          "ast_change": "disable unused final test scoring; never import keys or official entrypoints"
+        },
+        "generator": {
+          "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+          "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+          "path": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/models/qwen2.5-1.5b",
+          "download_endpoint": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct/resolve/master/model.safetensors",
+          "tls_verification": true,
+          "weight_expected_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+          "weight_expected_bytes": 3087467144,
+          "file_sha256": {
+            "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+            "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+            "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+            "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+            "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+          },
+          "transfer": "trusted ModelScope HTTPS mirror; no TLS bypass; official Hugging Face pinned LFS SHA-256 and byte count verified at destination",
+          "native_generator": "qwen3-max API",
+          "adapted_generator": "local transformers Qwen2.5-1.5B-Instruct",
+          "rationale": "explicit lower-capacity adaptation; no external API credentials",
+          "generation": {
+            "temperature": 1.2,
+            "top_p": 0.85,
+            "max_new_tokens": 256,
+            "candidates_per_cluster": 3
+          }
+        },
+        "core_seconds": 21.13259031495545,
+        "internal_split": {
+          "policy": "classwise-10pct-sparse-v1",
+          "seed": 273024,
+          "mask_sha256": {
+            "train": "f41f5305f8e3581ea902a54baed8629d95f3005a62b2a7a1c6261e01bb8e1419",
+            "validation": "90e4d9806ce46763b92c2511a38a81a395027d02a5bd8c983927c104e03edd18",
+            "unlabeled": "e2edc85f79701656233eb78c918dc96e29415bec67a0c52d3ae67ae70a999638"
+          },
+          "classes": [
+            {
+              "label": 1,
+              "source_rows": 383,
+              "train_rows": 38,
+              "validation_rows": 38,
+              "unlabeled_rows": 307
+            },
+            {
+              "label": 5,
+              "source_rows": 171,
+              "train_rows": 17,
+              "validation_rows": 17,
+              "unlabeled_rows": 137
+            }
+          ],
+          "disjoint": true,
+          "external_nodes_used": false
+        },
+        "internal_val_accuracy": 0.7999999523162842,
+        "supervised_rows": 55,
+        "internal_validation_rows": 55,
+        "pseudo_pool_rows": 444,
+        "source_rows": 554,
+        "slots": 27,
+        "final_edges": 146,
+        "core_weighted_edges": 173,
+        "keyword_empty_vocabulary_repairs": 0,
+        "generation_candidates": 81,
+        "generated_schema_retries": 0,
+        "generated_schema_valid_fraction": 0.1111111111111111,
+        "wasserstein_scores": [
+          1.2319791316986084,
+          1.2256572246551514,
+          1.27982497215271,
+          1.2694474458694458,
+          1.251536250114441,
+          1.2293400764465332,
+          1.257615089416504,
+          1.2486521005630493,
+          1.2443314790725708,
+          1.234923005104065,
+          1.274312138557434,
+          1.2530109882354736,
+          1.279693841934204,
+          1.254755973815918,
+          1.249717116355896,
+          1.244400143623352,
+          1.2636727094650269,
+          1.240031361579895,
+          1.2627910375595093,
+          1.2369050979614258,
+          1.2390655279159546,
+          1.2759841680526733,
+          1.2363624572753906,
+          1.235592246055603,
+          1.2216356992721558,
+          1.2462568283081055,
+          1.2413557767868042,
+          1.2493120431900024,
+          1.2227282524108887,
+          1.2452187538146973,
+          1.288545846939087,
+          1.2383708953857422,
+          1.2856982946395874,
+          1.2288082838058472,
+          1.2450385093688965,
+          1.2211723327636719,
+          1.2104624509811401,
+          1.2529951333999634,
+          1.216581106185913,
+          1.238613486289978,
+          1.292191743850708,
+          1.2274813652038574,
+          1.2353154420852661,
+          1.2434637546539307,
+          1.2461308240890503,
+          1.2331571578979492,
+          1.238145112991333,
+          1.2379580736160278,
+          1.2290750741958618,
+          1.2295926809310913,
+          1.1956853866577148,
+          1.1931114196777344,
+          1.2350291013717651,
+          1.269791603088379,
+          1.2461110353469849,
+          1.2216870784759521,
+          1.2067110538482666,
+          1.245654821395874,
+          1.2524182796478271,
+          1.232256293296814,
+          1.2561639547348022,
+          1.2310353517532349,
+          1.2485510110855103,
+          1.209418535232544,
+          1.2803446054458618,
+          1.2411352396011353,
+          1.2520827054977417,
+          1.2355982065200806,
+          1.2717742919921875,
+          1.2290184497833252,
+          1.2547944784164429,
+          1.2537081241607666,
+          1.2289437055587769,
+          1.1889472007751465,
+          1.2421140670776367,
+          1.278104305267334,
+          1.241470217704773,
+          1.2432787418365479,
+          1.2447224855422974,
+          1.249364972114563,
+          1.2514524459838867,
+          1.2213702201843262,
+          1.2407941818237305,
+          1.2281203269958496,
+          1.2189078330993652,
+          1.2481343746185303,
+          1.2650853395462036,
+          1.2209259271621704,
+          1.248947024345398,
+          1.2411648035049438,
+          1.2103667259216309,
+          1.2423291206359863,
+          1.2010539770126343,
+          1.2025054693222046,
+          1.2503716945648193,
+          1.2358148097991943,
+          1.27142333984375,
+          1.2791295051574707,
+          1.2327739000320435,
+          1.2306103706359863
+        ],
+        "selection": [
+          {
+            "candidate": 73,
+            "wasserstein": 1.1889472007751465,
+            "internal_val_accuracy": 0.7454545497894287,
+            "best_epoch": 4,
+            "steps": 600,
+            "seed": 280024
+          },
+          {
+            "candidate": 51,
+            "wasserstein": 1.1931114196777344,
+            "internal_val_accuracy": 0.7454545497894287,
+            "best_epoch": 3,
+            "steps": 600,
+            "seed": 280024
+          },
+          {
+            "candidate": 50,
+            "wasserstein": 1.1956853866577148,
+            "internal_val_accuracy": 0.7454545497894287,
+            "best_epoch": 4,
+            "steps": 600,
+            "seed": 280024
+          },
+          {
+            "candidate": 92,
+            "wasserstein": 1.2010539770126343,
+            "internal_val_accuracy": 0.7636363506317139,
+            "best_epoch": 3,
+            "steps": 600,
+            "seed": 280024
+          },
+          {
+            "candidate": 93,
+            "wasserstein": 1.2025054693222046,
+            "internal_val_accuracy": 0.6909090876579285,
+            "best_epoch": 1,
+            "steps": 600,
+            "seed": 280024
+          }
+        ],
+        "winner": 92,
+        "label_rule": "native mean predicted logits, mapped to current global class ids",
+        "historical_raw_reads": 0,
+        "report_dev_used_for_selection": false,
+        "test_used_for_selection": false,
+        "adaptations": [
+          "current delta only; frozen block diagonal prefix",
+          "classwise 10% labeled / 10% internal val; singleton train-only; pairs train/val; remainder pseudo pool",
+          "common MiniLM semantic core; original X pooled for common Student",
+          "local Qwen2.5-1.5B rather than native qwen3-max API",
+          "native raw text candidate selection; prompt schema compliance audited, not enforced",
+          "three samples; native 100 combinations, WSD top-five, internal GCN validation",
+          "common 320-character cap before candidate scoring and final storage",
+          "sparse equivalent of native dense coarsening",
+          "binary synthetic support in common Student; weighted native candidate evaluation"
+        ],
+        "official_reproduction": false
+      }
+    }
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,608 @@
+{
+  "protocol": {
+    "name": "native-tagsam-student-diagnostic-v1",
+    "source": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/native_epochs/cora_outer5000/results.json",
+    "source_memory_hash": "6a92d73ad6cc47d3cdfda6ef808ff843383cd1d8e218419b334544ccd4605739",
+    "dataset": "cora",
+    "stage": 2,
+    "construction_protocol": {
+      "name": "native-tagsam-full-epoch-continual-v1",
+      "dataset": "cora",
+      "order_seed": 9101,
+      "construction_seed": 271006,
+      "groups": [
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          5,
+          6,
+          1
+        ]
+      ],
+      "budgets": [
+        43,
+        60,
+        95
+      ],
+      "memory_rate": 0.05,
+      "class_floor_adjustments": [],
+      "outer_steps": 5000,
+      "inner_epochs": 15,
+      "inner_batch": 20,
+      "native_source": {
+        "commit": "d812f06fd16db3cd4d497804a8e504d2c738faa8",
+        "files": {
+          "model.py": "57d4462472b20f277479afd8cd7b1834fac97707a7a3c571c955a18df334c25b",
+          "selection.py": "c6e3c67e8317a38d172a48759037e358b476271642bdbbc294a9ff16de7f50e0",
+          "distill.py": "09a031cc88925d2ca4fab57faaf45c80484981c47d8dd21124d5fcdca8540227",
+          "dataset.py": "401419f5bc86bdb6d4cb80043bfa3d676a1997a287fcf1cd64a6c4ae650421ab",
+          "epoch.py": "d75342eaf71bfbf202b6dc3e84e6f3b5caabf1f243e77d4cf5324eca6185a359",
+          "reparam.py": "44ebf08b2b7bcd26a3791be554587981fbf2b981690b1a3e3caf1884cd0c5505",
+          "buffer.py": "62628a08920423fff88943dadd70ba9d472d6479e3d191a59f3f4dfacac14426"
+        },
+        "official_reproduction": false
+      },
+      "internal_bert": "/home/pc/huggingface-cache/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+      "final_student": {
+        "name": "GraphTextPromptStudent",
+        "graph_encoder": "two-layer symmetric-normalized GCN",
+        "text_encoder": "frozen MiniLM embeddings",
+        "classifier_head": "none; prompt cosine only",
+        "pair_loss": "symmetric multi-positive graph-text InfoNCE",
+        "prompt_loss": "cross-entropy over encoded class prompts",
+        "margin_loss": "multiclass prompt margin",
+        "lambda_pair": 0.5,
+        "lambda_prompt": 1.0,
+        "lambda_margin": 0.1,
+        "margin": 0.2,
+        "same_class_rows_are_positive": true
+      },
+      "student_steps": 2048,
+      "student_batch": 24,
+      "student_seeds": [
+        150,
+        151,
+        152
+      ],
+      "retained": [
+        "native GPT2 PMI selector",
+        "native CLIP/GCN and residual TextProjection",
+        "frozen BERT CLS inside construction",
+        "native full-epoch unroll function",
+        "native wBCELoss",
+        "native SGD with learned rates and StepLR",
+        "fresh response subset up to 2000"
+      ],
+      "adaptations": [
+        "current legal delta and frozen own prefix",
+        "5% cumulative row budget",
+        "320-character common stored text cap and documented selector numerical repairs",
+        "teacher fixed final 3-epoch model, not official evaluation-accuracy selection",
+        "full legal-source graph in place of NeighborSampler; same GCN operator",
+        "common MiniLM/prompt student for comparison; native distilled rates not used downstream"
+      ],
+      "official_reproduction": false,
+      "method_selection_from_test": false,
+      "resource_isolation": false,
+      "resource_note": "May share GPU with bounded adapter diagnostic; runtime is not an isolated efficiency comparison",
+      "evaluation": "previously inspected historical masks; not new blind data",
+      "source_hashes": {
+        "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+        "unified_q_multimodal.py": "f621d4575a9bb660fad8031e4d7135e2570cc72c02d16145c08aa989bee99525",
+        "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+        "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+        "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+        "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+        "run_unified_q_inloop_cat_20261007.py": "970783502188122b452778276d0de938d47956a1b9698bd18659cd4c0dc18097",
+        "run_unified_q_diagnostics_20261007.py": "2e34734682d3de3211e95c129d0c6c0d00f27025412f2c6e2cfd5b36522bcfc1",
+        "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+        "common.py": "00b6fab4fbbd2bdb5188824f51fe923fde7920afd70569a0d8102503891f523f"
+      },
+      "runner_hash": "a8c1578e2aed3e8b6db4dfbcd6b1d09835cd851b6b17db99ec5cf1e5dcccda8a",
+      "native_wrapper_hash": "b7cc596391e6e4d5b17c8ea7a5820326f987589ae5a3bda6e43cceea8abd1cfc",
+      "data_loader_hash": "09d6047c53797412a7c7282c2e7801c839086dfb89c7ce53117f6439176b92be",
+      "stage_id_hashes": [
+        "ead2b7f516b3ac58f95ee130645dd83b368a83f12682ec3cb7d9bc0b01321f35",
+        "c5f8c085bec3db5ad5924737639d73f3707eb9811c47caa833aa7942d60a7c2f",
+        "5b58bb155e8f9e77eac7c083bf63009da3a2d919153038ac165baa8fd735d370"
+      ],
+      "pool_mask_hash": "e77c9f642e2ec7740b4bd232875755691cbbb154b0180ab9fc9884f7ad429923",
+      "report_mask_hash": "82f26d441da76357ff9308bdf8b37f4fdcb024ad77de3cc9d2d536e34404f841",
+      "test_mask_hash": "8d6117a2c8382285baf5a1358a134de8f1cd53c6f12caeaa68fd5bd85ba13214"
+    },
+    "native_student": "upstream CLIP graph encoder and residual text projection",
+    "student_seeds": [
+      150,
+      151,
+      152
+    ],
+    "epochs": 15,
+    "batch": 32,
+    "batch_mode": "shuffle synthetic rows once per epoch, retain final incomplete batch",
+    "graph_lr": 0.004487037193030119,
+    "text_lr": 0.004796268418431282,
+    "optimizer": "SGD, momentum=.9, weight_decay=5e-4",
+    "prompt_rule": "common class prompts encoded with frozen BERT CLS",
+    "report_masks": "same common report-dev and sealed-test masks; no epoch selection",
+    "evaluation_split": "diagnostic only; separate from common MiniLM student",
+    "source_result_hash": "f74321493393b453898101e6d712496de1242c425f2f14c925e67d9a2f733f6d",
+    "runner_hash": "b3d8cb78bb6c37b509698fa2f92a566d349123cc2444b526543f6d6e21b94103",
+    "changes_from_official_eval": [
+      "fixed last epoch rather than best test epoch",
+      "common all-seen-category prompts rather than independent five-way tasks",
+      "batch-local self-loop equivalent instead of NeighborSampler"
+    ],
+    "teacher_check": "Reconstruct the final-stage fixed 3-epoch teacher with the original seed and legal inputs; evaluate once, no tuning"
+  },
+  "status": "complete",
+  "rows": [
+    {
+      "seed": 150,
+      "losses": [
+        {
+          "epoch": 1,
+          "batch_losses": [
+            3.5765910148620605,
+            3.5735912322998047,
+            3.52618145942688
+          ]
+        },
+        {
+          "epoch": 2,
+          "batch_losses": [
+            3.531669855117798,
+            3.4614086151123047,
+            3.44242000579834
+          ]
+        },
+        {
+          "epoch": 3,
+          "batch_losses": [
+            3.463365316390991,
+            3.3674941062927246,
+            3.18233060836792
+          ]
+        },
+        {
+          "epoch": 4,
+          "batch_losses": [
+            3.2000479698181152,
+            3.223701000213623,
+            3.123476505279541
+          ]
+        },
+        {
+          "epoch": 5,
+          "batch_losses": [
+            3.0857510566711426,
+            2.9749460220336914,
+            2.940748929977417
+          ]
+        },
+        {
+          "epoch": 6,
+          "batch_losses": [
+            2.8633170127868652,
+            2.7833006381988525,
+            2.6599655151367188
+          ]
+        },
+        {
+          "epoch": 7,
+          "batch_losses": [
+            2.5493712425231934,
+            2.5298781394958496,
+            2.131165027618408
+          ]
+        },
+        {
+          "epoch": 8,
+          "batch_losses": [
+            1.955955982208252,
+            1.7737035751342773,
+            1.6029386520385742
+          ]
+        },
+        {
+          "epoch": 9,
+          "batch_losses": [
+            1.3665266036987305,
+            1.1916084289550781,
+            1.256683588027954
+          ]
+        },
+        {
+          "epoch": 10,
+          "batch_losses": [
+            1.1488858461380005,
+            0.8706778287887573,
+            0.9506496787071228
+          ]
+        },
+        {
+          "epoch": 11,
+          "batch_losses": [
+            0.7141058444976807,
+            0.7497273683547974,
+            0.6006777286529541
+          ]
+        },
+        {
+          "epoch": 12,
+          "batch_losses": [
+            0.48108264803886414,
+            0.49427884817123413,
+            0.44707179069519043
+          ]
+        },
+        {
+          "epoch": 13,
+          "batch_losses": [
+            0.3607814311981201,
+            0.3090428411960602,
+            0.24856281280517578
+          ]
+        },
+        {
+          "epoch": 14,
+          "batch_losses": [
+            0.26465940475463867,
+            0.2226482331752777,
+            0.2442871630191803
+          ]
+        },
+        {
+          "epoch": 15,
+          "batch_losses": [
+            0.14784273505210876,
+            0.1869577318429947,
+            0.17850099503993988
+          ]
+        }
+      ],
+      "scores": {
+        "report_dev": {
+          "nodes": 271,
+          "macro_f1": 21.038592366212857,
+          "accuracy": 24.723247232472325
+        },
+        "sealed_test": {
+          "nodes": 271,
+          "macro_f1": 22.60533066411242,
+          "accuracy": 23.985239852398525
+        }
+      },
+      "seconds": 0.2929090909892693,
+      "peak_mb": 589.7548828125
+    },
+    {
+      "seed": 151,
+      "losses": [
+        {
+          "epoch": 1,
+          "batch_losses": [
+            3.6016035079956055,
+            3.5973706245422363,
+            3.5194437503814697
+          ]
+        },
+        {
+          "epoch": 2,
+          "batch_losses": [
+            3.4740705490112305,
+            3.4851298332214355,
+            3.4799630641937256
+          ]
+        },
+        {
+          "epoch": 3,
+          "batch_losses": [
+            3.472694158554077,
+            3.31669282913208,
+            3.3206028938293457
+          ]
+        },
+        {
+          "epoch": 4,
+          "batch_losses": [
+            3.2919809818267822,
+            3.281905174255371,
+            3.1092162132263184
+          ]
+        },
+        {
+          "epoch": 5,
+          "batch_losses": [
+            3.1598308086395264,
+            3.053481340408325,
+            3.001091957092285
+          ]
+        },
+        {
+          "epoch": 6,
+          "batch_losses": [
+            2.9995057582855225,
+            2.8288192749023438,
+            2.759064197540283
+          ]
+        },
+        {
+          "epoch": 7,
+          "batch_losses": [
+            2.6865615844726562,
+            2.6010079383850098,
+            2.3870291709899902
+          ]
+        },
+        {
+          "epoch": 8,
+          "batch_losses": [
+            2.363870143890381,
+            2.123107433319092,
+            1.7080004215240479
+          ]
+        },
+        {
+          "epoch": 9,
+          "batch_losses": [
+            1.5987739562988281,
+            1.4824497699737549,
+            1.3298468589782715
+          ]
+        },
+        {
+          "epoch": 10,
+          "batch_losses": [
+            1.358669638633728,
+            1.1984705924987793,
+            1.0636954307556152
+          ]
+        },
+        {
+          "epoch": 11,
+          "batch_losses": [
+            0.9626508355140686,
+            0.8476216197013855,
+            0.8458853960037231
+          ]
+        },
+        {
+          "epoch": 12,
+          "batch_losses": [
+            0.5889095067977905,
+            0.6542798280715942,
+            0.5865291357040405
+          ]
+        },
+        {
+          "epoch": 13,
+          "batch_losses": [
+            0.3920002281665802,
+            0.4935765862464905,
+            0.3202766180038452
+          ]
+        },
+        {
+          "epoch": 14,
+          "batch_losses": [
+            0.27152061462402344,
+            0.3558094799518585,
+            0.21765050292015076
+          ]
+        },
+        {
+          "epoch": 15,
+          "batch_losses": [
+            0.1837717592716217,
+            0.27614906430244446,
+            0.1581643521785736
+          ]
+        }
+      ],
+      "scores": {
+        "report_dev": {
+          "nodes": 271,
+          "macro_f1": 18.489647513438673,
+          "accuracy": 23.616236162361623
+        },
+        "sealed_test": {
+          "nodes": 271,
+          "macro_f1": 16.89802101677378,
+          "accuracy": 20.29520295202952
+        }
+      },
+      "seconds": 0.17050103400833905,
+      "peak_mb": 589.7548828125
+    },
+    {
+      "seed": 152,
+      "losses": [
+        {
+          "epoch": 1,
+          "batch_losses": [
+            3.64884352684021,
+            3.5605850219726562,
+            3.585291862487793
+          ]
+        },
+        {
+          "epoch": 2,
+          "batch_losses": [
+            3.538003444671631,
+            3.5208799839019775,
+            3.4376206398010254
+          ]
+        },
+        {
+          "epoch": 3,
+          "batch_losses": [
+            3.439577579498291,
+            3.347456932067871,
+            3.3150596618652344
+          ]
+        },
+        {
+          "epoch": 4,
+          "batch_losses": [
+            3.28737211227417,
+            3.2631139755249023,
+            3.118330955505371
+          ]
+        },
+        {
+          "epoch": 5,
+          "batch_losses": [
+            3.12294340133667,
+            3.017747402191162,
+            3.021798610687256
+          ]
+        },
+        {
+          "epoch": 6,
+          "batch_losses": [
+            2.8505325317382812,
+            2.962129592895508,
+            2.684208393096924
+          ]
+        },
+        {
+          "epoch": 7,
+          "batch_losses": [
+            2.599613904953003,
+            2.5867016315460205,
+            2.3117289543151855
+          ]
+        },
+        {
+          "epoch": 8,
+          "batch_losses": [
+            2.1524875164031982,
+            1.897968053817749,
+            1.7719933986663818
+          ]
+        },
+        {
+          "epoch": 9,
+          "batch_losses": [
+            1.5623520612716675,
+            1.3179969787597656,
+            1.2851512432098389
+          ]
+        },
+        {
+          "epoch": 10,
+          "batch_losses": [
+            1.2307238578796387,
+            1.152714490890503,
+            1.0275068283081055
+          ]
+        },
+        {
+          "epoch": 11,
+          "batch_losses": [
+            0.9676464796066284,
+            0.7014991044998169,
+            0.8644387722015381
+          ]
+        },
+        {
+          "epoch": 12,
+          "batch_losses": [
+            0.5839464664459229,
+            0.6230462789535522,
+            0.4315797686576843
+          ]
+        },
+        {
+          "epoch": 13,
+          "batch_losses": [
+            0.40681034326553345,
+            0.4255480170249939,
+            0.3101927638053894
+          ]
+        },
+        {
+          "epoch": 14,
+          "batch_losses": [
+            0.27723848819732666,
+            0.23318363726139069,
+            0.30109888315200806
+          ]
+        },
+        {
+          "epoch": 15,
+          "batch_losses": [
+            0.26877790689468384,
+            0.23609746992588043,
+            0.1907128244638443
+          ]
+        }
+      ],
+      "scores": {
+        "report_dev": {
+          "nodes": 271,
+          "macro_f1": 7.1326796421606415,
+          "accuracy": 7.011070110701106
+        },
+        "sealed_test": {
+          "nodes": 271,
+          "macro_f1": 7.6038543044252265,
+          "accuracy": 7.380073800738007
+        }
+      },
+      "seconds": 0.1683968340512365,
+      "peak_mb": 589.7548828125
+    }
+  ],
+  "summary": {
+    "report_dev": {
+      "macro_f1": 15.553639840604056,
+      "macro_f1_sd": 7.403290347098857,
+      "accuracy": 18.45018450184502,
+      "accuracy_sd": 9.92201450903967
+    },
+    "sealed_test": {
+      "macro_f1": 15.702401995103807,
+      "macro_f1_sd": 7.571869113785428,
+      "accuracy": 17.22017220172202,
+      "accuracy_sd": 8.719217022606289
+    }
+  },
+  "teacher_check": {
+    "scores": {
+      "report_dev": {
+        "nodes": 271,
+        "macro_f1": 12.25633601921082,
+        "accuracy": 26.199261992619927
+      },
+      "sealed_test": {
+        "nodes": 271,
+        "macro_f1": 14.131656451795099,
+        "accuracy": 26.199261992619927
+      }
+    },
+    "training": {
+      "epochs": 3,
+      "minibatch": 1024,
+      "lr": 2e-05,
+      "updates": 3,
+      "losses": [
+        6.717447280883789,
+        6.697548866271973,
+        6.678321361541748
+      ],
+      "selection": "fixed last epoch; no external test-accuracy selection",
+      "message_passing": "full legal source graph, not native NeighborSampler batches"
+    },
+    "original_loss_max_abs_difference": 0.0,
+    "legal_reference_rows": 745,
+    "reconstruction_only": true,
+    "note": "Default teacher budget transferred to the small continual delta; not an optimized native teacher upper bound"
+  }
+}

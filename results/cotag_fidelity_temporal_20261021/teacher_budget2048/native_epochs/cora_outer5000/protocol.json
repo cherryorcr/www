@@ -1,0 +1,113 @@
+{
+  "name": "native-tagsam-full-epoch-teacher2048-continual-v1",
+  "dataset": "cora",
+  "order_seed": 9101,
+  "construction_seed": 271006,
+  "groups": [
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      5,
+      6,
+      1
+    ]
+  ],
+  "budgets": [
+    43,
+    60,
+    95
+  ],
+  "memory_rate": 0.05,
+  "class_floor_adjustments": [],
+  "outer_steps": 5000,
+  "inner_epochs": 15,
+  "inner_batch": 20,
+  "native_source": {
+    "commit": "d812f06fd16db3cd4d497804a8e504d2c738faa8",
+    "files": {
+      "model.py": "57d4462472b20f277479afd8cd7b1834fac97707a7a3c571c955a18df334c25b",
+      "selection.py": "c6e3c67e8317a38d172a48759037e358b476271642bdbbc294a9ff16de7f50e0",
+      "distill.py": "09a031cc88925d2ca4fab57faaf45c80484981c47d8dd21124d5fcdca8540227",
+      "dataset.py": "401419f5bc86bdb6d4cb80043bfa3d676a1997a287fcf1cd64a6c4ae650421ab",
+      "epoch.py": "d75342eaf71bfbf202b6dc3e84e6f3b5caabf1f243e77d4cf5324eca6185a359",
+      "reparam.py": "44ebf08b2b7bcd26a3791be554587981fbf2b981690b1a3e3caf1884cd0c5505",
+      "buffer.py": "62628a08920423fff88943dadd70ba9d472d6479e3d191a59f3f4dfacac14426"
+    },
+    "official_reproduction": false
+  },
+  "internal_bert": "/home/pc/huggingface-cache/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+  "final_student": {
+    "name": "GraphTextPromptStudent",
+    "graph_encoder": "two-layer symmetric-normalized GCN",
+    "text_encoder": "frozen MiniLM embeddings",
+    "classifier_head": "none; prompt cosine only",
+    "pair_loss": "symmetric multi-positive graph-text InfoNCE",
+    "prompt_loss": "cross-entropy over encoded class prompts",
+    "margin_loss": "multiclass prompt margin",
+    "lambda_pair": 0.5,
+    "lambda_prompt": 1.0,
+    "lambda_margin": 0.1,
+    "margin": 0.2,
+    "same_class_rows_are_positive": true
+  },
+  "student_steps": 2048,
+  "student_batch": 24,
+  "student_seeds": [
+    150,
+    151,
+    152
+  ],
+  "retained": [
+    "native GPT2 PMI selector",
+    "native CLIP/GCN and residual TextProjection",
+    "frozen BERT CLS inside construction",
+    "native full-epoch unroll function",
+    "native wBCELoss",
+    "native SGD with learned rates and StepLR",
+    "fresh response subset up to 2000"
+  ],
+  "adaptations": [
+    "current legal delta and frozen own prefix",
+    "5% cumulative row budget",
+    "320-character common stored text cap and documented selector numerical repairs",
+    "teacher fixed final 2048-update native model, not official 3-epoch default or test-based selection",
+    "full legal-source graph in place of NeighborSampler; same GCN operator",
+    "common MiniLM/prompt student for comparison; native distilled rates not used downstream"
+  ],
+  "official_reproduction": false,
+  "method_selection_from_test": false,
+  "resource_isolation": false,
+  "resource_note": "May share GPU with bounded adapter diagnostic; runtime is not an isolated efficiency comparison",
+  "evaluation": "previously inspected historical masks; not new blind data",
+  "source_hashes": {
+    "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+    "unified_q_multimodal.py": "f621d4575a9bb660fad8031e4d7135e2570cc72c02d16145c08aa989bee99525",
+    "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+    "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+    "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+    "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+    "run_unified_q_inloop_cat_20261007.py": "970783502188122b452778276d0de938d47956a1b9698bd18659cd4c0dc18097",
+    "run_unified_q_diagnostics_20261007.py": "2e34734682d3de3211e95c129d0c6c0d00f27025412f2c6e2cfd5b36522bcfc1",
+    "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+    "common.py": "00b6fab4fbbd2bdb5188824f51fe923fde7920afd70569a0d8102503891f523f"
+  },
+  "runner_hash": "a8c1578e2aed3e8b6db4dfbcd6b1d09835cd851b6b17db99ec5cf1e5dcccda8a",
+  "native_wrapper_hash": "b7cc596391e6e4d5b17c8ea7a5820326f987589ae5a3bda6e43cceea8abd1cfc",
+  "data_loader_hash": "09d6047c53797412a7c7282c2e7801c839086dfb89c7ce53117f6439176b92be",
+  "stage_id_hashes": [
+    "ead2b7f516b3ac58f95ee130645dd83b368a83f12682ec3cb7d9bc0b01321f35",
+    "c5f8c085bec3db5ad5924737639d73f3707eb9811c47caa833aa7942d60a7c2f",
+    "5b58bb155e8f9e77eac7c083bf63009da3a2d919153038ac165baa8fd735d370"
+  ],
+  "pool_mask_hash": "e77c9f642e2ec7740b4bd232875755691cbbb154b0180ab9fc9884f7ad429923",
+  "report_mask_hash": "82f26d441da76357ff9308bdf8b37f4fdcb024ad77de3cc9d2d536e34404f841",
+  "test_mask_hash": "8d6117a2c8382285baf5a1358a134de8f1cd53c6f12caeaa68fd5bd85ba13214",
+  "teacher_updates": 2048,
+  "teacher_budget_wrapper_hash": "dd1dac21a899f1b7d1f898340469f462c254bbd599581dbadcd42a8d83065a72"
+}

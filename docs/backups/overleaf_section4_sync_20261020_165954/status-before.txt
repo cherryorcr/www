@@ -1,0 +1,35 @@
+ M README.md
+ M RESULTS_REGISTER.md
+ M WWW2027_REQUIREMENTS.md
+ M figures/core_ablation_effects.pdf
+ M figures/core_ablation_effects.png
+ M figures/core_ablation_effects.source.json
+ M figures/method_overview.pdf
+ M figures/method_overview.png
+ M main.tex
+ M sections/01_introduction.tex
+ M sections/02_problem_protocol.tex
+ M sections/03_related_baselines.tex
+ M sections/04_method.tex
+ M sections/08_limitations.tex
+ M tools/make_core_ablation_figure.py
+ M tools/make_method_overview.py
+?? $build/
+?? $out/
+?? compile_latest.log
+?? evidence/student_resource_audit_20261019.md
+?? figures/challenge_overview.html
+?? figures/challenge_overview.pdf
+?? figures/challenge_overview.png
+?? figures/primary_confirmation.png
+?? figures/problem_interfaces.pdf
+?? figures/problem_interfaces.png
+?? figures/split_confirmation.pdf
+?? figures/split_confirmation.png
+?? figures/split_confirmation.source.json
+?? tmp_method_page-04.png
+?? tmp_method_page-05.png
+?? tools/diagram_primitives.py
+?? tools/make_challenge_overview.py
+?? tools/make_problem_interfaces.py
+?? tools/make_split_confirmation.py

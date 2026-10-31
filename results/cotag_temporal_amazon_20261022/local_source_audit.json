@@ -1,0 +1,365 @@
+{
+  "snapshot": "c9fc08d286d11f164ea8cb61ded3179d23037f05",
+  "free_disk_bytes": 25388285952,
+  "free_disk_floor_bytes": 8589934592,
+  "datasets": {
+    "sportsfit": {
+      "source_schema": {
+        "edge_index": {
+          "type": "Tensor",
+          "shape": [
+            2,
+            1773500
+          ]
+        },
+        "y": {
+          "type": "Tensor",
+          "shape": [
+            173055
+          ]
+        },
+        "train_mask": {
+          "type": "Tensor",
+          "shape": [
+            173055
+          ]
+        },
+        "val_mask": {
+          "type": "Tensor",
+          "shape": [
+            173055
+          ]
+        },
+        "test_mask": {
+          "type": "Tensor",
+          "shape": [
+            173055
+          ]
+        },
+        "node_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            173055,
+            384
+          ]
+        },
+        "edge_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            1,
+            384
+          ]
+        },
+        "noi_node_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            1,
+            384
+          ]
+        },
+        "class_node_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            13,
+            384
+          ]
+        },
+        "prompt_edge_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            3,
+            384
+          ]
+        },
+        "num_nodes": {
+          "type": "int",
+          "shape": null
+        },
+        "num_classes": {
+          "type": "int",
+          "shape": null
+        },
+        "train_id": {
+          "type": "ndarray",
+          "shape": [
+            34611
+          ]
+        },
+        "val_id": {
+          "type": "ndarray",
+          "shape": [
+            17305
+          ]
+        },
+        "test_id": {
+          "type": "ndarray",
+          "shape": [
+            121139
+          ]
+        }
+      },
+      "converted_schema": {
+        "node_f": {
+          "type": "Tensor",
+          "shape": [
+            173055,
+            384
+          ]
+        },
+        "edge_index": {
+          "type": "Tensor",
+          "shape": [
+            2,
+            1773500
+          ]
+        },
+        "text_list": {
+          "type": "list",
+          "shape": null
+        },
+        "label_list": {
+          "type": "ndarray",
+          "shape": [
+            173055
+          ]
+        },
+        "all_labels": {
+          "type": "ndarray",
+          "shape": [
+            13
+          ]
+        },
+        "labels_desc": {
+          "type": "ndarray",
+          "shape": [
+            13
+          ]
+        },
+        "original_node_ids": {
+          "type": "Tensor",
+          "shape": [
+            173055
+          ]
+        },
+        "audit_metadata": {
+          "type": "dict",
+          "shape": null
+        }
+      },
+      "source_candidate_fields": {
+        "time_fields": [],
+        "external_id_fields": []
+      },
+      "converted_candidate_fields": {
+        "time_fields": [],
+        "external_id_fields": []
+      },
+      "nodes": 173055,
+      "raw_text_container": "list",
+      "all_raw_text_entries_are_strings": true,
+      "converted_original_ids_are_sequential": true,
+      "text_lengths_equal": true,
+      "exact_text_matches_by_row": 173055,
+      "files": [
+        {
+          "path": "/home/pc/.cache/huggingface/hub/datasets--Graph-COM--Text-Attributed-Graphs/snapshots/c9fc08d286d11f164ea8cb61ded3179d23037f05/sportsfit/processed_data.pt",
+          "bytes": 297669786,
+          "sha256": "c65da1fcea7fd189a3dc972bb567a6d01eb814d98ce76b72f39ddaab9b8b4812"
+        },
+        {
+          "path": "/home/pc/.cache/huggingface/hub/datasets--Graph-COM--Text-Attributed-Graphs/snapshots/c9fc08d286d11f164ea8cb61ded3179d23037f05/sportsfit/raw_texts.pt",
+          "bytes": 21632488,
+          "sha256": "5073a8f45f0f938762e8fef078774d07d5490cfa8fdc205c02401203ca086948"
+        },
+        {
+          "path": "/home/pc/research/TAGSAM/data/tagbench/sportsfit.pt",
+          "bytes": 335208290,
+          "sha256": "d70f894f6b21d28a844fd63f448ff51ab02e60e99da54ce46b34dbaa3d55fe4a"
+        }
+      ],
+      "verified_node_timestamp_pairs": 0,
+      "temporal_run_status": "not_launched_no_verified_timestamp_mapping"
+    },
+    "bookhis": {
+      "source_schema": {
+        "edge_index": {
+          "type": "Tensor",
+          "shape": [
+            2,
+            358574
+          ]
+        },
+        "y": {
+          "type": "Tensor",
+          "shape": [
+            41551
+          ]
+        },
+        "train_mask": {
+          "type": "Tensor",
+          "shape": [
+            41551
+          ]
+        },
+        "val_mask": {
+          "type": "Tensor",
+          "shape": [
+            41551
+          ]
+        },
+        "test_mask": {
+          "type": "Tensor",
+          "shape": [
+            41551
+          ]
+        },
+        "node_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            41551,
+            384
+          ]
+        },
+        "edge_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            1,
+            384
+          ]
+        },
+        "noi_node_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            1,
+            384
+          ]
+        },
+        "class_node_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            12,
+            384
+          ]
+        },
+        "prompt_edge_text_feat": {
+          "type": "Tensor",
+          "shape": [
+            3,
+            384
+          ]
+        },
+        "num_nodes": {
+          "type": "int",
+          "shape": null
+        },
+        "num_classes": {
+          "type": "int",
+          "shape": null
+        },
+        "train_id": {
+          "type": "ndarray",
+          "shape": [
+            24930
+          ]
+        },
+        "val_id": {
+          "type": "ndarray",
+          "shape": [
+            8310
+          ]
+        },
+        "test_id": {
+          "type": "ndarray",
+          "shape": [
+            8311
+          ]
+        }
+      },
+      "converted_schema": {
+        "node_f": {
+          "type": "Tensor",
+          "shape": [
+            41551,
+            384
+          ]
+        },
+        "edge_index": {
+          "type": "Tensor",
+          "shape": [
+            2,
+            358574
+          ]
+        },
+        "text_list": {
+          "type": "list",
+          "shape": null
+        },
+        "label_list": {
+          "type": "ndarray",
+          "shape": [
+            41551
+          ]
+        },
+        "all_labels": {
+          "type": "ndarray",
+          "shape": [
+            12
+          ]
+        },
+        "labels_desc": {
+          "type": "ndarray",
+          "shape": [
+            12
+          ]
+        },
+        "original_node_ids": {
+          "type": "Tensor",
+          "shape": [
+            41551
+          ]
+        },
+        "audit_metadata": {
+          "type": "dict",
+          "shape": null
+        }
+      },
+      "source_candidate_fields": {
+        "time_fields": [],
+        "external_id_fields": []
+      },
+      "converted_candidate_fields": {
+        "time_fields": [],
+        "external_id_fields": []
+      },
+      "nodes": 41551,
+      "raw_text_container": "list",
+      "all_raw_text_entries_are_strings": true,
+      "converted_original_ids_are_sequential": true,
+      "text_lengths_equal": true,
+      "exact_text_matches_by_row": 41551,
+      "files": [
+        {
+          "path": "/home/pc/.cache/huggingface/hub/datasets--Graph-COM--Text-Attributed-Graphs/snapshots/c9fc08d286d11f164ea8cb61ded3179d23037f05/bookhis/processed_data.pt",
+          "bytes": 70408858,
+          "sha256": "9c6844c53a7bc4a69c3419621a9d99907a096ad20271c43635be84e5f5aedc58"
+        },
+        {
+          "path": "/home/pc/.cache/huggingface/hub/datasets--Graph-COM--Text-Attributed-Graphs/snapshots/c9fc08d286d11f164ea8cb61ded3179d23037f05/bookhis/raw_texts.pt",
+          "bytes": 59656360,
+          "sha256": "0c91714161f0d461e10bda7656ee239befa151e827f9872e5354e7ae9473d6f3"
+        },
+        {
+          "path": "/home/pc/research/TAGSAM/data/tagbench/bookhis.pt",
+          "bytes": 136202644,
+          "sha256": "6ccd9b36b2180bc6c4db7448fbfd9863c344d24b697e0773e3af42b1cb22fbc8"
+        }
+      ],
+      "verified_node_timestamp_pairs": 0,
+      "temporal_run_status": "not_launched_no_verified_timestamp_mapping"
+    }
+  },
+  "audited_at_utc": "2026-10-22T00:23:13.790188+00:00",
+  "script_sha256": "db49902524ff7e81c594ef7bb044ee1599ce6021c1cdd2643a242b2d106ff527",
+  "mode": "local",
+  "purpose": "Chronology feasibility only; no downstream outcomes or paper edits"
+}

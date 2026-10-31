@@ -1,0 +1,22 @@
+{
+  "stage": 1,
+  "construction_seconds": 0.025310023920610547,
+  "construction_peak_mb": 156.51953125,
+  "memory_hash": "8c8b5385094b6b8fde2a3885b83b1f7e81cbe0093152a5918597779652c08cb7",
+  "audit": {
+    "method": "stad_adapter",
+    "seed": 7001,
+    "allocation": {
+      "2": 23,
+      "4": 17
+    },
+    "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+    "source_ids_hash": "3bd22d0c88f856b613c7e9d824ae0906a0435f741b2e8c96a90f1ef3bd431939",
+    "historical_raw_reads": 0,
+    "external_labels_used_for_selection": false,
+    "official_reproduction": false,
+    "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+    "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+    "refinement": null
+  }
+}

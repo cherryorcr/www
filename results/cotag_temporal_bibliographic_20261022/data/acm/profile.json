@@ -1,0 +1,489 @@
+{
+  "filter_counts": {
+    "source_records": 2385022,
+    "outside_year_range": 220869,
+    "no_venue_match": 2137289,
+    "invalid_or_generic_title_or_id": 460,
+    "invalid_year": 8428,
+    "equivalent_duplicate_records_merged": 145,
+    "ambiguous_title_records_removed": 903
+  },
+  "source_year_counts": {
+    "1936": 1,
+    "1938": 1,
+    "1941": 1,
+    "1945": 1,
+    "1947": 1,
+    "1949": 2,
+    "1950": 2,
+    "1951": 43,
+    "1952": 79,
+    "1953": 37,
+    "1954": 86,
+    "1955": 97,
+    "1956": 271,
+    "1957": 289,
+    "1958": 432,
+    "1959": 562,
+    "1960": 608,
+    "1961": 865,
+    "1962": 826,
+    "1963": 869,
+    "1964": 984,
+    "1965": 1063,
+    "1966": 1324,
+    "1967": 1596,
+    "1968": 1950,
+    "1969": 2357,
+    "1970": 2440,
+    "1971": 3038,
+    "1972": 3315,
+    "1973": 4031,
+    "1974": 4194,
+    "1975": 4365,
+    "1976": 4422,
+    "1977": 4516,
+    "1978": 4997,
+    "1979": 5377,
+    "1980": 6193,
+    "1981": 6738,
+    "1982": 7120,
+    "1983": 8871,
+    "1984": 10707,
+    "1985": 13006,
+    "1986": 25643,
+    "1987": 27128,
+    "1988": 28180,
+    "1989": 29232,
+    "1990": 35259,
+    "1991": 37542,
+    "1992": 40765,
+    "1993": 41752,
+    "1994": 41426,
+    "1995": 47957,
+    "1996": 52942,
+    "1997": 58246,
+    "1998": 57829,
+    "1999": 59918,
+    "2000": 63305,
+    "2001": 64140,
+    "2002": 68863,
+    "2003": 62345,
+    "2004": 70520,
+    "2005": 108750,
+    "2006": 131478,
+    "2007": 126130,
+    "2008": 139886,
+    "2009": 182767,
+    "2010": 151733,
+    "2011": 142899,
+    "2012": 138941,
+    "2013": 110471,
+    "2014": 92948,
+    "2015": 26913,
+    "2016": 3009
+  },
+  "top_source_venues": [
+    [
+      "IEEE Transactions on Information Theory",
+      12754
+    ],
+    [
+      "Computer",
+      11621
+    ],
+    [
+      "Discrete Mathematics",
+      10814
+    ],
+    [
+      "Communications of the ACM",
+      10125
+    ],
+    [
+      "IEEE Transactions on Signal Processing",
+      9863
+    ],
+    [
+      "Journal of Computational Physics",
+      9847
+    ],
+    [
+      "Applied Mathematics and Computation",
+      9517
+    ],
+    [
+      "IEEE Transactions on Computers",
+      9111
+    ],
+    [
+      "Automatica (Journal of IFAC)",
+      8815
+    ],
+    [
+      "Theoretical Computer Science",
+      8335
+    ],
+    [
+      "Journal of Computational and Applied Mathematics",
+      8285
+    ],
+    [
+      "Expert Systems with Applications: An International Journal",
+      8221
+    ],
+    [
+      "Microelectronic Engineering",
+      7629
+    ],
+    [
+      "Bioinformatics",
+      6858
+    ],
+    [
+      "Information Processing Letters",
+      6557
+    ],
+    [
+      "IEEE Communications Magazine",
+      6550
+    ],
+    [
+      "Mathematical and Computer Modelling: An International Journal",
+      6459
+    ],
+    [
+      "Computer Communications",
+      6243
+    ],
+    [
+      "Operations Research",
+      6020
+    ],
+    [
+      "Fuzzy Sets and Systems",
+      5702
+    ],
+    [
+      "Information Sciences: an International Journal",
+      5680
+    ],
+    [
+      "IEEE Spectrum",
+      5594
+    ],
+    [
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      5560
+    ],
+    [
+      "IEEE Transactions on Consumer Electronics",
+      5515
+    ],
+    [
+      "Management Science",
+      5361
+    ],
+    [
+      "Pattern Recognition Letters",
+      5287
+    ],
+    [
+      "Signal Processing",
+      5226
+    ],
+    [
+      "Linux Journal",
+      5190
+    ],
+    [
+      "Discrete Applied Mathematics",
+      5148
+    ],
+    [
+      "Computers & Mathematics with Applications",
+      5049
+    ],
+    [
+      "Computational Statistics & Data Analysis",
+      4905
+    ],
+    [
+      "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+      4878
+    ],
+    [
+      "IEEE Transactions on Image Processing",
+      4852
+    ],
+    [
+      "IEEE Journal on Selected Areas in Communications",
+      4844
+    ],
+    [
+      "Neurocomputing",
+      4586
+    ],
+    [
+      "IEEE Software",
+      4145
+    ],
+    [
+      "Wireless Personal Communications: An International Journal",
+      4117
+    ],
+    [
+      "Computers and Operations Research",
+      4105
+    ],
+    [
+      "Electronic Notes in Theoretical Computer Science (ENTCS)",
+      4021
+    ],
+    [
+      "Pattern Recognition",
+      3896
+    ],
+    [
+      "Numerische Mathematik",
+      3891
+    ],
+    [
+      "IEEE Transactions on Software Engineering",
+      3867
+    ],
+    [
+      "Computers and Security",
+      3689
+    ],
+    [
+      "Journal of Approximation Theory",
+      3674
+    ],
+    [
+      "IEEE Computer Graphics and Applications",
+      3669
+    ],
+    [
+      "Journal of Computing Sciences in Colleges",
+      3663
+    ],
+    [
+      "Computers and Industrial Engineering",
+      3580
+    ],
+    [
+      "IEEE Transactions on Wireless Communications",
+      3531
+    ],
+    [
+      "Computers & Geosciences",
+      3502
+    ],
+    [
+      "International Journal of Remote Sensing",
+      3440
+    ],
+    [
+      "IEEE Transactions on Education",
+      3425
+    ],
+    [
+      "IBM Journal of Research and Development",
+      3391
+    ],
+    [
+      "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
+      3388
+    ],
+    [
+      "Journal of Systems and Software",
+      3377
+    ],
+    [
+      "Mathematics and Computers in Simulation",
+      3363
+    ],
+    [
+      "IEEE Transactions on Parallel and Distributed Systems",
+      3359
+    ],
+    [
+      "IEEE Transactions on Neural Networks",
+      3344
+    ],
+    [
+      "Journal of Cognitive Neuroscience",
+      3286
+    ],
+    [
+      "ACM SIGSOFT Software Engineering Notes",
+      3153
+    ],
+    [
+      "Journal of Multivariate Analysis",
+      3106
+    ],
+    [
+      "SIAM Journal on Numerical Analysis",
+      3106
+    ],
+    [
+      "Journal of Combinatorial Theory Series A",
+      3088
+    ],
+    [
+      "Computers & Education",
+      3072
+    ],
+    [
+      "Nonlinear Analysis: Theory, Methods & Applications",
+      3070
+    ],
+    [
+      "ACM SIGPLAN Notices",
+      3057
+    ],
+    [
+      "Computer Networks: The International Journal of Computer and Telecommunications Networking",
+      3052
+    ],
+    [
+      "IEEE Micro",
+      3049
+    ],
+    [
+      "Journal of the ACM (JACM)",
+      3016
+    ],
+    [
+      "IEEE Transactions on Circuits and Systems for Video Technology",
+      3014
+    ],
+    [
+      "IEEE Transactions on Knowledge and Data Engineering",
+      3000
+    ],
+    [
+      "Journal of Optimization Theory and Applications",
+      2954
+    ],
+    [
+      "Neural Computation",
+      2930
+    ],
+    [
+      "Biological Cybernetics",
+      2917
+    ],
+    [
+      "Interfaces",
+      2911
+    ],
+    [
+      "Automation and Remote Control",
+      2878
+    ],
+    [
+      "Neural Networks",
+      2867
+    ],
+    [
+      "Physica D",
+      2846
+    ],
+    [
+      "European Journal of Combinatorics",
+      2835
+    ],
+    [
+      "SIAM Journal on Control and Optimization",
+      2756
+    ],
+    [
+      "Journal of Parallel and Distributed Computing",
+      2753
+    ],
+    [
+      "IEEE Design & Test",
+      2743
+    ],
+    [
+      "Fundamenta Informaticae",
+      2716
+    ],
+    [
+      "Operations Research Letters",
+      2706
+    ],
+    [
+      "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+      2677
+    ],
+    [
+      "SIAM Journal on Scientific Computing",
+      2568
+    ],
+    [
+      "Information and Computation",
+      2513
+    ],
+    [
+      "Analog Integrated Circuits and Signal Processing",
+      2512
+    ],
+    [
+      "Decision Support Systems",
+      2480
+    ],
+    [
+      "Applied Soft Computing",
+      2435
+    ],
+    [
+      "Network Security",
+      2423
+    ],
+    [
+      "SIAM Journal on Computing",
+      2422
+    ],
+    [
+      "Computer-Aided Design",
+      2382
+    ],
+    [
+      "Artificial Intelligence",
+      2372
+    ],
+    [
+      "Applied Numerical Mathematics",
+      2365
+    ],
+    [
+      "IEEE Transactions on Visualization and Computer Graphics",
+      2355
+    ],
+    [
+      "Multimedia Tools and Applications",
+      2348
+    ],
+    [
+      "Mathematics of Operations Research",
+      2336
+    ],
+    [
+      "Journal of the American Society for Information Science and Technology",
+      2328
+    ],
+    [
+      "BYTE",
+      2250
+    ],
+    [
+      "Computers in Human Behavior",
+      2237
+    ]
+  ],
+  "eligible_unique_titles": 16928
+}

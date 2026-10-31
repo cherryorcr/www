@@ -1,0 +1,76 @@
+{
+  "sources": [
+    {
+      "path": "results/uq_final_evidence_report_20261013_132047/pairs.csv",
+      "sha256": "37154d1fbbbc4b27451ba7deed437b9b61eb92b245180d7d4e38cd5c121a02c0"
+    },
+    {
+      "path": "results/uq_four_priority_20261017/analysis_fresh_pairs.csv",
+      "sha256": "7cf24cd8e790b89209de7cf03229db3f6a01c3d424a01ca6d80f53b8d658283f"
+    }
+  ],
+  "filters": {
+    "primary": {
+      "category": "confirmation",
+      "split": "sealed_test",
+      "left": "uq_dm_edgefree",
+      "right": "gecc_hard",
+      "metric": "final_f1"
+    },
+    "additional": {
+      "baseline": "gecc_hard",
+      "metric": "f1"
+    }
+  },
+  "records": [
+    {
+      "dataset": "arxiv",
+      "panel": "primary",
+      "mean": 0.22449205147337084,
+      "low": -0.34315238885061616,
+      "high": 0.7921364917973578,
+      "n": 9
+    },
+    {
+      "dataset": "bookhis",
+      "panel": "primary",
+      "mean": 3.473902782945633,
+      "low": 2.2036169754874075,
+      "high": 4.7441885904038585,
+      "n": 9
+    },
+    {
+      "dataset": "sportsfit",
+      "panel": "primary",
+      "mean": -0.4933851677409204,
+      "low": -1.503976832659827,
+      "high": 0.5172064971779862,
+      "n": 9
+    },
+    {
+      "dataset": "arxiv",
+      "panel": "additional",
+      "mean": 1.5091601833429422,
+      "low": -0.23576143878777955,
+      "high": 3.254081805473664,
+      "n": 3
+    },
+    {
+      "dataset": "sportsfit",
+      "panel": "additional",
+      "mean": -0.7445882089672627,
+      "low": -2.6822677462152327,
+      "high": 1.193091328280707,
+      "n": 3
+    },
+    {
+      "dataset": "bookhis",
+      "panel": "additional",
+      "mean": 3.1494615516737148,
+      "low": -2.4709018693695746,
+      "high": 8.769824972717004,
+      "n": 3
+    }
+  ],
+  "interpretation": "Separate nominal paired 95% t intervals over cell means; each cell averages three Student seeds. Historical sealed_test denotes an inspected fixed mask, not a new blind test. The additional mask rebuilds the legal construction pool. The panels are not pooled and do not estimate post-selection uncertainty."
+}

@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "source_hashes_verified": 48,
+  "summarizer_snapshot_verified": true,
+  "export_rows": {
+    "text_cells": 72,
+    "text_students": 216,
+    "text_summary": 120,
+    "text_contrasts": 90,
+    "text_interactions": 30,
+    "fullhistory_retention": 48,
+    "fullhistory_student_pairs": 144,
+    "tagsam_budget": 12,
+    "tagsam_replay": 3,
+    "cost": 6
+  },
+  "compared_fields": 8061,
+  "numerical_warnings": [
+    {
+      "dataset": "arxiv",
+      "stage": 1,
+      "task": "text"
+    },
+    {
+      "dataset": "arxiv",
+      "stage": 2,
+      "task": "text"
+    },
+    {
+      "dataset": "arxiv",
+      "stage": 2,
+      "task": "uq-final-frozen-confirmation-20261012-v1"
+    }
+  ],
+  "data_sha256": "e281341687735590d9a6b35750fc210b2226f36d1efb807c2213ed1b9bf6cba8",
+  "verifier_sha256": "8518d114d463c98f5d3bd9cf7dd1894aa510ad9b70a62f8a94032ba8d4950a95",
+  "scope": "Independent stdlib recomputation from raw Student records; no aggregation helpers imported",
+  "limits": "Checks saved records and exports, not the truth of unobserved training behavior; masks previously inspected"
+}

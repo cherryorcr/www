@@ -1,0 +1,292 @@
+{
+  "protocol": {
+    "source_id_hash": "5b58bb155e8f9e77eac7c083bf63009da3a2d919153038ac165baa8fd735d370",
+    "rows": 35,
+    "seed": 271006,
+    "native_selector_hash": "b2e2b28138b22cfa9e387024799a1d992d7db58fe28af2ea9290cc6acf99164d",
+    "source_hashes": {
+      "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+      "unified_q_multimodal.py": "f621d4575a9bb660fad8031e4d7135e2570cc72c02d16145c08aa989bee99525",
+      "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+      "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+      "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+      "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+      "run_unified_q_inloop_cat_20261007.py": "970783502188122b452778276d0de938d47956a1b9698bd18659cd4c0dc18097",
+      "run_unified_q_diagnostics_20261007.py": "2e34734682d3de3211e95c129d0c6c0d00f27025412f2c6e2cfd5b36522bcfc1",
+      "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+      "common.py": "00b6fab4fbbd2bdb5188824f51fe923fde7920afd70569a0d8102503891f523f"
+    }
+  },
+  "selector": {
+    "native_source": {
+      "commit": "d812f06fd16db3cd4d497804a8e504d2c738faa8",
+      "files": {
+        "model.py": "57d4462472b20f277479afd8cd7b1834fac97707a7a3c571c955a18df334c25b",
+        "selection.py": "c6e3c67e8317a38d172a48759037e358b476271642bdbbc294a9ff16de7f50e0",
+        "distill.py": "09a031cc88925d2ca4fab57faaf45c80484981c47d8dd21124d5fcdca8540227",
+        "dataset.py": "401419f5bc86bdb6d4cb80043bfa3d676a1997a287fcf1cd64a6c4ae650421ab",
+        "epoch.py": "d75342eaf71bfbf202b6dc3e84e6f3b5caabf1f243e77d4cf5324eca6185a359"
+      },
+      "official_reproduction": false
+    },
+    "selector": "native GPT2-large word-probability PMI + greedy redundancy",
+    "center_ids": [
+      728,
+      597,
+      1694,
+      854,
+      314,
+      1696,
+      1705,
+      1964,
+      2225,
+      334,
+      966,
+      1219,
+      1890,
+      2058,
+      436,
+      654,
+      1117,
+      1185,
+      2199,
+      1849,
+      38,
+      2100,
+      2194,
+      1016,
+      2528,
+      977,
+      1685,
+      758,
+      1026,
+      2196,
+      164,
+      2315,
+      299,
+      1489,
+      530
+    ],
+    "source_ids": [
+      [
+        728,
+        1016,
+        1127,
+        1305
+      ],
+      [
+        106,
+        224,
+        597,
+        675
+      ],
+      [
+        1069,
+        1455,
+        1685,
+        1694
+      ],
+      [
+        854,
+        956,
+        995,
+        1034
+      ],
+      [
+        156,
+        314,
+        509,
+        1244
+      ],
+      [
+        1114,
+        1334,
+        1696,
+        1769
+      ],
+      [
+        459,
+        1364,
+        1469,
+        1705
+      ],
+      [
+        836,
+        1256,
+        1576,
+        1595
+      ],
+      [
+        2225
+      ],
+      [
+        20,
+        25,
+        267,
+        334
+      ],
+      [
+        910,
+        964,
+        965,
+        966
+      ],
+      [
+        1219
+      ],
+      [
+        237,
+        965,
+        1060,
+        1136
+      ],
+      [
+        188,
+        219,
+        755,
+        757
+      ],
+      [
+        89,
+        109,
+        177,
+        208
+      ],
+      [
+        135,
+        344,
+        418,
+        654
+      ],
+      [
+        910,
+        1114,
+        1117,
+        1225
+      ],
+      [
+        255,
+        456,
+        514,
+        550
+      ],
+      [
+        55,
+        120,
+        380,
+        844
+      ],
+      [
+        1849
+      ],
+      [
+        38,
+        219,
+        538,
+        757
+      ],
+      [
+        735,
+        1956,
+        2100,
+        2527
+      ],
+      [
+        1955,
+        2149,
+        2188,
+        2189
+      ],
+      [
+        727,
+        728,
+        856,
+        1016
+      ],
+      [
+        1858,
+        2528
+      ],
+      [
+        790,
+        977,
+        1187,
+        1226
+      ],
+      [
+        1069,
+        1096,
+        1455,
+        1685
+      ],
+      [
+        100,
+        265,
+        758,
+        1980
+      ],
+      [
+        798,
+        1026,
+        1105,
+        2356
+      ],
+      [
+        380,
+        938,
+        2196,
+        2267
+      ],
+      [
+        157,
+        164,
+        418,
+        517
+      ],
+      [
+        109,
+        459,
+        488,
+        507
+      ],
+      [
+        299,
+        596,
+        1827,
+        2110
+      ],
+      [
+        177,
+        430,
+        635,
+        837
+      ],
+      [
+        530
+      ]
+    ],
+    "summary_ratio": 0.6,
+    "max_sources": 4,
+    "max_hops": 4,
+    "sentence_group_size": 5,
+    "diagnostics": {
+      "probability_floors": 0,
+      "ordered_pairs": 370,
+      "tail_batch_pairs": 122
+    },
+    "label_rule": "current-delta random center label; not stratified quota labels",
+    "adaptations": [
+      "current delta only; frozen prefix",
+      "candidate and final text cap 320 characters",
+      "common MiniLM replaces native BERT",
+      "normalize whitespace before native word alignment",
+      "flush native missing trailing PMI pair batch",
+      "empty-source groups contribute zero feature weight",
+      "zero rounded probabilities use float64 tiny before log"
+    ],
+    "official_reproduction": false
+  },
+  "seconds": 7.563360319938511,
+  "peak_mb": 4950.20703125,
+  "memory_hash": "ae7944fe15ae379bec6e71fa0eccd20d9033c54790be0e3fea8a8b6d514ca875"
+}

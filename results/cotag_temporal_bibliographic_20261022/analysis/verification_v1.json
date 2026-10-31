@@ -1,0 +1,486 @@
+{
+  "created_utc": "2026-10-22T02:38:44.665569+00:00",
+  "verifier_sha256": "afb9bc42b0ac29e80f5643d7dd9cb7959125bb7f1bc0cc32306f4811536b7ebf",
+  "datasets": {
+    "acm": {
+      "nodes": 16928,
+      "classes": [
+        "databases",
+        "data mining",
+        "computer networks"
+      ],
+      "boundaries": [
+        2005,
+        2008,
+        2010,
+        2012,
+        2015
+      ],
+      "train_counts": [
+        5099,
+        2088,
+        1624,
+        1311,
+        1726
+      ],
+      "budgets": [
+        255,
+        359,
+        441,
+        506,
+        592
+      ],
+      "actual_final_rate": 0.049966239027684,
+      "source_check": {
+        "source_records_scanned": 2385022,
+        "selected_primary_records_matched": 16928,
+        "selected_alias_records": 17069,
+        "source_fields_and_citations_match": true,
+        "archive_sha256": "fc6bb51fb6ef2b0a06e09e0cdc7d12b260cc976a25c31577cf4207ca6749deeb",
+        "scope": "Independent parsing of selected source records and their citations; not an independent census of all eligibility exclusions."
+      },
+      "source_hashes_match": true
+    },
+    "dblp": {
+      "nodes": 57520,
+      "classes": [
+        "artificial intelligence",
+        "computer vision",
+        "natural language processing",
+        "machine learning"
+      ],
+      "boundaries": [
+        2008,
+        2010,
+        2012,
+        2014,
+        2015
+      ],
+      "train_counts": [
+        17901,
+        5458,
+        6005,
+        6438,
+        4425
+      ],
+      "budgets": [
+        895,
+        1168,
+        1468,
+        1790,
+        2011
+      ],
+      "actual_final_rate": 0.049991299376040965,
+      "source_check": {
+        "source_records_scanned": 3079007,
+        "selected_primary_records_matched": 57520,
+        "selected_alias_records": 57536,
+        "source_fields_and_citations_match": true,
+        "archive_sha256": "dde23905afdb1c5432a10d73601bfc0645e4a8950fe231b2b70bff280fad7efd",
+        "scope": "Independent parsing of selected source records and their citations; not an independent census of all eligibility exclusions."
+      },
+      "source_hashes_match": true
+    }
+  },
+  "runs": [
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/cat_cctp_c271006/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/cat_cctp_c271108/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/cat_cctp_c271109/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/gecc_hard_c271006/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/gecc_hard_c271108/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/gecc_hard_c271109/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/uq_dm_edgefree_c271006/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/uq_dm_edgefree_c271108/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/acm/uq_dm_edgefree_c271109/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/cat_cctp_c271006/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/cat_cctp_c271108/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/cat_cctp_c271109/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/gecc_hard_c271006/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/gecc_hard_c271108/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/gecc_hard_c271109/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/uq_dm_edgefree_c271006/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/uq_dm_edgefree_c271108/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    },
+    {
+      "path": "results/cotag_temporal_bibliographic_20261022/runs/dblp/uq_dm_edgefree_c271109/results.json",
+      "passed": true,
+      "stages": 5,
+      "independently_recomputed_metric_scalars": 288,
+      "source_paths": {
+        "run_unified_q_matrix_20261008.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_matrix_20261008.py",
+        "unified_q_multimodal.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/unified_q_multimodal.py",
+        "external_continual_mechanisms.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/external_continual_mechanisms.py",
+        "graphtext_prompt_student.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/graphtext_prompt_student.py",
+        "run_unified_q_large_smoke_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_large_smoke_20261007.py",
+        "run_unified_q_revision_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_revision_20261007.py",
+        "run_unified_q_inloop_cat_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_inloop_cat_20261007.py",
+        "run_unified_q_diagnostics_20261007.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_unified_q_diagnostics_20261007.py",
+        "run_uq_final_confirmation_20261012.py": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/code/run_uq_final_confirmation_20261012.py",
+        "common.py": "/home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/common.py"
+      },
+      "prefix_and_hashes_match": true,
+      "fixed_budget_match": true,
+      "future_inference_nodes": 0,
+      "checkpoints_finite": true
+    }
+  ],
+  "cross_dataset_exact_normalized_title_overlap": 0,
+  "passed": true,
+  "scope": "All saved memories, prefixes, prediction metrics, protocol/source hashes and selected raw source records. Does not instrument historical process access or independently re-encode text embeddings."
+}

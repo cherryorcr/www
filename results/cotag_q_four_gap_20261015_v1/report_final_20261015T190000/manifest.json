@@ -1,0 +1,250 @@
+{
+  "sources": [
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/arxiv_o9101_c271006/results.json",
+      "sha256": "fef8480ff87a4c96f0457f2d56de9ba1d240e67da76bd33d6678111116830f2a",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/arxiv_o9101_c271006_no_text_init/results.json",
+      "sha256": "1c7d46bb4c45581d104f50bcaa464a740aa4b995e083e1f7594e40aebc076e6f",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/arxiv_o9101_c271006_no_pair_feedback/results.json",
+      "sha256": "04d9485fb3c5a315151a1dcb39d34527cac7024c24a8661c28e172b514a2d2be",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/arxiv_o9101_c271006/results.json",
+      "sha256": "e835b46cdbf076d5b95cb2412755b63a22e6002fe1908170183c0db71c9fd0ba",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/arxiv_o9101_c271108/results.json",
+      "sha256": "aa83c4a0858ca64df5cea410b92f5b78a4ea5ec20692d9a66fc7fcdcdca7b7bc",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/arxiv_o9101_c271108_no_text_init/results.json",
+      "sha256": "23a4bb067a4c6fd8d4e7ebaf10362e6b82e70c8d987bb33e9a0dfd04e02c4304",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/arxiv_o9101_c271108_no_pair_feedback/results.json",
+      "sha256": "143bb35dc2fe57b078b8a5c25804b41f744a60a8acae6a583192710fa0cfc194",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/arxiv_o9101_c271108/results.json",
+      "sha256": "0ed9f7e8ffcaeb37fdb8edbf16ab6d6c2abb31782892bbf13fe6aceffcadc311",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/arxiv_o9101_c271109/results.json",
+      "sha256": "73f47d13a54e1e65708faa863a9810ed01b40cbf0ddaf15930435df23ad02500",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/arxiv_o9101_c271109_no_text_init/results.json",
+      "sha256": "12c8df015f7b52831784a2f1e362e04699e10df7d6455f20511fa598874acc5b",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/arxiv_o9101_c271109_no_pair_feedback/results.json",
+      "sha256": "d91ed6043f47c7f25fb00b23ed8535b1c6a7f74e387461f9d601489934d21e74",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/arxiv_o9101_c271109/results.json",
+      "sha256": "84c1929a9ce65703db845922acd5de29d650c2f029da6d7cb8b34a642feaf9c0",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/sportsfit_o9101_c271006/results.json",
+      "sha256": "fe184c9e1bcb4afc22de7c8e42b82e9b05941427cfae0a339345260932763e77",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/sportsfit_o9101_c271006_no_text_init/results.json",
+      "sha256": "241fe9c146e41117a82efc22b4c5bf6643af7788a17a33883d6047f3fe6576dd",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/sportsfit_o9101_c271006_no_pair_feedback/results.json",
+      "sha256": "9c38b3572d61c5c9148af825831a4a461e69c0e281d55463ee4e6f7569374d7c",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/sportsfit_o9101_c271006/results.json",
+      "sha256": "22baaab92b1378dff5f38dd7173540027f4c932ce1d4560fa7fd800b622e1903",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/sportsfit_o9101_c271108/results.json",
+      "sha256": "e226c1d7d7dede25039518ca3b03d45288e26de80171f6327b6473af5d442bdf",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/sportsfit_o9101_c271108_no_text_init/results.json",
+      "sha256": "4caaa223a6f6454283377fae4aeb30bc5edbb469f6e152abe50ddcce7a8acc87",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/sportsfit_o9101_c271108_no_pair_feedback/results.json",
+      "sha256": "37241bd4070a072f6b2c1870450be7879ac03611fd0ec2aa1457ecf88a2b0ef2",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/sportsfit_o9101_c271108/results.json",
+      "sha256": "307a90592a9f98519b414d014ab83a7f70ac42da1e0cd2fe2f76f1b9feb7b449",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/sportsfit_o9101_c271109/results.json",
+      "sha256": "736ae4e2861d8ce377a7943e2da0d025cd9c9da9d1bfa8826d9d313a9d861955",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/sportsfit_o9101_c271109_no_text_init/results.json",
+      "sha256": "78317a6b37b75884433724c631df53e595f040ba4b15443fb2f9811b83749a59",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/sportsfit_o9101_c271109_no_pair_feedback/results.json",
+      "sha256": "1e9571fab2b34dc4de8f19ea8c550037f577a957f75b1764e7e4bc6d2a398b63",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/sportsfit_o9101_c271109/results.json",
+      "sha256": "5544393662b8975097611f2e2ee5e99319659d8f75914649e039cd86d76c6ba5",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/bookhis_o9101_c271006/results.json",
+      "sha256": "2714e3716533978fdebc4c13f1edb85f212e163d99d25501255166465ed25c0f",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/bookhis_o9101_c271006_no_text_init/results.json",
+      "sha256": "8f0cf85215894e2dbf747b4433f1a79bca5b7459b4cff0f501ad7b79c714239d",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/bookhis_o9101_c271006_no_pair_feedback/results.json",
+      "sha256": "32e039de01144093339f4c16eaedc1dec814eeeea362f10850e9f7bea0f451cd",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/bookhis_o9101_c271006/results.json",
+      "sha256": "73354353f1fec7fe58b14f34a9b08766c7053ee5bdddd7f8f65a6d2e81c78f64",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/bookhis_o9101_c271108/results.json",
+      "sha256": "4c96932df72bfe8b0862d4029ac6744297beeb9cc06c9a1d7db3fbcef3eed078",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/bookhis_o9101_c271108_no_text_init/results.json",
+      "sha256": "ca72e8dde2c2611b2e812cc39b3b4303cabc5e3d0f13bf63a35580a5357d6b7f",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/bookhis_o9101_c271108_no_pair_feedback/results.json",
+      "sha256": "afe508f6bb29eceef6c1eee5e803e4d4974d833581505a61ad2aae9f69dabf65",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/bookhis_o9101_c271108/results.json",
+      "sha256": "7f192cbdbab467ea3ecc06dd24d37f68716b2f355b7cdfe04905f1dbd9732cd7",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_final_evidence_20261012/confirmation/bookhis_o9101_c271109/results.json",
+      "sha256": "d82cf238e5dd4844c267967a07f0860e29c1da0beb9b324939ff9b5411ae0cc9",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/bookhis_o9101_c271109_no_text_init/results.json",
+      "sha256": "db23aa9705249af41c2a7a81491ecc4d42ff86b0fd0d35e566c5f077791e0ff9",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/text/bookhis_o9101_c271109_no_pair_feedback/results.json",
+      "sha256": "c8ebc82478e718988a23aaad97a9724829488ceab4e1f55b5d7389fb87192c74",
+      "status": "complete"
+    },
+    {
+      "path": "results/uq_exact5_no_node_text_20261015/bookhis_o9101_c271109/results.json",
+      "sha256": "96a931a3a6626b70b672b677d5ad26903748a62b4a233d4e241f085fb1c3e3fc",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/fullhistory/arxiv_o9101_c271006_full_ef/results.json",
+      "sha256": "2d65ac129b12edbf6dc69a2da6210ed3fcd65965c899652e5158fd1df7ac7a13",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/fullhistory/arxiv_o9101_c271006_full_topology/results.json",
+      "sha256": "7f6297af98752f0d07668cb205e3f57369186af8a193ad3e8fdc9d6e3a880bd8",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/fullhistory/sportsfit_o9101_c271006_full_ef/results.json",
+      "sha256": "237d9888782d1a562411479212e72ca9b0a1417d8c9e841ab64d29a80a74d6f2",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/fullhistory/sportsfit_o9101_c271006_full_topology/results.json",
+      "sha256": "296b59e950315d70ebf727f44abb158f32c750aadcf8b284cec83829a14649bb",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/fullhistory/bookhis_o9101_c271006_full_ef/results.json",
+      "sha256": "3023e06512729e6743e077ecc9d5dc260ad19524563c0d590514a2114e5c40ba",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/fullhistory/bookhis_o9101_c271006_full_topology/results.json",
+      "sha256": "8e3bd496293a68ed5d288b683e155a790903f6472ccd3d1179d0f2f64ff7cdf4",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/tagsam_budget/arxiv_o9101_c271006/results.json",
+      "sha256": "efe53605775b13980e6a044f4665492cf53bfd54c9a078bbce42dfbc7494ac00",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/cost/arxiv_o9101_c271006_dense_vs_sparse/results.json",
+      "sha256": "68d9c18c718d3ded955a1a5cb484776844c5f28558715d5b3fed187badbc4f05",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/tagsam_budget/sportsfit_o9101_c271006/results.json",
+      "sha256": "33abc3021ae359c549d342c6598d1eea5f6b70177466b9332d71ad6e77d5d88a",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/cost/sportsfit_o9101_c271006_dense_vs_sparse/results.json",
+      "sha256": "ae16742e443cf58a5a69b825d4e5628fb2354357feb7203b16aba9831128c094",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/tagsam_budget/bookhis_o9101_c271006/results.json",
+      "sha256": "71fcf01b30e16577fca29ec853bbd4253631194d74c57bf3844f4e3da84b8b4c",
+      "status": "complete"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/cost/bookhis_o9101_c271006_dense_vs_sparse/results.json",
+      "sha256": "a7fa3c6f49d4d6fb789e471ce2be8d36c2b07b47fc5dd3b166410f212ce2a522",
+      "status": "complete"
+    }
+  ],
+  "pending": [],
+  "status": "complete",
+  "text_inference": "t intervals over 3 construction-cell means at order 9101; Students averaged first",
+  "fullhistory_inference": "Ratio of means and mean Student-paired ratio; no invented construction replicates",
+  "splits": "Both masks previously inspected; post-hoc diagnostics, not fresh blind confirmation",
+  "summary_script_sha256": "c17ee6079c02d222a3702da5ad66669feecb1facf27c6aedc54bbea16f7edf8b"
+}

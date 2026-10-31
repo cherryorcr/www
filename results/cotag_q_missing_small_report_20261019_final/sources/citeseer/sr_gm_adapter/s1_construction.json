@@ -1,0 +1,52 @@
+{
+  "stage": 1,
+  "construction_seconds": 0.04730850399937481,
+  "construction_peak_mb": 192.86669921875,
+  "memory_hash": "d0a60b30373bb363c5174584203d03061d778690cbd7e1775197436e715299c3",
+  "audit": {
+    "method": "sr_gm_adapter",
+    "seed": 7001,
+    "allocation": {
+      "2": 23,
+      "4": 17
+    },
+    "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+    "source_ids_hash": "3bd22d0c88f856b613c7e9d824ae0906a0435f741b2e8c96a90f1ef3bd431939",
+    "historical_raw_reads": 0,
+    "external_labels_used_for_selection": false,
+    "official_reproduction": false,
+    "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+    "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+    "refinement": {
+      "steps": 3,
+      "active_rows": 40,
+      "projection_space": "shared 128-D latent outputs",
+      "reason": "source X and MiniLM dimensions differ; coordinatewise raw-gradient projection is undefined",
+      "optimized": "X only; fixed real-source text payload",
+      "trajectory": [
+        {
+          "update": 1,
+          "objective": 0.6568828821182251,
+          "gradient_matching": 0.6568801403045654,
+          "damping": 5.428131771623157e-05,
+          "feature_gradient_norm": 0.5048732161521912
+        },
+        {
+          "update": 2,
+          "objective": 0.4803852140903473,
+          "gradient_matching": 0.48036640882492065,
+          "damping": 0.00019605290435720235,
+          "feature_gradient_norm": 0.1221928745508194
+        },
+        {
+          "update": 3,
+          "objective": 0.44305741786956787,
+          "gradient_matching": 0.44302594661712646,
+          "damping": 0.00016259292897302657,
+          "feature_gradient_norm": 0.07813578099012375
+        }
+      ],
+      "official_reproduction": false
+    }
+  }
+}

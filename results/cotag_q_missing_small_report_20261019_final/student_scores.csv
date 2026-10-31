@@ -1,0 +1,91 @@
+dataset,method,arm,stage,split,student_seed,macro_f1,accuracy
+cora,TAGSAM bounded core,tagsam_native_bounded,0,report_dev,150,86.19565217391305,88.9763779527559
+cora,TAGSAM bounded core,tagsam_native_bounded,0,report_dev,151,89.59404096834265,91.33858267716536
+cora,TAGSAM bounded core,tagsam_native_bounded,0,report_dev,152,79.11184210526316,84.25196850393701
+cora,TAGSAM bounded core,tagsam_native_bounded,0,sealed_test,150,85.01043279262302,87.02290076335878
+cora,TAGSAM bounded core,tagsam_native_bounded,0,sealed_test,151,88.8144499178982,90.07633587786259
+cora,TAGSAM bounded core,tagsam_native_bounded,0,sealed_test,152,80.6879606879607,83.96946564885496
+cora,TAGSAM bounded core,tagsam_native_bounded,1,report_dev,150,54.434765240904625,67.74193548387096
+cora,TAGSAM bounded core,tagsam_native_bounded,1,report_dev,151,56.8045843045843,70.43010752688173
+cora,TAGSAM bounded core,tagsam_native_bounded,1,report_dev,152,55.96014154300559,67.74193548387096
+cora,TAGSAM bounded core,tagsam_native_bounded,1,sealed_test,150,54.275793650793645,67.5531914893617
+cora,TAGSAM bounded core,tagsam_native_bounded,1,sealed_test,151,59.20028384986811,72.3404255319149
+cora,TAGSAM bounded core,tagsam_native_bounded,1,sealed_test,152,56.042947117922296,69.14893617021278
+cora,TAGSAM bounded core,tagsam_native_bounded,2,report_dev,150,57.893815027855524,66.78966789667896
+cora,TAGSAM bounded core,tagsam_native_bounded,2,report_dev,151,61.233236701766614,69.00369003690037
+cora,TAGSAM bounded core,tagsam_native_bounded,2,report_dev,152,66.38187050957762,70.11070110701108
+cora,TAGSAM bounded core,tagsam_native_bounded,2,sealed_test,150,56.83632618673096,65.68265682656826
+cora,TAGSAM bounded core,tagsam_native_bounded,2,sealed_test,151,62.258241824264005,68.63468634686348
+cora,TAGSAM bounded core,tagsam_native_bounded,2,sealed_test,152,62.554573944825854,67.52767527675276
+cora,STAD local-Qwen,stad_native_local,0,report_dev,150,83.20222763661678,85.03937007874016
+cora,STAD local-Qwen,stad_native_local,0,report_dev,151,84.35104052573932,85.8267716535433
+cora,STAD local-Qwen,stad_native_local,0,report_dev,152,84.35104052573932,85.8267716535433
+cora,STAD local-Qwen,stad_native_local,0,sealed_test,150,85.20331325301204,86.25954198473282
+cora,STAD local-Qwen,stad_native_local,0,sealed_test,151,86.19941748776105,87.02290076335878
+cora,STAD local-Qwen,stad_native_local,0,sealed_test,152,85.06838905775076,86.25954198473282
+cora,STAD local-Qwen,stad_native_local,1,report_dev,150,76.98064029594141,78.49462365591397
+cora,STAD local-Qwen,stad_native_local,1,report_dev,151,72.5797703806905,74.19354838709677
+cora,STAD local-Qwen,stad_native_local,1,report_dev,152,76.61543015973396,78.49462365591397
+cora,STAD local-Qwen,stad_native_local,1,sealed_test,150,80.163791888038,80.31914893617021
+cora,STAD local-Qwen,stad_native_local,1,sealed_test,151,79.0749178083144,79.25531914893617
+cora,STAD local-Qwen,stad_native_local,1,sealed_test,152,82.17291967291968,82.4468085106383
+cora,STAD local-Qwen,stad_native_local,2,report_dev,150,68.44934158004004,73.06273062730627
+cora,STAD local-Qwen,stad_native_local,2,report_dev,151,65.27018536420591,68.63468634686348
+cora,STAD local-Qwen,stad_native_local,2,report_dev,152,64.14273807081138,67.52767527675276
+cora,STAD local-Qwen,stad_native_local,2,sealed_test,150,72.00952984343255,73.06273062730627
+cora,STAD local-Qwen,stad_native_local,2,sealed_test,151,67.24436463255807,65.68265682656826
+cora,STAD local-Qwen,stad_native_local,2,sealed_test,152,69.07231352996914,67.89667896678966
+cora,DANCE-inspired,dance_adapter,2,report_dev,150,39.78917366585902,45.38745387453875
+cora,DANCE-inspired,dance_adapter,2,report_dev,151,40.39821207958262,48.33948339483395
+cora,DANCE-inspired,dance_adapter,2,report_dev,152,39.29190853945003,47.601476014760145
+cora,SR-GM-inspired,sr_gm_adapter,2,report_dev,150,27.76888565245145,28.782287822878228
+cora,SR-GM-inspired,sr_gm_adapter,2,report_dev,151,24.38068644287683,26.56826568265683
+cora,SR-GM-inspired,sr_gm_adapter,2,report_dev,152,33.06630408097094,38.00738007380074
+cora,STAD-inspired,stad_adapter,2,report_dev,150,29.91043932986632,35.79335793357934
+cora,STAD-inspired,stad_adapter,2,report_dev,151,28.020312874603214,30.627306273062732
+cora,STAD-inspired,stad_adapter,2,report_dev,152,31.601026375462464,35.42435424354243
+citeseer,TAGSAM bounded core,tagsam_native_bounded,0,report_dev,150,88.07646205286733,88.09523809523809
+citeseer,TAGSAM bounded core,tagsam_native_bounded,0,report_dev,151,88.07646205286733,88.09523809523809
+citeseer,TAGSAM bounded core,tagsam_native_bounded,0,report_dev,152,87.2501897293195,87.3015873015873
+citeseer,TAGSAM bounded core,tagsam_native_bounded,0,sealed_test,150,98.34231805929919,98.3739837398374
+citeseer,TAGSAM bounded core,tagsam_native_bounded,0,sealed_test,151,98.34231805929919,98.3739837398374
+citeseer,TAGSAM bounded core,tagsam_native_bounded,0,sealed_test,152,98.34231805929919,98.3739837398374
+citeseer,TAGSAM bounded core,tagsam_native_bounded,1,report_dev,150,78.67232913973788,78.78787878787878
+citeseer,TAGSAM bounded core,tagsam_native_bounded,1,report_dev,151,80.02365450641312,80.08658008658008
+citeseer,TAGSAM bounded core,tagsam_native_bounded,1,report_dev,152,76.8123930063067,77.48917748917748
+citeseer,TAGSAM bounded core,tagsam_native_bounded,1,sealed_test,150,82.08635265700484,82.40343347639485
+citeseer,TAGSAM bounded core,tagsam_native_bounded,1,sealed_test,151,82.14674357715595,82.40343347639485
+citeseer,TAGSAM bounded core,tagsam_native_bounded,1,sealed_test,152,79.14983788106217,80.25751072961373
+citeseer,TAGSAM bounded core,tagsam_native_bounded,2,report_dev,150,56.59195127566187,65.20376175548589
+citeseer,TAGSAM bounded core,tagsam_native_bounded,2,report_dev,151,59.995106772638906,68.02507836990596
+citeseer,TAGSAM bounded core,tagsam_native_bounded,2,report_dev,152,60.335235526142206,66.4576802507837
+citeseer,TAGSAM bounded core,tagsam_native_bounded,2,sealed_test,150,65.93125086978482,72.41379310344827
+citeseer,TAGSAM bounded core,tagsam_native_bounded,2,sealed_test,151,65.73925752176109,73.35423197492163
+citeseer,TAGSAM bounded core,tagsam_native_bounded,2,sealed_test,152,64.31801069961254,70.84639498432603
+citeseer,STAD local-Qwen,stad_native_local,0,report_dev,150,95.13888888888889,95.23809523809523
+citeseer,STAD local-Qwen,stad_native_local,0,report_dev,151,95.95817027009687,96.03174603174604
+citeseer,STAD local-Qwen,stad_native_local,0,report_dev,152,93.57142857142857,93.65079365079364
+citeseer,STAD local-Qwen,stad_native_local,0,sealed_test,150,96.65032679738562,96.7479674796748
+citeseer,STAD local-Qwen,stad_native_local,0,sealed_test,151,95.82456378572883,95.9349593495935
+citeseer,STAD local-Qwen,stad_native_local,0,sealed_test,152,95.82456378572883,95.9349593495935
+citeseer,STAD local-Qwen,stad_native_local,1,report_dev,150,81.40148227321747,81.81818181818183
+citeseer,STAD local-Qwen,stad_native_local,1,report_dev,151,82.63195626751964,83.11688311688312
+citeseer,STAD local-Qwen,stad_native_local,1,report_dev,152,80.72180722628973,80.95238095238095
+citeseer,STAD local-Qwen,stad_native_local,1,sealed_test,150,83.14590154191923,83.2618025751073
+citeseer,STAD local-Qwen,stad_native_local,1,sealed_test,151,82.59963930019232,82.40343347639485
+citeseer,STAD local-Qwen,stad_native_local,1,sealed_test,152,82.3610553487278,82.40343347639485
+citeseer,STAD local-Qwen,stad_native_local,2,report_dev,150,64.81442264498524,68.65203761755487
+citeseer,STAD local-Qwen,stad_native_local,2,report_dev,151,67.02056247173998,71.47335423197492
+citeseer,STAD local-Qwen,stad_native_local,2,report_dev,152,65.39074276567403,69.59247648902821
+citeseer,STAD local-Qwen,stad_native_local,2,sealed_test,150,67.01735999922606,71.47335423197492
+citeseer,STAD local-Qwen,stad_native_local,2,sealed_test,151,67.79831810932289,72.41379310344827
+citeseer,STAD local-Qwen,stad_native_local,2,sealed_test,152,66.47627285940672,71.78683385579937
+citeseer,DANCE-inspired,dance_adapter,2,report_dev,150,42.29215450707411,49.52978056426332
+citeseer,DANCE-inspired,dance_adapter,2,report_dev,151,45.11537220240081,51.410658307210035
+citeseer,DANCE-inspired,dance_adapter,2,report_dev,152,43.48643314692307,48.589341692789965
+citeseer,SR-GM-inspired,sr_gm_adapter,2,report_dev,150,46.28356067842207,51.09717868338558
+citeseer,SR-GM-inspired,sr_gm_adapter,2,report_dev,151,48.309134717948005,51.724137931034484
+citeseer,SR-GM-inspired,sr_gm_adapter,2,report_dev,152,52.226589951843984,57.68025078369906
+citeseer,STAD-inspired,stad_adapter,2,report_dev,150,44.286623307416626,51.410658307210035
+citeseer,STAD-inspired,stad_adapter,2,report_dev,151,46.39092948539784,51.410658307210035
+citeseer,STAD-inspired,stad_adapter,2,report_dev,152,47.555967806331665,54.858934169278996

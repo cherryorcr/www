@@ -1,0 +1,161 @@
+﻿dataset,arm,updates,architecture,split,metric,construction_seed,order_seed,n_constructions,n_students,mean,student_sd,source
+arxiv,independent_x,30,GCN,report_dev,accuracy,271006,9101,1,3,67.68040628321718,0.9185129997737922,"primary experiment, construction 271006"
+arxiv,independent_x,30,GCN,report_dev,final_f1,271006,9101,1,3,51.304472390271236,0.962760943549291,"primary experiment, construction 271006"
+arxiv,independent_x,30,GCN,report_dev,new_f1,271006,9101,1,3,53.99300350569732,0.8709321399978985,"primary experiment, construction 271006"
+arxiv,independent_x,30,GCN,report_dev,old_f1,271006,9101,1,3,50.00999444580683,1.4611747875090326,"primary experiment, construction 271006"
+arxiv,independent_x,30,GCN,sealed_test,accuracy,271006,9101,1,3,68.09565987599646,0.559162945434189,"primary experiment, construction 271006"
+arxiv,independent_x,30,GCN,sealed_test,final_f1,271006,9101,1,3,52.350411050482414,0.0930105517465566,"primary experiment, construction 271006"
+arxiv,independent_x,30,GCN,sealed_test,new_f1,271006,9101,1,3,54.23844349421811,0.30976160008558573,"primary experiment, construction 271006"
+arxiv,independent_x,30,GCN,sealed_test,old_f1,271006,9101,1,3,51.44135839238745,0.24579859886777128,"primary experiment, construction 271006"
+arxiv,independent_x,100,GCN,report_dev,accuracy,271006,9101,1,3,67.3339632297941,0.9407080917950185,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GCN,report_dev,final_f1,271006,9101,1,3,48.84507535440139,0.574312655434995,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GCN,report_dev,new_f1,271006,9101,1,3,53.420729616410085,0.3322516729919021,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GCN,report_dev,old_f1,271006,9101,1,3,46.64198256158239,0.7047273549124043,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GCN,sealed_test,accuracy,271006,9101,1,3,67.17449069973428,0.944272075944054,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GCN,sealed_test,final_f1,271006,9101,1,3,49.08999183589621,0.19426016810731386,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GCN,sealed_test,new_f1,271006,9101,1,3,53.195611367150256,0.7589483686588229,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GCN,sealed_test,old_f1,271006,9101,1,3,47.11321206158871,0.6531850518644926,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,30,GCN,report_dev,accuracy,271006,9101,1,3,71.24325813944331,0.5526512791372954,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GCN,report_dev,final_f1,271006,9101,1,3,51.50259289968023,0.7282721102504806,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GCN,report_dev,new_f1,271006,9101,1,3,53.46195021611863,1.3719836187231296,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GCN,report_dev,old_f1,271006,9101,1,3,50.55919863620989,1.1940595448093574,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GCN,sealed_test,accuracy,271006,9101,1,3,71.05009349473478,0.7911358373363999,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GCN,sealed_test,final_f1,271006,9101,1,3,53.19528544237153,0.4867436501989749,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GCN,sealed_test,new_f1,271006,9101,1,3,53.56508922070134,0.5562166667203651,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GCN,sealed_test,old_f1,271006,9101,1,3,53.01723177132383,0.6641825270714605,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,100,GCN,report_dev,accuracy,271006,9101,1,3,71.85740718869334,0.5213506652404448,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GCN,report_dev,final_f1,271006,9101,1,3,51.54369601181643,1.3586671381836941,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GCN,report_dev,new_f1,271006,9101,1,3,53.73063945591747,0.827693520215202,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GCN,report_dev,old_f1,271006,9101,1,3,50.49072324243445,1.715779060755283,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GCN,sealed_test,accuracy,271006,9101,1,3,71.57760062985926,0.5740046144216613,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GCN,sealed_test,final_f1,271006,9101,1,3,53.1028029122981,1.6885550281536779,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GCN,sealed_test,new_f1,271006,9101,1,3,53.651832555320006,0.49689640248374606,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GCN,sealed_test,old_f1,271006,9101,1,3,52.83845530639866,2.2623223063619142,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,30,GraphSAGE,report_dev,accuracy,271006,9101,1,3,69.26695799377977,1.1316021189680023,"primary experiment, construction 271006"
+arxiv,independent_x,30,GraphSAGE,report_dev,final_f1,271006,9101,1,3,51.25577233095276,1.4212317099877345,"primary experiment, construction 271006"
+arxiv,independent_x,30,GraphSAGE,report_dev,new_f1,271006,9101,1,3,54.43135582137952,0.5433672080631043,"primary experiment, construction 271006"
+arxiv,independent_x,30,GraphSAGE,report_dev,old_f1,271006,9101,1,3,49.72678768741395,1.8451775702103006,"primary experiment, construction 271006"
+arxiv,independent_x,30,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,69.2254699340616,1.2562014182559986,"primary experiment, construction 271006"
+arxiv,independent_x,30,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,52.10426011127211,1.4170636670449612,"primary experiment, construction 271006"
+arxiv,independent_x,30,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,54.084015830987674,2.1362773214978414,"primary experiment, construction 271006"
+arxiv,independent_x,30,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,51.151044394372036,1.1101637651722729,"primary experiment, construction 271006"
+arxiv,independent_x,100,GraphSAGE,report_dev,accuracy,271006,9101,1,3,70.5287193417582,0.5159718445144443,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GraphSAGE,report_dev,final_f1,271006,9101,1,3,50.98563003778042,1.127439388285508,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GraphSAGE,report_dev,new_f1,271006,9101,1,3,53.16016614654837,1.741441478301889,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GraphSAGE,report_dev,old_f1,271006,9101,1,3,49.93863117059584,0.9612451934387918,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,69.78447003247713,0.9686246311544463,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,51.3672698760462,1.2735343739345792,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,52.6145742581839,1.6190536888511502,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,independent_x,100,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,50.76671591427618,1.122777300963632,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,30,GraphSAGE,report_dev,accuracy,271006,9101,1,3,71.90661784969096,0.5840059514255547,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GraphSAGE,report_dev,final_f1,271006,9101,1,3,52.427057109372136,0.9331204462278311,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GraphSAGE,report_dev,new_f1,271006,9101,1,3,54.4842756958129,0.6217120610266103,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GraphSAGE,report_dev,old_f1,271006,9101,1,3,51.4365444566414,1.1179105375143592,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,71.15047731522488,0.881326143099413,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,53.39589946192001,0.6747928891565527,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,54.25681696452995,1.2289569200624293,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,30,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,52.98138362733004,0.4321315026552612,"primary experiment, construction 271006"
+arxiv,uq_dm_edgefree,100,GraphSAGE,report_dev,accuracy,271006,9101,1,3,72.34164009290973,0.40373861068015776,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GraphSAGE,report_dev,final_f1,271006,9101,1,3,52.5718073524507,0.7654828575314078,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GraphSAGE,report_dev,new_f1,271006,9101,1,3,54.860723646425924,0.6960357411636467,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GraphSAGE,report_dev,old_f1,271006,9101,1,3,51.46973654424041,1.0958886157970174,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,71.62877669520716,0.3480571346245226,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,53.15936587962824,0.35041542592265723,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,54.438482929683694,0.897007480829605,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+arxiv,uq_dm_edgefree,100,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,52.54349470737932,0.46532474671653756,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\arxiv_o9101_c271006\results.json
+sportsfit,independent_x,30,GCN,report_dev,accuracy,271006,9101,1,3,81.60753495897376,3.1924703219457187,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GCN,report_dev,final_f1,271006,9101,1,3,75.41144972038963,1.9181338618763248,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GCN,report_dev,new_f1,271006,9101,1,3,91.8204058974439,0.25119973245486454,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GCN,report_dev,old_f1,271006,9101,1,3,72.42800314274338,2.282919914758055,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GCN,sealed_test,accuracy,271006,9101,1,3,81.28972610655264,3.300688325390798,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GCN,sealed_test,final_f1,271006,9101,1,3,75.50203043387965,1.8966834310069691,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GCN,sealed_test,new_f1,271006,9101,1,3,91.55165407066147,0.059469931706163555,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GCN,sealed_test,old_f1,271006,9101,1,3,72.58391704537388,2.231200164039295,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GCN,report_dev,accuracy,271006,9101,1,3,86.02411495049887,1.0291994675085108,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GCN,report_dev,final_f1,271006,9101,1,3,80.15266433508616,0.7664354816728963,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GCN,report_dev,new_f1,271006,9101,1,3,93.48901651665203,0.5047375688191261,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GCN,report_dev,old_f1,271006,9101,1,3,77.7278730293469,0.9170716447691912,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GCN,sealed_test,accuracy,271006,9101,1,3,85.68319272699257,0.9917954894162873,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GCN,sealed_test,final_f1,271006,9101,1,3,80.77831404422831,0.8224174331387454,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GCN,sealed_test,new_f1,271006,9101,1,3,93.43619451060665,0.6833228533557164,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GCN,sealed_test,old_f1,271006,9101,1,3,78.47688123215953,1.0266110289205934,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GraphSAGE,report_dev,accuracy,271006,9101,1,3,77.07731422627991,2.196021140483889,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GraphSAGE,report_dev,final_f1,271006,9101,1,3,72.01954841453711,0.9396364413850026,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GraphSAGE,report_dev,new_f1,271006,9101,1,3,86.16017407778007,3.142014663727367,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GraphSAGE,report_dev,old_f1,271006,9101,1,3,69.44852556667476,1.4273943388940324,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,76.89048114334143,2.223410891622899,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,72.40205370937286,0.7128896432632682,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,85.59496567412128,3.8493839603437072,"primary experiment, construction 271006"
+sportsfit,independent_x,30,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,70.00334244305499,1.2579063815771359,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GraphSAGE,report_dev,accuracy,271006,9101,1,3,82.63222774374975,2.189559889576112,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GraphSAGE,report_dev,final_f1,271006,9101,1,3,77.92837007805561,0.8926073484188753,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GraphSAGE,report_dev,new_f1,271006,9101,1,3,92.29237823534727,0.6083968990131522,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GraphSAGE,report_dev,old_f1,271006,9101,1,3,75.31673223127531,0.9712413709216977,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,82.58600100157942,2.2803330058346694,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,78.26478933617416,0.9721928568484939,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,92.41606831504181,0.555727714714388,"primary experiment, construction 271006"
+sportsfit,uq_dm_edgefree,30,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,75.6918295218346,1.0556158163017284,"primary experiment, construction 271006"
+bookhis,independent_x,30,GCN,report_dev,accuracy,271006,9101,1,3,80.68993180906538,0.43209732882455243,"primary experiment, construction 271006"
+bookhis,independent_x,30,GCN,report_dev,final_f1,271006,9101,1,3,45.39238289225015,0.5031956157467523,"primary experiment, construction 271006"
+bookhis,independent_x,30,GCN,report_dev,new_f1,271006,9101,1,3,60.92817091532112,2.3290425855590526,"primary experiment, construction 271006"
+bookhis,independent_x,30,GCN,report_dev,old_f1,271006,9101,1,3,43.98003852651643,0.36089135045233134,"primary experiment, construction 271006"
+bookhis,independent_x,30,GCN,sealed_test,accuracy,271006,9101,1,3,79.85559566787003,0.5840992105661379,"primary experiment, construction 271006"
+bookhis,independent_x,30,GCN,sealed_test,final_f1,271006,9101,1,3,46.23747508769401,1.4921821885180504,"primary experiment, construction 271006"
+bookhis,independent_x,30,GCN,sealed_test,new_f1,271006,9101,1,3,59.75423153975991,1.2833866291524678,"primary experiment, construction 271006"
+bookhis,independent_x,30,GCN,sealed_test,old_f1,271006,9101,1,3,45.008679046597116,1.590107158544916,"primary experiment, construction 271006"
+bookhis,independent_x,100,GCN,report_dev,accuracy,271006,9101,1,3,80.08022462896109,0.1325528410899224,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GCN,report_dev,final_f1,271006,9101,1,3,43.88301412741601,0.675343676548361,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GCN,report_dev,new_f1,271006,9101,1,3,53.24074986046818,5.44942208925474,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GCN,report_dev,old_f1,271006,9101,1,3,43.03231087895673,0.2435085234262679,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GCN,sealed_test,accuracy,271006,9101,1,3,79.80746089049337,0.6824282492783591,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GCN,sealed_test,final_f1,271006,9101,1,3,43.95915637376793,2.49721064115812,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GCN,sealed_test,new_f1,271006,9101,1,3,49.82518529564717,9.133651512512307,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GCN,sealed_test,old_f1,271006,9101,1,3,43.42588101723346,1.8971436202000964,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,30,GCN,report_dev,accuracy,271006,9101,1,3,81.17930204572804,2.4336640693329277,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GCN,report_dev,final_f1,271006,9101,1,3,47.40507521466867,0.8376381922124742,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GCN,report_dev,new_f1,271006,9101,1,3,66.54040404040403,1.0285561542634496,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GCN,report_dev,old_f1,271006,9101,1,3,45.66549986687455,0.8451629700332866,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GCN,sealed_test,accuracy,271006,9101,1,3,79.99197753710389,2.2451575853650088,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GCN,sealed_test,final_f1,271006,9101,1,3,49.94697055029431,1.6607765761134312,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GCN,sealed_test,new_f1,271006,9101,1,3,61.60037348272643,2.739984566465736,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GCN,sealed_test,old_f1,271006,9101,1,3,48.88757028370958,1.6217589037975528,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,100,GCN,report_dev,accuracy,271006,9101,1,3,82.61532290413157,0.54156081289171,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GCN,report_dev,final_f1,271006,9101,1,3,45.82523691708233,1.4559694995833061,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GCN,report_dev,new_f1,271006,9101,1,3,55.74783943445112,4.6081878446261095,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GCN,report_dev,old_f1,271006,9101,1,3,44.92318214277608,1.340697879609842,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GCN,sealed_test,accuracy,271006,9101,1,3,81.87725631768954,0.5836031601916796,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GCN,sealed_test,final_f1,271006,9101,1,3,47.73110637937302,2.8817352597779724,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GCN,sealed_test,new_f1,271006,9101,1,3,53.53006014105109,4.680134753837234,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GCN,sealed_test,old_f1,271006,9101,1,3,47.203928764675005,2.745584438944357,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,30,GraphSAGE,report_dev,accuracy,271006,9101,1,3,81.08303249097473,1.0219433812544938,"primary experiment, construction 271006"
+bookhis,independent_x,30,GraphSAGE,report_dev,final_f1,271006,9101,1,3,47.62701537559479,1.3738444875292142,"primary experiment, construction 271006"
+bookhis,independent_x,30,GraphSAGE,report_dev,new_f1,271006,9101,1,3,63.19206502817519,5.36458824268453,"primary experiment, construction 271006"
+bookhis,independent_x,30,GraphSAGE,report_dev,old_f1,271006,9101,1,3,46.21201086172385,1.0113707269555465,"primary experiment, construction 271006"
+bookhis,independent_x,30,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,80.41716807059767,0.7747805425704036,"primary experiment, construction 271006"
+bookhis,independent_x,30,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,48.42250660990461,0.8434687064809628,"primary experiment, construction 271006"
+bookhis,independent_x,30,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,63.29590925898447,4.4140454730410426,"primary experiment, construction 271006"
+bookhis,independent_x,30,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,47.07037909635189,0.6131290895569959,"primary experiment, construction 271006"
+bookhis,independent_x,100,GraphSAGE,report_dev,accuracy,271006,9101,1,3,80.42519053349378,1.4513120976071114,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GraphSAGE,report_dev,final_f1,271006,9101,1,3,46.19674197659409,0.6515480262843507,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GraphSAGE,report_dev,new_f1,271006,9101,1,3,58.18900072967657,6.10255423617966,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GraphSAGE,report_dev,old_f1,271006,9101,1,3,45.10653663540477,0.3960245025669922,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,79.95186522262334,0.8326759996152177,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,46.17829119298559,1.2512407438255135,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,58.876012716644446,1.6016427295985565,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,independent_x,100,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,45.02395287265296,1.3176262607820426,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,30,GraphSAGE,report_dev,accuracy,271006,9101,1,3,82.83995186522263,0.27755866653840955,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GraphSAGE,report_dev,final_f1,271006,9101,1,3,47.59670036279628,2.001648717282696,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GraphSAGE,report_dev,new_f1,271006,9101,1,3,60.88626739261948,2.2536043846832188,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GraphSAGE,report_dev,old_f1,271006,9101,1,3,46.388557905539635,2.387455899518451,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,81.98957079823505,0.30092257253928567,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,50.12623889678562,0.9157198960523263,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,63.03402949408602,3.0107678304144456,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,30,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,48.95280338794013,0.7339878881521824,"primary experiment, construction 271006"
+bookhis,uq_dm_edgefree,100,GraphSAGE,report_dev,accuracy,271006,9101,1,3,82.7276373846771,0.3490462882921317,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GraphSAGE,report_dev,final_f1,271006,9101,1,3,47.14771951842774,1.065765082758354,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GraphSAGE,report_dev,new_f1,271006,9101,1,3,53.89536971405611,1.2250826424610233,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GraphSAGE,report_dev,old_f1,271006,9101,1,3,46.53429677337062,1.0825807395641145,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GraphSAGE,sealed_test,accuracy,271006,9101,1,3,82.08584035298838,0.5542471062788874,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GraphSAGE,sealed_test,final_f1,271006,9101,1,3,49.18062335867095,1.3057591614554096,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GraphSAGE,sealed_test,new_f1,271006,9101,1,3,58.35077974791711,1.6141293612996293,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json
+bookhis,uq_dm_edgefree,100,GraphSAGE,sealed_test,old_f1,271006,9101,1,3,48.346972777830395,1.5442403354832241,D:\Aprojects\continue_tag_condensation\experiments\cotag_q_free_x_20261020\results\cotag_q_free_x_budget100_20261020_v5\bookhis_o9101_c271006\results.json

@@ -1,0 +1,498 @@
+{
+  "filter_counts": {
+    "source_records": 3079007,
+    "no_venue_match": 2606017,
+    "outside_year_range": 415224,
+    "invalid_or_generic_title_or_id": 45,
+    "equivalent_duplicate_records_merged": 16,
+    "ambiguous_title_records_removed": 180
+  },
+  "source_year_counts": {
+    "1936": 7,
+    "1937": 9,
+    "1938": 5,
+    "1939": 9,
+    "1940": 6,
+    "1941": 5,
+    "1942": 7,
+    "1943": 3,
+    "1944": 3,
+    "1945": 3,
+    "1946": 5,
+    "1947": 4,
+    "1948": 4,
+    "1949": 12,
+    "1950": 13,
+    "1951": 10,
+    "1952": 20,
+    "1953": 46,
+    "1954": 79,
+    "1955": 68,
+    "1956": 92,
+    "1957": 110,
+    "1958": 129,
+    "1959": 194,
+    "1960": 202,
+    "1961": 344,
+    "1962": 444,
+    "1963": 424,
+    "1964": 400,
+    "1965": 486,
+    "1966": 640,
+    "1967": 761,
+    "1968": 887,
+    "1969": 981,
+    "1970": 969,
+    "1971": 1146,
+    "1972": 1541,
+    "1973": 1725,
+    "1974": 2240,
+    "1975": 2199,
+    "1976": 2549,
+    "1977": 2706,
+    "1978": 2807,
+    "1979": 3221,
+    "1980": 3641,
+    "1981": 4255,
+    "1982": 4599,
+    "1983": 5397,
+    "1984": 6395,
+    "1985": 6993,
+    "1986": 8060,
+    "1987": 9374,
+    "1988": 11412,
+    "1989": 13354,
+    "1990": 15144,
+    "1991": 18211,
+    "1992": 20387,
+    "1993": 24680,
+    "1994": 28803,
+    "1995": 31087,
+    "1996": 34565,
+    "1997": 37980,
+    "1998": 42756,
+    "1999": 47934,
+    "2000": 55743,
+    "2001": 60743,
+    "2002": 69305,
+    "2003": 83106,
+    "2004": 101895,
+    "2005": 120765,
+    "2006": 135939,
+    "2007": 148432,
+    "2008": 159074,
+    "2009": 175808,
+    "2010": 182181,
+    "2011": 196227,
+    "2012": 207237,
+    "2013": 214892,
+    "2014": 223664,
+    "2015": 227225,
+    "2016": 232456,
+    "2017": 81735,
+    "2018": 38
+  },
+  "top_source_venues": [
+    [
+      "",
+      506699
+    ],
+    [
+      "Lecture Notes in Computer Science",
+      32137
+    ],
+    [
+      "international conference on acoustics, speech, and signal processing",
+      26621
+    ],
+    [
+      "international conference on robotics and automation",
+      19943
+    ],
+    [
+      "international conference on image processing",
+      18336
+    ],
+    [
+      "international conference on communications",
+      17679
+    ],
+    [
+      "international symposium on circuits and systems",
+      16945
+    ],
+    [
+      "global communications conference",
+      15850
+    ],
+    [
+      "international geoscience and remote sensing symposium",
+      15390
+    ],
+    [
+      "intelligent robots and systems",
+      14698
+    ],
+    [
+      "conference of the international speech communication association",
+      13510
+    ],
+    [
+      "human factors in computing systems",
+      13120
+    ],
+    [
+      "Applied Mathematics and Computation",
+      13060
+    ],
+    [
+      "vehicular technology conference",
+      12605
+    ],
+    [
+      "conference on decision and control",
+      12139
+    ],
+    [
+      "national conference on artificial intelligence",
+      10605
+    ],
+    [
+      "IEEE Transactions on Information Theory",
+      10526
+    ],
+    [
+      "international conference on computer graphics and interactive techniques",
+      10309
+    ],
+    [
+      "hawaii international conference on system sciences",
+      10220
+    ],
+    [
+      "Discrete Mathematics",
+      10167
+    ],
+    [
+      "IEEE Transactions on Signal Processing",
+      10133
+    ],
+    [
+      "Bioinformatics",
+      10072
+    ],
+    [
+      "European Journal of Operational Research",
+      9983
+    ],
+    [
+      "computer vision and pattern recognition",
+      9809
+    ],
+    [
+      "systems, man and cybernetics",
+      9754
+    ],
+    [
+      "international conference on pattern recognition",
+      9584
+    ],
+    [
+      "Neurocomputing",
+      9579
+    ],
+    [
+      "Expert Systems With Applications",
+      9491
+    ],
+    [
+      "NeuroImage",
+      8804
+    ],
+    [
+      "IEEE Transactions on Communications",
+      8739
+    ],
+    [
+      "Sensors",
+      8656
+    ],
+    [
+      "international symposium on neural networks",
+      8637
+    ],
+    [
+      "wireless communications and networking conference",
+      8549
+    ],
+    [
+      "soft computing",
+      8320
+    ],
+    [
+      "Theoretical Computer Science",
+      8300
+    ],
+    [
+      "BMC Bioinformatics",
+      7907
+    ],
+    [
+      "Communications of The ACM",
+      7887
+    ],
+    [
+      "personal, indoor and mobile radio communications",
+      7822
+    ],
+    [
+      "winter simulation conference",
+      7690
+    ],
+    [
+      "IEEE Transactions on Geoscience and Remote Sensing",
+      7620
+    ],
+    [
+      "IEEE Transactions on Industrial Electronics",
+      7548
+    ],
+    [
+      "Automatica",
+      7193
+    ],
+    [
+      "international conference on computer communications",
+      7159
+    ],
+    [
+      "systems man and cybernetics",
+      6904
+    ],
+    [
+      "international joint conference on artificial intelligence",
+      6882
+    ],
+    [
+      "Information Sciences",
+      6873
+    ],
+    [
+      "congress on evolutionary computation",
+      6756
+    ],
+    [
+      "IEEE Transactions on Wireless Communications",
+      6660
+    ],
+    [
+      "international conference on multimedia and expo",
+      6584
+    ],
+    [
+      "IEEE Communications Letters",
+      6576
+    ],
+    [
+      "neural information processing systems",
+      6355
+    ],
+    [
+      "Pattern Recognition",
+      6177
+    ],
+    [
+      "advances in computing and communications",
+      6173
+    ],
+    [
+      "international conference on conceptual structures",
+      6165
+    ],
+    [
+      "design automation conference",
+      6164
+    ],
+    [
+      "ieee international conference on high performance computing data and analytics",
+      6120
+    ],
+    [
+      "international parallel and distributed processing symposium",
+      6084
+    ],
+    [
+      "IEEE Transactions on Vehicular Technology",
+      6024
+    ],
+    [
+      "international symposium on information theory",
+      5946
+    ],
+    [
+      "Journal of Computational Physics",
+      5938
+    ],
+    [
+      "technical symposium on computer science education",
+      5908
+    ],
+    [
+      "IEEE Transactions on Computers",
+      5779
+    ],
+    [
+      "acm symposium on applied computing",
+      5772
+    ],
+    [
+      "international conference on software engineering",
+      5759
+    ],
+    [
+      "IEEE Transactions on Image Processing",
+      5751
+    ],
+    [
+      "arXiv: Information Theory",
+      5608
+    ],
+    [
+      "IEEE Transactions on Automatic Control",
+      5559
+    ],
+    [
+      "Proceedings of SPIE",
+      5526
+    ],
+    [
+      "genetic and evolutionary computation conference",
+      5515
+    ],
+    [
+      "Wireless Personal Communications",
+      5514
+    ],
+    [
+      "IEEE Transactions on Instrumentation and Measurement",
+      5511
+    ],
+    [
+      "Information Processing Letters",
+      5468
+    ],
+    [
+      "Signal Processing",
+      5456
+    ],
+    [
+      "Nucleic Acids Research",
+      5339
+    ],
+    [
+      "Discrete Applied Mathematics",
+      5338
+    ],
+    [
+      "international world wide web conferences",
+      5303
+    ],
+    [
+      "design, automation, and test in europe",
+      5267
+    ],
+    [
+      "IEICE Transactions on Communications",
+      5229
+    ],
+    [
+      "IEEE Journal on Selected Areas in Communications",
+      5199
+    ],
+    [
+      "Pattern Recognition Letters",
+      5084
+    ],
+    [
+      "fuzzy systems and knowledge discovery",
+      4976
+    ],
+    [
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      4965
+    ],
+    [
+      "IEEE Transactions on Biomedical Engineering",
+      4911
+    ],
+    [
+      "Journal of Combinatorial Theory",
+      4846
+    ],
+    [
+      "knowledge discovery and data mining",
+      4839
+    ],
+    [
+      "international conference on management of data",
+      4826
+    ],
+    [
+      "international conference on information systems",
+      4783
+    ],
+    [
+      "Cognitive Science",
+      4771
+    ],
+    [
+      "ieee international conference on fuzzy systems",
+      4769
+    ],
+    [
+      "meeting of the association for computational linguistics",
+      4740
+    ],
+    [
+      "international symposium on biomedical imaging",
+      4705
+    ],
+    [
+      "Journal of Computational Chemistry",
+      4658
+    ],
+    [
+      "international conference of the ieee engineering in medicine and biology society",
+      4609
+    ],
+    [
+      "international conference on parallel processing",
+      4599
+    ],
+    [
+      "IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences",
+      4557
+    ],
+    [
+      "Microelectronics Reliability",
+      4523
+    ],
+    [
+      "parallel computing",
+      4515
+    ],
+    [
+      "international conference on human computer interaction",
+      4509
+    ],
+    [
+      "robotics and biomimetics",
+      4484
+    ],
+    [
+      "conference on information and knowledge management",
+      4483
+    ]
+  ],
+  "eligible_unique_titles": 57525
+}

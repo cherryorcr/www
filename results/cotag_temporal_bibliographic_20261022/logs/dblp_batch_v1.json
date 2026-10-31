@@ -1,0 +1,72 @@
+[
+  {
+    "job": "encode",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 3.2011570930480957,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_encode_v1.log"
+  },
+  {
+    "job": "uq_dm_edgefree_c271006",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 191.8930106163025,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_uq_dm_edgefree_c271006_v1.log"
+  },
+  {
+    "job": "cat_cctp_c271006",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 149.6742012500763,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_cat_cctp_c271006_v1.log"
+  },
+  {
+    "job": "gecc_hard_c271006",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 139.14652967453003,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_gecc_hard_c271006_v1.log"
+  },
+  {
+    "job": "uq_dm_edgefree_c271108",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 191.4600989818573,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_uq_dm_edgefree_c271108_v1.log"
+  },
+  {
+    "job": "cat_cctp_c271108",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 149.93447852134705,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_cat_cctp_c271108_v1.log"
+  },
+  {
+    "job": "gecc_hard_c271108",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 138.42287683486938,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_gecc_hard_c271108_v1.log"
+  },
+  {
+    "job": "uq_dm_edgefree_c271109",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 191.2179820537567,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_uq_dm_edgefree_c271109_v1.log"
+  },
+  {
+    "job": "cat_cctp_c271109",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 151.8180034160614,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_cat_cctp_c271109_v1.log"
+  },
+  {
+    "job": "gecc_hard_c271109",
+    "dataset": "dblp",
+    "returncode": 0,
+    "seconds": 136.50049471855164,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_temporal_bibliographic_20261022/logs/dblp_gecc_hard_c271109_v1.log"
+  }
+]

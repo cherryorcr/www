@@ -1,0 +1,271 @@
+{
+  "stage": 2,
+  "construction_seconds": 62.60158011200838,
+  "construction_peak_mb": 5271.3759765625,
+  "memory_hash": "8ad29c25bf019f7d6d907673e60e410bf93fa2ab910fb48b06543caf82af5a85",
+  "audit": {
+    "native_source": {
+      "commit": "5aaf1a06e44638499373b1358c85d1546187edae",
+      "file_hashes": {
+        "models/GNN.py": {
+          "actual_sha256": "923249e0b6f55eb58f4a504eabeb4b71ae1cc5088b2ce144087e5cb10ee772d8",
+          "canonical_sha256": "c3f71c4503551c231998f6ccd4bdc1bdf9d6f9f6b9b5637c31eefe1f7d7112c2"
+        },
+        "utils_gdd.py": {
+          "actual_sha256": "e65df66b8c160c9b00d18d75d8d008a97cd56b607a791cbae37c6ff817b2c5f6",
+          "canonical_sha256": "94972bf2f201bad18ee971fa7ce0474df4259813bfbd612c31c50069436b1bd5"
+        },
+        "deep_robust_utils.py": {
+          "actual_sha256": "e5fdb3aca56f5d0c8ed644d7304a0889e4e39820b919641987de7123a10c181a",
+          "canonical_sha256": "c06af29863f03624d70cfb26084795ca0a4fd0ac0b05913daba2cd120aa6bf18"
+        },
+        "tagcond.py": {
+          "actual_sha256": "01c53b8ddf501636d9020076f5f664e126d72861b13e54cd5736e265e4e9be62",
+          "canonical_sha256": "5c422892603d16059cdd46ca2f624477f147a28f9505aac8e364b512d8de94c1"
+        },
+        "prompt.py": {
+          "actual_sha256": "a8158a190eb2c1ebf5e591e1cabc0948f2d53a53c81ce398c3bf598afb610cd6",
+          "canonical_sha256": "7fbca453f0df4a4676e785878670c439b22f2ff6288fb38a6ef5b340ff93de81"
+        }
+      },
+      "official_reproduction": false,
+      "ast_change": "disable unused final test scoring; never import keys or official entrypoints"
+    },
+    "generator": {
+      "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "path": "/home/pc/research/TAG_condensation/experiments/uq_final_evidence_20261012/models/qwen2.5-1.5b",
+      "download_endpoint": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct/resolve/master/model.safetensors",
+      "tls_verification": true,
+      "weight_expected_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "weight_expected_bytes": 3087467144,
+      "file_sha256": {
+        "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+        "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+        "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+      },
+      "transfer": "trusted ModelScope HTTPS mirror; no TLS bypass; official Hugging Face pinned LFS SHA-256 and byte count verified at destination",
+      "native_generator": "qwen3-max API",
+      "adapted_generator": "local transformers Qwen2.5-1.5B-Instruct",
+      "rationale": "explicit lower-capacity adaptation; no external API credentials",
+      "generation": {
+        "temperature": 1.2,
+        "top_p": 0.85,
+        "max_new_tokens": 256,
+        "candidates_per_cluster": 3
+      }
+    },
+    "core_seconds": 20.734821030986495,
+    "internal_split": {
+      "policy": "classwise-10pct-sparse-v1",
+      "seed": 273024,
+      "mask_sha256": {
+        "train": "81c564cd30dfab520f86d256f160364ea84d5280bf3d2af1930eeaf6ae224ab3",
+        "validation": "d00d2d3a05cb530790b8863a3e5ff68f3162f1c675f294aa00c68db17a92f90c",
+        "unlabeled": "9e167aadbf579d906967ee6e0f3b3c15167e128ef6fdc560ccdd68175c21320c"
+      },
+      "classes": [
+        {
+          "label": 1,
+          "source_rows": 295,
+          "train_rows": 30,
+          "validation_rows": 30,
+          "unlabeled_rows": 235
+        },
+        {
+          "label": 5,
+          "source_rows": 133,
+          "train_rows": 13,
+          "validation_rows": 13,
+          "unlabeled_rows": 107
+        },
+        {
+          "label": 6,
+          "source_rows": 257,
+          "train_rows": 26,
+          "validation_rows": 26,
+          "unlabeled_rows": 205
+        }
+      ],
+      "disjoint": true,
+      "external_nodes_used": false
+    },
+    "internal_val_accuracy": 0.9275362491607666,
+    "supervised_rows": 69,
+    "internal_validation_rows": 69,
+    "pseudo_pool_rows": 547,
+    "source_rows": 685,
+    "slots": 35,
+    "final_edges": 244,
+    "core_weighted_edges": 279,
+    "keyword_empty_vocabulary_repairs": 0,
+    "generation_candidates": 105,
+    "generated_schema_retries": 0,
+    "generated_schema_valid_fraction": 0.10476190476190476,
+    "wasserstein_scores": [
+      1.0174121856689453,
+      1.0212358236312866,
+      1.0094205141067505,
+      1.0132999420166016,
+      1.0365066528320312,
+      1.0657318830490112,
+      1.0770726203918457,
+      1.0385947227478027,
+      1.0492998361587524,
+      1.040433645248413,
+      1.0610584020614624,
+      1.0373997688293457,
+      1.056426763534546,
+      1.044898509979248,
+      1.0889185667037964,
+      1.018057942390442,
+      1.035966396331787,
+      1.0416240692138672,
+      1.0188531875610352,
+      1.0321568250656128,
+      1.0312107801437378,
+      1.0579798221588135,
+      1.0693188905715942,
+      1.0246105194091797,
+      1.0630757808685303,
+      1.023384928703308,
+      1.087270975112915,
+      1.077093243598938,
+      1.038947582244873,
+      1.0139482021331787,
+      1.082720160484314,
+      1.120558261871338,
+      1.0636670589447021,
+      1.0233194828033447,
+      1.0766630172729492,
+      1.0445445775985718,
+      1.036624550819397,
+      1.060049057006836,
+      1.006990909576416,
+      1.0845494270324707,
+      1.0314862728118896,
+      1.0063705444335938,
+      1.0636353492736816,
+      1.0167675018310547,
+      1.042231559753418,
+      1.0884835720062256,
+      1.0353481769561768,
+      1.0618646144866943,
+      1.0439692735671997,
+      1.0132346153259277,
+      1.0687353610992432,
+      1.0462697744369507,
+      1.0321935415267944,
+      1.040113091468811,
+      1.0597132444381714,
+      1.0814822912216187,
+      1.0396723747253418,
+      1.0462723970413208,
+      1.0842496156692505,
+      1.0628235340118408,
+      1.0735374689102173,
+      1.092599868774414,
+      1.0598951578140259,
+      0.976421594619751,
+      1.0767264366149902,
+      1.0620203018188477,
+      1.019702672958374,
+      1.0560925006866455,
+      1.0001100301742554,
+      1.0203800201416016,
+      1.0347933769226074,
+      1.0232778787612915,
+      1.0566494464874268,
+      1.045270562171936,
+      1.0217790603637695,
+      1.0107709169387817,
+      1.0827574729919434,
+      1.042796015739441,
+      1.0037925243377686,
+      1.0208370685577393,
+      1.133423089981079,
+      1.0601640939712524,
+      1.0770132541656494,
+      1.0670971870422363,
+      1.0568513870239258,
+      1.0098156929016113,
+      1.1079071760177612,
+      1.0741134881973267,
+      1.0406445264816284,
+      0.9659174680709839,
+      1.0511103868484497,
+      1.0528538227081299,
+      1.0391236543655396,
+      1.022379755973816,
+      1.0085327625274658,
+      1.060903787612915,
+      1.008730411529541,
+      1.0874665975570679,
+      1.022406816482544,
+      0.999596357345581
+    ],
+    "selection": [
+      {
+        "candidate": 89,
+        "wasserstein": 0.9659174680709839,
+        "internal_val_accuracy": 0.7971014380455017,
+        "best_epoch": 61,
+        "steps": 600,
+        "seed": 280024
+      },
+      {
+        "candidate": 63,
+        "wasserstein": 0.976421594619751,
+        "internal_val_accuracy": 0.782608687877655,
+        "best_epoch": 5,
+        "steps": 600,
+        "seed": 280024
+      },
+      {
+        "candidate": 99,
+        "wasserstein": 0.999596357345581,
+        "internal_val_accuracy": 0.782608687877655,
+        "best_epoch": 570,
+        "steps": 600,
+        "seed": 280024
+      },
+      {
+        "candidate": 68,
+        "wasserstein": 1.0001100301742554,
+        "internal_val_accuracy": 0.7971014380455017,
+        "best_epoch": 15,
+        "steps": 600,
+        "seed": 280024
+      },
+      {
+        "candidate": 78,
+        "wasserstein": 1.0037925243377686,
+        "internal_val_accuracy": 0.8840579986572266,
+        "best_epoch": 244,
+        "steps": 600,
+        "seed": 280024
+      }
+    ],
+    "winner": 78,
+    "label_rule": "native mean predicted logits, mapped to current global class ids",
+    "historical_raw_reads": 0,
+    "report_dev_used_for_selection": false,
+    "test_used_for_selection": false,
+    "adaptations": [
+      "current delta only; frozen block diagonal prefix",
+      "classwise 10% labeled / 10% internal val; singleton train-only; pairs train/val; remainder pseudo pool",
+      "common MiniLM semantic core; original X pooled for common Student",
+      "local Qwen2.5-1.5B rather than native qwen3-max API",
+      "native raw text candidate selection; prompt schema compliance audited, not enforced",
+      "three samples; native 100 combinations, WSD top-five, internal GCN validation",
+      "common 320-character cap before candidate scoring and final storage",
+      "sparse equivalent of native dense coarsening",
+      "binary synthetic support in common Student; weighted native candidate evaluation"
+    ],
+    "official_reproduction": false
+  }
+}

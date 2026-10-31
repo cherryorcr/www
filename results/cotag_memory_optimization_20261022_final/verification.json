@@ -1,0 +1,73 @@
+{
+  "memories": 52,
+  "predictions": 84,
+  "independent_metric_checks": 168,
+  "prefixes": 36,
+  "complete_streams": 12,
+  "statuses": [
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\arxiv_cache_offload_c271006\\results.json",
+      "status": "pilot_complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\arxiv_class_blocks_c271006\\results.json",
+      "status": "pilot_complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\arxiv_combined_c271006\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\arxiv_combined_c271108\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\arxiv_combined_c271109\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\arxiv_original_c271006\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\arxiv_original_c271108\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\arxiv_original_c271109\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\sportsfit_cache_offload_c271006\\results.json",
+      "status": "pilot_complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\sportsfit_class_blocks_c271006\\results.json",
+      "status": "pilot_complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\sportsfit_combined_c271006\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\sportsfit_combined_c271108\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\sportsfit_combined_c271109\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\sportsfit_original_c271006\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\sportsfit_original_c271108\\results.json",
+      "status": "complete"
+    },
+    {
+      "path": "results\\cotag_memory_optimization_20261022_download\\results\\cotag_memory_optimization_20261022_v2\\sportsfit_original_c271109\\results.json",
+      "status": "complete"
+    }
+  ]
+}

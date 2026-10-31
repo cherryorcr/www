@@ -1,0 +1,20 @@
+[
+  {
+    "job": "bookhis",
+    "returncode": 0,
+    "seconds": 3900.5989446640015,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/tagsam_bookhis_v1.log"
+  },
+  {
+    "job": "arxiv",
+    "returncode": 0,
+    "seconds": 3386.017254590988,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/tagsam_arxiv_v1.log"
+  },
+  {
+    "job": "sportsfit",
+    "returncode": 0,
+    "seconds": 3632.7132799625397,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/tagsam_sportsfit_v1.log"
+  }
+]

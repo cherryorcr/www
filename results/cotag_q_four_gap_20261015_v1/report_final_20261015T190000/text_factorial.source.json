@@ -1,0 +1,178 @@
+{
+  "description": "One order; three construction means, each averaging three Students. Common x scale. Previously inspected test mask.",
+  "records": [
+    {
+      "dataset": "arxiv",
+      "split": "sealed_test",
+      "control": "no_text_init",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": -0.5561750390249998,
+      "sd": 0.6000285880202666,
+      "ci_low": -2.046728682635975,
+      "ci_high": 0.9343786045859754,
+      "positive": 0,
+      "worst": -1.2294975226504334,
+      "values": [
+        -1.2294975226504334,
+        -0.36097733041060565,
+        -0.0780502640139602
+      ]
+    },
+    {
+      "dataset": "arxiv",
+      "split": "sealed_test",
+      "control": "no_pair_feedback",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": -0.1649196886713303,
+      "sd": 0.48154815709770954,
+      "ci_low": -1.3611516257267986,
+      "ci_high": 1.0313122483841382,
+      "positive": 1,
+      "worst": -0.45724208961377855,
+      "values": [
+        0.3908746867682211,
+        -0.45724208961377855,
+        -0.42839166316843347
+      ]
+    },
+    {
+      "dataset": "arxiv",
+      "split": "sealed_test",
+      "control": "both_off",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": -0.3557704939821041,
+      "sd": 0.21629295977012478,
+      "ci_low": -0.8930719921265096,
+      "ci_high": 0.18153100416230145,
+      "positive": 0,
+      "worst": -0.5953642965883645,
+      "values": [
+        -0.5953642965883645,
+        -0.2970370986430524,
+        -0.17491008671489539
+      ]
+    },
+    {
+      "dataset": "sportsfit",
+      "split": "sealed_test",
+      "control": "no_text_init",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": 2.5126075613286267,
+      "sd": 0.8182141042550715,
+      "ci_low": 0.4800510486877756,
+      "ci_high": 4.545164073969477,
+      "positive": 3,
+      "worst": 1.7402378123907312,
+      "values": [
+        2.427562079606318,
+        3.3700227919888306,
+        1.7402378123907312
+      ]
+    },
+    {
+      "dataset": "sportsfit",
+      "split": "sealed_test",
+      "control": "no_pair_feedback",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": -0.2822794181148159,
+      "sd": 1.2838614276952323,
+      "ci_low": -3.4715680072746395,
+      "ci_high": 2.9070091710450074,
+      "positive": 1,
+      "worst": -1.3007759276226238,
+      "values": [
+        1.1598669074988948,
+        -0.7059292342207186,
+        -1.3007759276226238
+      ]
+    },
+    {
+      "dataset": "sportsfit",
+      "split": "sealed_test",
+      "control": "both_off",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": 2.380321778630394,
+      "sd": 0.7538604916218342,
+      "ci_low": 0.5076285020171587,
+      "ci_high": 4.253015055243629,
+      "positive": 3,
+      "worst": 1.5167803030722382,
+      "values": [
+        2.907106888066849,
+        1.5167803030722382,
+        2.7170781447520937
+      ]
+    },
+    {
+      "dataset": "bookhis",
+      "split": "sealed_test",
+      "control": "no_text_init",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": 1.7389113568822883,
+      "sd": 2.03830846150799,
+      "ci_low": -3.3245275604667572,
+      "ci_high": 6.802350274231333,
+      "positive": 2,
+      "worst": -0.5988527946476196,
+      "values": [
+        3.144109879644283,
+        -0.5988527946476196,
+        2.6714769856502016
+      ]
+    },
+    {
+      "dataset": "bookhis",
+      "split": "sealed_test",
+      "control": "no_pair_feedback",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": 0.39347984642084793,
+      "sd": 1.2362091292942463,
+      "ci_low": -2.6774338712309733,
+      "ci_high": 3.464393564072669,
+      "positive": 1,
+      "worst": -0.506396939113813,
+      "values": [
+        -0.11620634339205793,
+        1.8030428217684147,
+        -0.506396939113813
+      ]
+    },
+    {
+      "dataset": "bookhis",
+      "split": "sealed_test",
+      "control": "both_off",
+      "metric": "final_f1",
+      "orientation": "full minus control",
+      "n": 3,
+      "mean": 0.6557204065652632,
+      "sd": 1.2190143377617464,
+      "ci_low": -2.372479080995519,
+      "ci_high": 3.6839198941260456,
+      "positive": 2,
+      "worst": -0.7206392781904043,
+      "values": [
+        1.0885153055670855,
+        -0.7206392781904043,
+        1.5992851923191083
+      ]
+    }
+  ],
+  "data_sha256": "e281341687735590d9a6b35750fc210b2226f36d1efb807c2213ed1b9bf6cba8",
+  "renderer_sha256": "1c7de4e251c3ef472c607fc04e821444a3710ae751942a28681c76bbca5d37de"
+}

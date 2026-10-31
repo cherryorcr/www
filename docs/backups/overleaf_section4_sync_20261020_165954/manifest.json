@@ -1,0 +1,214 @@
+{
+  "created": "2026-10-20T16:59:55.7149285+08:00",
+  "repository": "D:\\Aprojects\\continue_tag_condensation\\paper_www",
+  "localHead": "b372fe8bf65da4da0827578013b71b77d479ac4f",
+  "overleafHead": "d0b131c07179d408638a3a87540a68d810d1cdde",
+  "purpose": "Preserve local manuscript before syncing non-method content from Overleaf",
+  "files": [
+    {
+      "path": "$build/main.aux",
+      "bytes": 21016,
+      "sha256": "B033F2AC94DE19248EB817F081867CE805A494761BA9B154297C66EA5386908F"
+    },
+    {
+      "path": "$build/main.log",
+      "bytes": 100070,
+      "sha256": "D14928BE2C66EDBEF91A3A5AAA9338A563187043B3D419D93A696235532979B4"
+    },
+    {
+      "path": "$build/main.out",
+      "bytes": 7419,
+      "sha256": "2571340B47B57762827163B21A1337E3592373CD802388CF0C14183ED5B9A158"
+    },
+    {
+      "path": "$build/main.pdf",
+      "bytes": 1776103,
+      "sha256": "AD52A9DEE5DCBEA18B02864249E689E9365AADEA5CB1751361D6E98AEDC16077"
+    },
+    {
+      "path": "$out/main.aux",
+      "bytes": 22337,
+      "sha256": "96F28E992FADFF47F29FC63B7F2940A53F7D801E84304B3484714E8090F27A43"
+    },
+    {
+      "path": "$out/main.log",
+      "bytes": 100460,
+      "sha256": "208DBB8D10595D21A9113622F3F3C028AB1B1EB2DB0616DDB35696752B8EB475"
+    },
+    {
+      "path": "$out/main.out",
+      "bytes": 7642,
+      "sha256": "BA2774B9F8AEF0DB9DE7BF984309B9AFDE813E6C75A21D2952BABB401EBB720A"
+    },
+    {
+      "path": "$out/main.pdf",
+      "bytes": 1779612,
+      "sha256": "78EAFEFDE4B18D1560665ABDA8D1084AC16C0DE86913B9019B8DCB35B44F7422"
+    },
+    {
+      "path": "compile_latest.log",
+      "bytes": 45080,
+      "sha256": "72756A49DE6564DD367481F849AB1439DB76B817DE23ECCE5EA135B042656D40"
+    },
+    {
+      "path": "evidence/student_resource_audit_20261019.md",
+      "bytes": 1943,
+      "sha256": "969D07ACFF7CFA2FB89A760F278655C2EDF0B43E5037234C8FA40CDA2615F130"
+    },
+    {
+      "path": "figures/challenge_overview.html",
+      "bytes": 18308,
+      "sha256": "CDB68C0A7C5786EE78905F02D2EC5562CE787CDB43415BC9E33454F6CDC83282"
+    },
+    {
+      "path": "figures/challenge_overview.pdf",
+      "bytes": 32528,
+      "sha256": "08E2330F8C256AFFE08F3BFB43EBB7713D67B62ED31134B3006C13CD1524A774"
+    },
+    {
+      "path": "figures/challenge_overview.png",
+      "bytes": 165715,
+      "sha256": "B076D25FB1ADE2A0EAA5919A1D9508724CDD1057A2D3F4049668A19B8E4B8D4F"
+    },
+    {
+      "path": "figures/primary_confirmation.png",
+      "bytes": 35460,
+      "sha256": "BCA8C87481400A0C519754D80F3013DAB126AA8F5E8EE43941E2DE02F9F58D61"
+    },
+    {
+      "path": "figures/problem_interfaces.pdf",
+      "bytes": 29413,
+      "sha256": "CDFB9E610EF0BDE5DF52C449041CDB49FB3B3EB527287BF64AE49FC034E55AC6"
+    },
+    {
+      "path": "figures/problem_interfaces.png",
+      "bytes": 114440,
+      "sha256": "A8FB277D8E757DC83BE8020F2F67CB408F4EF31A4267D2A615CB4477E0802C69"
+    },
+    {
+      "path": "figures/split_confirmation.pdf",
+      "bytes": 15647,
+      "sha256": "10451CC8373F317755356D2A0A37E485189ECCEA83E4A0E1EAEC430394174651"
+    },
+    {
+      "path": "figures/split_confirmation.png",
+      "bytes": 50389,
+      "sha256": "58082085EBE47FFABAD3BA71ED7938F43332509F602DF80BD3DC8A57A6098F46"
+    },
+    {
+      "path": "figures/split_confirmation.source.json",
+      "bytes": 2164,
+      "sha256": "F81C718AABB2557019E48DC1F9DD9E43E82F45C2DDF70565FCF94F7A00031E5F"
+    },
+    {
+      "path": "tmp_method_page-04.png",
+      "bytes": 584804,
+      "sha256": "40B3BBFD7DD335972532FB82A9063881560FFCB3A0039B61AC1A025C1B3B5506"
+    },
+    {
+      "path": "tmp_method_page-05.png",
+      "bytes": 719914,
+      "sha256": "4C2272E5E7B95760522779F1F4105B274001B48213831037DD7962B138C70493"
+    },
+    {
+      "path": "tools/diagram_primitives.py",
+      "bytes": 4815,
+      "sha256": "56AC651E5E74BB7D7484A063DBA17DD555D33042A1BB28BB33D6BFD8F40DE741"
+    },
+    {
+      "path": "tools/make_challenge_overview.py",
+      "bytes": 7740,
+      "sha256": "904EC083A80CE75318DE1ED7BCA5AE12A98DE735CF7A062C699A39FD885CDC5D"
+    },
+    {
+      "path": "tools/make_problem_interfaces.py",
+      "bytes": 3479,
+      "sha256": "E066A2324D4A40D53F16691DF79D43B626DC6EFE0DD8E860CDA72F461908863A"
+    },
+    {
+      "path": "tools/make_split_confirmation.py",
+      "bytes": 7921,
+      "sha256": "21883EDAACBB8985BA1FD16D5DA7A31CB054F99C2A0AF637B33728D2DFB6FF3D"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6660,
+      "sha256": "EF3AD70CD988933B8DF65AF5B46B95C8D07A7235E7735D4EC83462959C1E393A"
+    },
+    {
+      "path": "RESULTS_REGISTER.md",
+      "bytes": 36846,
+      "sha256": "CCD305DB844C30F3B89D983030851DDDD4F1DB582250FCE9E4D36D96E143B771"
+    },
+    {
+      "path": "WWW2027_REQUIREMENTS.md",
+      "bytes": 2691,
+      "sha256": "4F163ACABE6A1B5401715133344608D0B0BA79A79412335A6C4131FDD10AD7ED"
+    },
+    {
+      "path": "figures/core_ablation_effects.pdf",
+      "bytes": 14774,
+      "sha256": "7F297441B4707B9B52FCE89A057B04B653EAA74F7FAAD5C11F0E3A9677D3FAC3"
+    },
+    {
+      "path": "figures/core_ablation_effects.png",
+      "bytes": 42877,
+      "sha256": "7AC1E5578F57D22B2D61DB9DC68160B0D5B0B46462953CC70A7E5068A5EA3539"
+    },
+    {
+      "path": "figures/core_ablation_effects.source.json",
+      "bytes": 3164,
+      "sha256": "FFEEF837641CCCD08AF7E3CA9AEB953345D4ACE88A2F0C788A494D72E5DB6E9A"
+    },
+    {
+      "path": "figures/method_overview.pdf",
+      "bytes": 41453,
+      "sha256": "9C9F2382031A49298EADCF6BE99F4E1A8A4DEF8702A0BE38CA6168AC1EA444F8"
+    },
+    {
+      "path": "figures/method_overview.png",
+      "bytes": 246724,
+      "sha256": "7BC79A8BF7FCC386EB59E23B9C66E5F4A49E642389529666C14FF843C52766BC"
+    },
+    {
+      "path": "main.tex",
+      "bytes": 6585,
+      "sha256": "03DFBD282C27813F93480FCF476B0CDAE1200C25D419730CB2FEA72F6AC6887A"
+    },
+    {
+      "path": "sections/01_introduction.tex",
+      "bytes": 6473,
+      "sha256": "C32C300998C2EB8F3A8496895FCB9087E3F4414D5C3973D2201470FB27C58700"
+    },
+    {
+      "path": "sections/02_problem_protocol.tex",
+      "bytes": 5333,
+      "sha256": "28C5623EF18B0D12485A163088F5404E0261CA2A84F4ECF5164C2F68BBF8EAA6"
+    },
+    {
+      "path": "sections/03_related_baselines.tex",
+      "bytes": 3914,
+      "sha256": "40D245BBDFC7185DFB1DF6AB0023990FB645AEC30ECBC0706C1A3819E021FE06"
+    },
+    {
+      "path": "sections/04_method.tex",
+      "bytes": 12022,
+      "sha256": "0F61E03DB07224C7D99778BA3772D0786270416C2AE17F5FBB3D4D63323DADBD"
+    },
+    {
+      "path": "sections/08_limitations.tex",
+      "bytes": 1306,
+      "sha256": "939CA41FA9D914255DFC25B8AC6C7C7F87CB64152DE3F9B6DC6F7B87170333AC"
+    },
+    {
+      "path": "tools/make_core_ablation_figure.py",
+      "bytes": 6280,
+      "sha256": "34488BFD64E900C1B6270B9861A381332C1A1AF0AADF93B6B96E2B5E79E9AFFF"
+    },
+    {
+      "path": "tools/make_method_overview.py",
+      "bytes": 13007,
+      "sha256": "F3F289C796FD64561ED8ECCAF349C1C23DE324D17DF6FAA8529071F177756225"
+    }
+  ]
+}

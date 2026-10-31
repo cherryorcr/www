@@ -1,0 +1,10 @@
+请先阅读交接报告：
+D:/Adocs/简历/research/graph-condensation/TAGSAM/NEW_CONVERSATION_HANDOFF_CLASSICAL_CONTINUAL_TAG_ZH_2026-09-05.md
+
+然后在同一项目继续研究。我的目标是经典持续TAG图凝聚：优化小型synthetic graph，使其训练效果接近累计真实TAG，并体现文本与持续机制，目标是有算法贡献的CCF A长论文。
+
+D2/A2及旧实验已冻结，只作基线或初始化，不能自动回到prototype buffer主线。新方向有设计草案，还没有新正式实验结果。
+
+先核查旧O2与短轨迹synthetic失败、静态TAGSAM复现和真实经典凝聚基线，明确主任务、监督范围、压缩率分母、文本产物与独立holdout，再形成并实现最小静态可行性实验。
+
+请特别留意：多步trajectory已经试过；A2的+4.35 pp不是超过PubMed所有基线；旧arXiv t3已经使用；新C0/N0尚无可报告结果。不要仅换名字，也不要直接同时堆transport、prompt、learned adjacency等模块。既有冻结数值仅在同一协议下复用。

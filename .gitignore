@@ -1,0 +1,66 @@
+# Python, editor, and environment caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# Training and model artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.npz
+*.npy
+*.pkl
+
+# Archives, logs, and temporary files
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.log
+*.pid
+*.tmp
+tmp/
+.tmp_*
+work_runs/
+results/**/runs/
+results/**/models/
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+paper/build/
+paper/tmp/
+paper/.git/
+
+# Legacy API and deployment prototypes outside the CoTAG-Q release path
+src/v2_codex/
+src/v2_llm_fusion/deploy_to_server.sh
+src/v2_llm_fusion/ONE_CLICK_DEPLOY.md
+src/v2_llm_fusion/CUSTOM_API_SETUP.sh
+src/v2_llm_fusion/setup_custom_api.sh
+src/v2_llm_fusion/DEPLOYMENT_GUIDE.md
+src/v2_llm_fusion/test_api_models.py
+experiments/**/code/v2_llm_fusion/
+experiments/**/frozen_code/llm_text_fusion.py
+experiments/**/code/llm_text_fusion.py
+experiments/**/test_api.py
+experiments/**/test_api_models.py
+**/deploy_to_server.sh
+**/ONE_CLICK_DEPLOY.md
+**/CUSTOM_API_SETUP.sh
+**/setup_custom_api.sh
+**/DEPLOYMENT_GUIDE.md

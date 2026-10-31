@@ -1,0 +1,16 @@
+{
+  "completed": "2026-10-20T17:02:15.7905127+08:00",
+  "overleafCommit": "42451a2ddda0e2963c83a77a77ed858eca90a445",
+  "previousOverleafCommit": "d0b131c07179d408638a3a87540a68d810d1cdde",
+  "publishedFiles": [
+    "figures/method_overview.pdf",
+    "figures/method_overview.png",
+    "sections/04_method.tex",
+    "tools/diagram_primitives.py",
+    "tools/make_method_overview.py"
+  ],
+  "otherTrackedFiles": "Unchanged from Overleaf parent",
+  "compile": "MiKTeX and built-in editor: success",
+  "backup": "files/ and manifest.json",
+  "stash": "56e6c74401cb173e92e813bbafea85e120e5e2d5"
+}

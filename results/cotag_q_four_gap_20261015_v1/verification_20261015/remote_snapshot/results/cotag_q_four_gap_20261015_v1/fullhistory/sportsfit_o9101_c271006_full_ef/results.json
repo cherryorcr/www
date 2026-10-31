@@ -1,0 +1,278 @@
+{
+  "protocol": {
+    "name": "cotag-four-gap-evidence-20261015-v1",
+    "task": "fullhistory",
+    "arm": "full_ef",
+    "dataset": "sportsfit",
+    "order_seed": 9101,
+    "construction_seed": 271006,
+    "groups": [
+      [
+        10,
+        3,
+        0,
+        2,
+        12
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "stage_raw_rows": [
+      76337,
+      13376,
+      6531,
+      9849,
+      15044
+    ],
+    "budgets": [
+      3817,
+      4486,
+      4812,
+      5305,
+      6057
+    ],
+    "class_floor_adjustments": [],
+    "memory_rate": 0.05,
+    "actual_final_rate": 0.05000123826741623,
+    "student": {
+      "name": "GraphTextPromptStudent",
+      "graph_encoder": "two-layer symmetric-normalized GCN",
+      "text_encoder": "frozen MiniLM embeddings",
+      "classifier_head": "none; prompt cosine only",
+      "pair_loss": "symmetric multi-positive graph-text InfoNCE",
+      "prompt_loss": "cross-entropy over encoded class prompts",
+      "margin_loss": "multiclass prompt margin",
+      "lambda_pair": 0.5,
+      "lambda_prompt": 1.0,
+      "lambda_margin": 0.1,
+      "margin": 0.2,
+      "same_class_rows_are_positive": true
+    },
+    "student_steps": 2048,
+    "student_batch": 24,
+    "student_seeds": [
+      150,
+      151,
+      152
+    ],
+    "method_selection_from_test": false,
+    "evaluation": "report-dev and previously inspected test; post-hoc evidence, not a new blind test",
+    "official_reproduction": false,
+    "source_hashes": {
+      "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+      "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+      "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+      "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+      "unified_q_multimodal.py": "f621d4575a9bb660fad8031e4d7135e2570cc72c02d16145c08aa989bee99525",
+      "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+      "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a"
+    },
+    "runner_hash": "2130f3c0c084f55510669d8d57d26ef386cb12859895329da56292890f7dd9ac",
+    "pool_mask_hash": "0824e4c02466feb1e8868b1f3ed7419e396c44903318c1162033b4729e663abb",
+    "report_mask_hash": "b64f935e32a5fb2b4f3387f867e896968b426e5765b65e7b41c359ac4b3f86c7",
+    "test_mask_hash": "22f86189f98c92f379e664560046e27f5e1558378a9dd8ac554fcca7fda9c4e1",
+    "stage_id_hashes": [
+      "d70425f208c63f28fba0c4f86fc09986df4bf523702b2c4a722e5a751778b153",
+      "daa80727499ccae8a9a72c917bd5a994a004b7fab3310e216b8ca4e49049718b",
+      "36492c6899d96233de0824a999b9a4fb1dd141ca1ed4431723f9e115cbc0397b",
+      "bfb76ea7d7cea7cf84aa2a4b2ab76b4e9b1e632ab1b53fba4785342f63662385",
+      "59bac1e9214da19fd2f2d7af5ee433723537ad11f0a558c5fa3f8b137077de7c"
+    ],
+    "primary_protocol_checks": {
+      "groups": true,
+      "stage_raw_rows": true,
+      "budgets": true,
+      "student": true,
+      "student_steps": true,
+      "student_batch": true,
+      "student_seeds": true,
+      "pool_mask_hash": true,
+      "report_mask_hash": true,
+      "test_mask_hash": true,
+      "stage_id_hashes": true
+    },
+    "reference": "full legal training pool; historical raw access permitted only for this reference",
+    "construction_seed_relevant": false,
+    "evaluated_stage": 4,
+    "text_preprocess": "same whitespace cleaning and 320 character cap as CoTAG-Q",
+    "topology": "self loops only",
+    "reference_rows": 121137,
+    "reference_edges": 0,
+    "reference_id_hash": "44fe6fa0e1e98f5c6cbb584cd61ae876c33c90bd969663f58c0b9875cf01901b",
+    "memory_hash": "9ff33a46a254b7630ac107ad8f37c0d45f2716188277d1a53931b1e744ecfd24",
+    "training_budget": "fixed 2048 updates, 24 sampled loss rows",
+    "not_an_optimized_performance_upper_bound": true
+  },
+  "rows": [
+    {
+      "stage": 4,
+      "arm": "full_ef",
+      "memory_rows": 121137,
+      "scores": {
+        "report_dev": {
+          "split": "report_dev",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 17306,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 80.87131262319608,
+              "accuracy": 89.23494741708078,
+              "old_f1": 78.46014513551485,
+              "new_f1": 94.13273380544271
+            },
+            {
+              "seed": 151,
+              "final_f1": 79.28633573490917,
+              "accuracy": 88.45487114295621,
+              "old_f1": 76.71480558784434,
+              "new_f1": 93.42975154376583
+            },
+            {
+              "seed": 152,
+              "final_f1": 79.45957178557738,
+              "accuracy": 88.33930428753034,
+              "old_f1": 76.69085007545704,
+              "new_f1": 94.6875411912392
+            }
+          ],
+          "final_f1": 79.87240671456088,
+          "final_f1_std": 0.8694034984071056,
+          "accuracy": 88.67637428252245,
+          "accuracy_std": 0.4871774671575014,
+          "old_f1": 77.28860026627207,
+          "old_f1_std": 1.0146583179229538,
+          "new_f1": 94.08334218014924,
+          "new_f1_std": 0.6303477998768978
+        },
+        "sealed_test": {
+          "split": "sealed_test",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 17306,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 80.36236472126888,
+              "accuracy": 88.8015717092338,
+              "old_f1": 77.83390944511198,
+              "new_f1": 94.26886874013167
+            },
+            {
+              "seed": 151,
+              "final_f1": 79.76799464398852,
+              "accuracy": 88.0330521206518,
+              "old_f1": 77.39700565420982,
+              "new_f1": 92.80843408777142
+            },
+            {
+              "seed": 152,
+              "final_f1": 79.80584937422643,
+              "accuracy": 88.02149543510922,
+              "old_f1": 77.27402763371119,
+              "new_f1": 93.7308689470603
+            }
+          ],
+          "final_f1": 79.9787362464946,
+          "final_f1_std": 0.3327707170764437,
+          "accuracy": 88.28537308833161,
+          "accuracy_std": 0.4470784622537486,
+          "old_f1": 77.50164757767766,
+          "old_f1_std": 0.29424370816492845,
+          "new_f1": 93.6027239249878,
+          "new_f1_std": 0.7386021956812222
+        }
+      },
+      "score": {
+        "split": "report_dev",
+        "student_steps": 2048,
+        "student_batch": 24,
+        "student_seeds": [
+          150,
+          151,
+          152
+        ],
+        "eval_rows": 17306,
+        "per_student": [
+          {
+            "seed": 150,
+            "final_f1": 80.87131262319608,
+            "accuracy": 89.23494741708078,
+            "old_f1": 78.46014513551485,
+            "new_f1": 94.13273380544271
+          },
+          {
+            "seed": 151,
+            "final_f1": 79.28633573490917,
+            "accuracy": 88.45487114295621,
+            "old_f1": 76.71480558784434,
+            "new_f1": 93.42975154376583
+          },
+          {
+            "seed": 152,
+            "final_f1": 79.45957178557738,
+            "accuracy": 88.33930428753034,
+            "old_f1": 76.69085007545704,
+            "new_f1": 94.6875411912392
+          }
+        ],
+        "final_f1": 79.87240671456088,
+        "final_f1_std": 0.8694034984071056,
+        "accuracy": 88.67637428252245,
+        "accuracy_std": 0.4871774671575014,
+        "old_f1": 77.28860026627207,
+        "old_f1_std": 1.0146583179229538,
+        "new_f1": 94.08334218014924,
+        "new_f1_std": 0.6303477998768978
+      },
+      "student_seconds": 219.3586603460135,
+      "student_peak_mb": 2029.70361328125
+    }
+  ],
+  "status": "complete",
+  "sampling_coverage": [
+    {
+      "seed": 150,
+      "unique_rows": 40406,
+      "fraction": 0.33355623483657837,
+      "draws": 49152
+    },
+    {
+      "seed": 151,
+      "unique_rows": 40293,
+      "fraction": 0.3326233923435211,
+      "draws": 49152
+    },
+    {
+      "seed": 152,
+      "unique_rows": 40331,
+      "fraction": 0.332937091588974,
+      "draws": 49152
+    }
+  ]
+}

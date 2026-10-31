@@ -1,0 +1,21 @@
+{
+  "method": "semantic-recursive",
+  "classification": "mechanism-adapted continual baseline",
+  "paper_title": "Semantic-Recursive Graph Condensation",
+  "paper_year": null,
+  "paper_venue": "internal baseline reference",
+  "paper_url": null,
+  "result_root": "/home/pc/research/TAG_condensation/results/external_continual_adapters_20260927_v2",
+  "orders": ["order19611", "order19612"],
+  "access": "sealed stage artifact and current protocol stream; no test labels",
+  "memory": "sealed recursive synthetic artifact with TAG text",
+  "student": "canonical scratch GCN/MiniLM/bidirectional InfoNCE",
+  "adaptation": "shared TAG protocol and student replace upstream evaluation",
+  "student_seeds": [150,151,152,153,154,155],
+  "construction_seed": 270927,
+  "source_hashes": {"protocol_cora_order19611": "65474d2d667fb70925f763a8deae7134f54cd23aa255f0d9588499953d874269"},
+  "teacher": "sealed semantic-recursive stage artifact",
+  "audits": {"source_locality": "passed; sealed artifact and current stream", "budget": "passed", "prefix": "passed", "checkpoint_reload": "passed"},
+  "native_reproduction": false,
+  "main_table_eligibility": "eligible only for covered orders"
+}

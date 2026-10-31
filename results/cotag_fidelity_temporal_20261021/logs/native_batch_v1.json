@@ -1,0 +1,8 @@
+[
+  {
+    "job": "cora",
+    "returncode": 1,
+    "seconds": 3.0031068325042725,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/native_cora_v1.log"
+  }
+]

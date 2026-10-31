@@ -1,0 +1,194 @@
+{
+  "dataset": "dblp",
+  "nodes": 57520,
+  "classes": [
+    "artificial intelligence",
+    "computer vision",
+    "natural language processing",
+    "machine learning"
+  ],
+  "class_counts": {
+    "artificial intelligence": 13676,
+    "natural language processing": 8683,
+    "computer vision": 21165,
+    "machine learning": 13996
+  },
+  "boundary_years": [
+    2008,
+    2010,
+    2012,
+    2014,
+    2015
+  ],
+  "deduplicated_across_datasets": 5,
+  "nodes_before_cap": 57520,
+  "abstract_present": 51071,
+  "directed_citations": 297223,
+  "symmetric_edges": 593138,
+  "edge_filter_counts": {
+    "references_outside_retained_nodes": 411343,
+    "forward_year_references_removed": 1195,
+    "self_references_removed": 4
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "year_end": 2008,
+      "nodes": 25606,
+      "train_nodes": 17901,
+      "train_class_counts": {
+        "artificial intelligence": 4933,
+        "natural language processing": 2321,
+        "computer vision": 6520,
+        "machine learning": 4127
+      },
+      "split_counts": {
+        "8": 2561,
+        "9": 2520,
+        "0": 2578,
+        "3": 2554,
+        "2": 2516,
+        "5": 2606,
+        "1": 2635,
+        "4": 2515,
+        "6": 2511,
+        "7": 2610
+      }
+    },
+    {
+      "stage": 1,
+      "year_end": 2010,
+      "nodes": 7785,
+      "train_nodes": 5458,
+      "train_class_counts": {
+        "computer vision": 1934,
+        "machine learning": 1567,
+        "natural language processing": 895,
+        "artificial intelligence": 1062
+      },
+      "split_counts": {
+        "5": 806,
+        "1": 784,
+        "3": 764,
+        "8": 784,
+        "9": 753,
+        "2": 779,
+        "4": 777,
+        "6": 785,
+        "0": 752,
+        "7": 801
+      }
+    },
+    {
+      "stage": 2,
+      "year_end": 2012,
+      "nodes": 8661,
+      "train_nodes": 6005,
+      "train_class_counts": {
+        "computer vision": 2195,
+        "machine learning": 1651,
+        "natural language processing": 908,
+        "artificial intelligence": 1251
+      },
+      "split_counts": {
+        "6": 855,
+        "2": 878,
+        "1": 890,
+        "7": 876,
+        "3": 888,
+        "5": 875,
+        "0": 837,
+        "4": 836,
+        "9": 874,
+        "8": 852
+      }
+    },
+    {
+      "stage": 3,
+      "year_end": 2014,
+      "nodes": 9159,
+      "train_nodes": 6438,
+      "train_class_counts": {
+        "computer vision": 2488,
+        "artificial intelligence": 1187,
+        "machine learning": 1635,
+        "natural language processing": 1128
+      },
+      "split_counts": {
+        "2": 907,
+        "8": 945,
+        "1": 922,
+        "7": 937,
+        "5": 958,
+        "4": 865,
+        "9": 930,
+        "6": 926,
+        "0": 877,
+        "3": 892
+      }
+    },
+    {
+      "stage": 4,
+      "year_end": 2015,
+      "nodes": 6309,
+      "train_nodes": 4425,
+      "train_class_counts": {
+        "computer vision": 1686,
+        "artificial intelligence": 1076,
+        "machine learning": 866,
+        "natural language processing": 797
+      },
+      "split_counts": {
+        "4": 617,
+        "5": 617,
+        "7": 659,
+        "1": 629,
+        "0": 619,
+        "2": 618,
+        "9": 672,
+        "6": 635,
+        "3": 637,
+        "8": 606
+      }
+    }
+  ],
+  "venue_rules": {
+    "artificial intelligence": [
+      "aaai",
+      "ijcai",
+      "national conference on artificial intelligence",
+      "international joint conference on artificial intelligence",
+      "journal of artificial intelligence research"
+    ],
+    "computer vision": [
+      "cvpr",
+      "iccv",
+      "eccv",
+      "computer vision and pattern recognition",
+      "international conference on computer vision",
+      "european conference on computer vision",
+      "international journal of computer vision"
+    ],
+    "natural language processing": [
+      "acl",
+      "emnlp",
+      "naacl",
+      "association for computational linguistics",
+      "empirical methods in natural language processing"
+    ],
+    "machine learning": [
+      "icml",
+      "nips",
+      "neural information processing systems",
+      "international conference on machine learning",
+      "journal of machine learning research"
+    ]
+  },
+  "source_url": "https://lfs.aminer.cn/lab-datasets/citation/dblp.v10.zip",
+  "archive_bytes": 1848832450,
+  "archive_sha256": "dde23905afdb1c5432a10d73601bfc0645e4a8950fe231b2b70bff280fad7efd",
+  "preparation_code_sha256": "7b0dffcf9aeb84682b5b4f3e1ad374edf0157623278f4e9a029bcafdbd59af56",
+  "created_at_utc": "2026-10-22T00:46:57.839095+00:00",
+  "records_sha256": "0197902189c7e8e1295016fe15e014b0e240d9a038f9bc9ae3a80da35765d42d",
+  "edges_sha256": "5b03c3f56b4c66742a78fe9c096785f10b404fe232ab23f6b59c5f327c0bec6a"
+}

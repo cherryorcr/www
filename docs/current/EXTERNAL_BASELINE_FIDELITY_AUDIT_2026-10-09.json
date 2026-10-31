@@ -1,0 +1,545 @@
+{
+  "name": "external-baseline-fidelity-audit-20261009",
+  "card_root": "D:\\Aprojects\\tag_baseline\\EXTERNAL_BASELINE_HANDOFF_PACKAGE_20261004\\EXTERNAL_BASELINE_HANDOFF_PACKAGE_20261004\\baseline_cards",
+  "card_count": 13,
+  "rows": [
+    {
+      "method": "CaT-MMD-TAG",
+      "card_file": "cat_mmd_tag_card.json",
+      "category": "mechanism-adapted",
+      "strict_status": "eligible",
+      "strict_reasons": [],
+      "paper": "CaT: Balanced Continual Graph Learning with Graph Condensation",
+      "paper_year": 2023,
+      "paper_venue": "ICDM 2023",
+      "upstream": "superallen13/CaT-CGL@43d6fcfd7b1754fe53b9f911492d7cb0c113a2eb",
+      "mechanism": "class-balanced MMD condensation of synthetic features against current raw/teacher statistics",
+      "adaptation": "upstream CaT construction and MMD objective adapted to fixed 5% TAG stream",
+      "access": "current delta only; no cumulative raw in constructor",
+      "memory": "edge-free synthetic rows with TAG text",
+      "student": "canonical scratch GCN/MiniLM/bidirectional InfoNCE",
+      "student_seeds": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "construction_seed": 270927,
+      "orders": [
+        "order19611",
+        "order19612",
+        "order19613",
+        "order19614",
+        "order19615"
+      ],
+      "audits": {
+        "source_locality": "passed; current-delta protocol",
+        "budget": "passed",
+        "prefix": "passed",
+        "checkpoint_reload": "passed"
+      },
+      "native_reproduction": false,
+      "eligibility": "eligible as mechanism-adapted strict continual baseline",
+      "metadata_note": null
+    },
+    {
+      "method": "external_continual_adapters_card.json",
+      "card_file": "external_continual_adapters_card.json",
+      "category": "unclassified",
+      "strict_status": "conditional",
+      "strict_reasons": [
+        "current-delta locality not explicit"
+      ],
+      "paper": "External continual adapter bundle",
+      "paper_year": 2026,
+      "paper_venue": "internal handoff index",
+      "upstream": {
+        "CaT": "superallen13/CaT-CGL@43d6fcfd7b1754fe53b9f911492d7cb0c113a2eb",
+        "GECC": "rockcor/GECC@d731be00cc3beb7585e8fa7b60ca21a6c3cb4e3f"
+      },
+      "mechanism": null,
+      "adaptation": [
+        "TAG text attachment",
+        "5% cumulative stream",
+        "shared scratch InfoNCE replaces upstream supervised/distilled student",
+        "GECC hard variant and current-delta restriction"
+      ],
+      "access": null,
+      "memory": "CaT/GECC edge-free synthetic rows; k-center/medoid real-node coreset; semantic-recursive sealed artifact",
+      "student": "two-layer GCN, frozen MiniLM/text projection, bidirectional InfoNCE, scratch per stage",
+      "student_seeds": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "construction_seed": 270927,
+      "orders": [
+        "cora",
+        "citeseer",
+        "order19611",
+        "order19612",
+        "order19613",
+        "order19614",
+        "order19615 (CaT/k-center)"
+      ],
+      "audits": {
+        "source_locality": "protocol records physical fixture limitation",
+        "budget": "results include memory_rows",
+        "prefix": "existing per-stage artifacts",
+        "checkpoint_reload": "independent audit passed for all formal continual roots; order19615 maximum metric error 0.0"
+      },
+      "native_reproduction": false,
+      "eligibility": "eligible by method and covered order; see method cards",
+      "metadata_note": null
+    },
+    {
+      "method": "GCond",
+      "card_file": "gcond_reference_only_card.json",
+      "category": "reference-only",
+      "strict_status": "exclude",
+      "strict_reasons": [
+        "current-delta locality not explicit",
+        "reference-only classification"
+      ],
+      "paper": "Graph Condensation for Graph Neural Networks",
+      "paper_year": 2022,
+      "paper_venue": "ICLR 2022",
+      "upstream": "https://github.com/ChandlerBang/GCond",
+      "mechanism": "gradient matching over synthetic features and parametrized adjacency",
+      "adaptation": null,
+      "access": "repository readable; no test labels used in this verification",
+      "memory": null,
+      "student": null,
+      "student_seeds": null,
+      "construction_seed": null,
+      "orders": null,
+      "audits": {
+        "source_locality": "repository-only",
+        "budget": "not-applicable",
+        "prefix": "not-applicable",
+        "checkpoint_reload": "not-applicable"
+      },
+      "native_reproduction": false,
+      "eligibility": "excluded; reference-only",
+      "metadata_note": null
+    },
+    {
+      "method": "GCondenser",
+      "card_file": "gcondenser_reference_only_card.json",
+      "category": "reference-only",
+      "strict_status": "exclude",
+      "strict_reasons": [
+        "current-delta locality not explicit",
+        "reference-only classification"
+      ],
+      "paper": "GCondenser: Benchmarking Graph Condensation",
+      "paper_year": 2024,
+      "paper_venue": "arXiv:2405.14246",
+      "upstream": "https://github.com/superallen13/GCondenser",
+      "mechanism": "benchmark toolkit wrapping multiple graph condensation methods with Hydra and DGL/PyG backends",
+      "adaptation": null,
+      "access": "repository readable; no test labels used in this verification",
+      "memory": null,
+      "student": null,
+      "student_seeds": null,
+      "construction_seed": null,
+      "orders": null,
+      "audits": {
+        "source_locality": "repository-only",
+        "budget": "not-applicable",
+        "prefix": "not-applicable",
+        "checkpoint_reload": "not-applicable"
+      },
+      "native_reproduction": false,
+      "eligibility": "excluded; reference-only",
+      "metadata_note": null
+    },
+    {
+      "method": "GECC-hard-TAG",
+      "card_file": "gecc_hard_tag_card.json",
+      "category": "mechanism-adapted",
+      "strict_status": "eligible",
+      "strict_reasons": [],
+      "paper": "GECC: Scalable and Structure-free Graph Condensation with Evolving Capabilities",
+      "paper_year": 2026,
+      "paper_venue": "KDD 2026",
+      "upstream": "rockcor/GECC@d731be00cc3beb7585e8fa7b60ca21a6c3cb4e3f",
+      "mechanism": "hard hop-weight propagation followed by Lloyd-style structure-free clustering",
+      "adaptation": "hard hop-weight branch, sklearn Lloyd, fixed TAG text attachment",
+      "access": "current delta only; cumulative-raw and fuzzy variants excluded from strict table",
+      "memory": "edge-free synthetic rows with TAG text",
+      "student": "canonical scratch GCN/MiniLM/bidirectional InfoNCE",
+      "student_seeds": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "construction_seed": 270927,
+      "orders": [
+        "order19611",
+        "order19612",
+        "order19613 partial",
+        "order19614 cora partial"
+      ],
+      "audits": {
+        "source_locality": "passed; current delta only",
+        "budget": "passed",
+        "prefix": "passed",
+        "checkpoint_reload": "passed"
+      },
+      "native_reproduction": false,
+      "eligibility": "eligible for covered orders; order19613/19614 coverage is partial",
+      "metadata_note": null
+    },
+    {
+      "method": "Official GraphCLIP frozen checkpoint",
+      "card_file": "graphclip_reference_only_card.json",
+      "category": "reference-only",
+      "strict_status": "exclude",
+      "strict_reasons": [
+        "current-delta locality not explicit",
+        "reference-only classification"
+      ],
+      "paper": "GraphCLIP: Enhancing Transferability in Graph Foundation Models for Text-Attributed Graphs",
+      "paper_year": 2025,
+      "paper_venue": "WWW 2025",
+      "upstream": "local official source tree: /home/pc/research/GraphCLIP",
+      "mechanism": "official pretrained graph-text model inference, not a condensation constructor",
+      "adaptation": [
+        "local deterministic dev split and stage slices",
+        "official checkpoint evaluated as an upper/reference model",
+        "not continual training and not a current-delta adapter"
+      ],
+      "access": "complete original TAG used for transductive ego-subgraph features",
+      "memory": "none; no synthetic memory constructed",
+      "student": "none; training_steps=0 and model state unchanged",
+      "student_seeds": [],
+      "construction_seed": null,
+      "orders": null,
+      "audits": {
+        "source_locality": "reference-only; complete original graph features",
+        "budget": "not-applicable",
+        "prefix": "not-applicable",
+        "checkpoint_reload": "strict graph/text load and unchanged state recorded"
+      },
+      "native_reproduction": false,
+      "eligibility": "excluded; official checkpoint reference under protocol section 3.C",
+      "metadata_note": null
+    },
+    {
+      "method": "k-center/FPS",
+      "card_file": "k_center_native_card.json",
+      "category": "mechanism-adapted",
+      "strict_status": "eligible",
+      "strict_reasons": [],
+      "paper": "k-center/Farthest Point Sampling coreset reference",
+      "paper_year": null,
+      "paper_venue": "algorithmic reference",
+      "upstream": null,
+      "mechanism": "farthest-point/k-center coreset selection in the feature/text space",
+      "adaptation": "TAG text and fixed cumulative 5% stream",
+      "access": "current legal pool for farthest-point selection; no historical raw constructor access",
+      "memory": "real-node coreset selected in joint feature/text space",
+      "student": "canonical scratch GCN/MiniLM/bidirectional InfoNCE",
+      "student_seeds": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "construction_seed": 270927,
+      "orders": [
+        "order19611",
+        "order19612",
+        "order19613",
+        "order19614",
+        "order19615"
+      ],
+      "audits": {
+        "source_locality": "passed; current legal pool only",
+        "budget": "passed",
+        "prefix": "passed",
+        "checkpoint_reload": "passed"
+      },
+      "native_reproduction": false,
+      "eligibility": "eligible as mechanism-adapted coreset reference",
+      "metadata_note": null
+    },
+    {
+      "method": "medoid",
+      "card_file": "medoid_native_card.json",
+      "category": "mechanism-adapted",
+      "strict_status": "eligible",
+      "strict_reasons": [],
+      "paper": "Medoid coreset reference",
+      "paper_year": null,
+      "paper_venue": "algorithmic reference",
+      "upstream": null,
+      "mechanism": "medoid coreset selection in the feature/text space",
+      "adaptation": "TAG text and fixed cumulative 5% stream",
+      "access": "current legal pool for medoid selection; no historical raw constructor access",
+      "memory": "real-node medoid coreset selected from joint feature/text space",
+      "student": "canonical scratch GCN/MiniLM/bidirectional InfoNCE",
+      "student_seeds": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "construction_seed": 270927,
+      "orders": [
+        "order19611",
+        "order19612",
+        "order19613 partial",
+        "order19614 cora partial"
+      ],
+      "audits": {
+        "source_locality": "passed; current legal pool only",
+        "budget": "passed",
+        "prefix": "passed",
+        "checkpoint_reload": "passed"
+      },
+      "native_reproduction": false,
+      "eligibility": "eligible for covered orders; order19613/19614 coverage is partial",
+      "metadata_note": null
+    },
+    {
+      "method": "PUMA-inspired TAG adaptation",
+      "card_file": "puma_adapter_card.json",
+      "category": "mechanism-adapted",
+      "strict_status": "eligible",
+      "strict_reasons": [],
+      "paper": "PUMA: Efficient Continual Graph Learning with Graph Condensation",
+      "paper_year": 2023,
+      "paper_venue": "arXiv:2312.14439",
+      "upstream": "superallen13/PUMA@9e4e87f53db0da6aacad4a0a9d08f1c2970413d0",
+      "mechanism": [
+        "pseudo-labeling",
+        "confidence filtering",
+        "one-time normalized propagation",
+        "edge-free memory",
+        "scratch retraining per stage"
+      ],
+      "adaptation": [
+        "GraphCLIP Cora/Citeseer instead of official PUMA data",
+        "frozen MiniLM plus TAG feature fusion",
+        "InfoNCE GCN Student instead of PUMA classifier",
+        "current-delta teacher/candidate split",
+        "cumulative 5% memory budget"
+      ],
+      "access": "current delta plus previous synthetic parent only; no historical raw graph/text/edge access",
+      "memory": "edge-free synthetic rows with TAG text; self-loops only at Student evaluation",
+      "student": "canonical two-layer GCN, frozen MiniLM, bidirectional InfoNCE, scratch per stage",
+      "student_seeds": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "construction_seed": 44,
+      "orders": {
+        "datasets": [
+          "cora",
+          "citeseer"
+        ],
+        "orders": [
+          "order19611",
+          "order19612"
+        ],
+        "stages": 3
+      },
+      "audits": {
+        "source_locality": "passed per stage manifest; no historical raw graph/text/edge access",
+        "budget": "passed; cumulative five-percent rows",
+        "prefix": "passed by stage manifest",
+        "checkpoint_reload": "passed in formal runner audits"
+      },
+      "native_reproduction": false,
+      "eligibility": "eligible as mechanism-adapted strict continual baseline",
+      "metadata_note": "Official PUMA mechanism is retained; implementation is adapted to the frozen TAG Student and current-delta contract."
+    },
+    {
+      "method": "semantic-recursive",
+      "card_file": "semantic_recursive_card.json",
+      "category": "mechanism-adapted",
+      "strict_status": "conditional",
+      "strict_reasons": [
+        "current-delta locality not explicit"
+      ],
+      "paper": "Semantic-Recursive Graph Condensation",
+      "paper_year": null,
+      "paper_venue": "internal baseline reference",
+      "upstream": null,
+      "mechanism": "recursive semantic append of synthetic memory with class-aware text/topology payloads",
+      "adaptation": "shared TAG protocol and student replace upstream evaluation",
+      "access": "sealed stage artifact and current protocol stream; no test labels",
+      "memory": "sealed recursive synthetic artifact with TAG text",
+      "student": "canonical scratch GCN/MiniLM/bidirectional InfoNCE",
+      "student_seeds": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "construction_seed": 270927,
+      "orders": [
+        "order19611",
+        "order19612"
+      ],
+      "audits": {
+        "source_locality": "passed; sealed artifact and current stream",
+        "budget": "passed",
+        "prefix": "passed",
+        "checkpoint_reload": "passed"
+      },
+      "native_reproduction": false,
+      "eligibility": "eligible only for covered orders",
+      "metadata_note": null
+    },
+    {
+      "method": "SFGC",
+      "card_file": "sfgc_reference_only_card.json",
+      "category": "reference-only",
+      "strict_status": "exclude",
+      "strict_reasons": [
+        "current-delta locality not explicit",
+        "reference-only classification"
+      ],
+      "paper": "Structure-free Graph Condensation: From Large-scale Graphs to Condensed Graph-free Data",
+      "paper_year": 2023,
+      "paper_venue": "NeurIPS 2023",
+      "upstream": "https://github.com/Amanda-Zheng/SFGC",
+      "mechanism": "structure-free graph condensation by trajectory-buffer imitation and feature distillation",
+      "adaptation": null,
+      "access": "repository readable; no test labels used in this verification",
+      "memory": null,
+      "student": null,
+      "student_seeds": null,
+      "construction_seed": null,
+      "orders": null,
+      "audits": {
+        "source_locality": "repository-only",
+        "budget": "not-applicable",
+        "prefix": "not-applicable",
+        "checkpoint_reload": "not-applicable"
+      },
+      "native_reproduction": false,
+      "eligibility": "excluded; reference-only",
+      "metadata_note": null
+    },
+    {
+      "method": "STAD",
+      "card_file": "stad_baseline_card.json",
+      "category": "mechanism-adapted",
+      "strict_status": "supplementary",
+      "strict_reasons": [
+        "current-delta locality not explicit",
+        "card does not declare strict eligibility"
+      ],
+      "paper": "Semi-Supervised Text-Attributed Graph Distillation",
+      "paper_year": 2026,
+      "paper_venue": "KDD 2026",
+      "upstream": "https://github.com/laiyurui/STAD-Semi-Supervised-Text-Attributed-Graph-Distillation",
+      "mechanism": null,
+      "adaptation": [
+        "official STAD components loaded from pinned checkout",
+        "test scoring disabled by AST extraction",
+        "canonical TAG student and protocol"
+      ],
+      "access": null,
+      "memory": "STAD condensed features, adjacency and generated text",
+      "student": "canonical GraphCLIP transfer student; local Qwen text generation",
+      "student_seeds": null,
+      "construction_seed": 9000,
+      "orders": [
+        "cora",
+        "citeseer",
+        "3 stages",
+        "student seeds 100-105"
+      ],
+      "audits": {
+        "source_locality": "protocol/acceptance recorded",
+        "budget": "acceptance rows checked",
+        "prefix": "acceptance recorded",
+        "checkpoint_reload": "independent acceptance passed"
+      },
+      "native_reproduction": false,
+      "eligibility": "reference/adapted table only; supervised/static differences prevent strict ranking",
+      "metadata_note": null
+    },
+    {
+      "method": "TAGSAM",
+      "card_file": "tagsam_baseline_card.json",
+      "category": "mechanism-adapted",
+      "strict_status": "supplementary",
+      "strict_reasons": [
+        "current-delta locality not explicit",
+        "card does not declare strict eligibility"
+      ],
+      "paper": "TAGSAM: Text-Attributed Graph Condensation",
+      "paper_year": null,
+      "paper_venue": "citation metadata pending verification",
+      "upstream": "https://github.com/SundayVHan/TAGSAM",
+      "mechanism": "text-attributed graph condensation with graph/text-aware synthetic memory",
+      "adaptation": [
+        "canonical encoders",
+        "dispersion/concat initialization",
+        "fixed-rate continual blocks",
+        "100 outer steps and 10 inner updates"
+      ],
+      "access": null,
+      "memory": "synthetic node features with self-loop or semantic topology",
+      "student": "canonical two-layer GCN, frozen MiniLM, bidirectional InfoNCE, scratch per stage",
+      "student_seeds": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "construction_seed": [
+        9000,
+        9001,
+        9002
+      ],
+      "orders": [
+        "cora",
+        "citeseer",
+        "order19611",
+        "order19612"
+      ],
+      "audits": {
+        "source_locality": "recorded in manifest",
+        "budget": "recorded in manifest",
+        "prefix": "recorded in construction artifacts",
+        "checkpoint_reload": "independent reload passed for 72 fits per dataset; maximum metric error 0.0"
+      },
+      "native_reproduction": false,
+      "eligibility": "adapted reference table; order metadata is incomplete",
+      "metadata_note": null
+    }
+  ],
+  "rules": {
+    "strict_access": "current delta only; no historical raw constructor access",
+    "strict_student": "same Prompt Student, frozen MiniLM, same seeds and steps",
+    "strict_split": "same selector/report/sealed-test masks",
+    "official_reproduction": "false unless separately verified; current cards are adapted/reference"
+  }
+}

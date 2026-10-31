@@ -1,0 +1,26 @@
+path,status,completed_stages,error,invalid_intervention
+native_epochs/cora_outer5000/results.json,complete,3,,False
+precision_repair/temporal/uq_dm_edgefree_c271006/results.json,failed,1,"RuntimeError('Sinkhorn failed tolerance 0.0001: row=0.00010639429092407227, col=2.2439395680147059e-07')",True
+precision_repair/temporal/uq_dm_edgefree_c271108/results.json,running,0,,True
+precision_repair_v2/temporal/uq_dm_edgefree_c271006/results.json,complete,5,,False
+precision_repair_v2/temporal/uq_dm_edgefree_c271108/results.json,complete,5,,False
+precision_repair_v2/temporal/uq_dm_edgefree_c271109/results.json,complete,5,,False
+tagsam/arxiv_o9101_c271006/outer100_updates10/results.json,complete,3,,False
+tagsam/arxiv_o9101_c271006/outer5000_updates15/results.json,complete,3,,False
+tagsam/arxiv_o9101_c271006/outer500_updates10/results.json,complete,3,,False
+tagsam/bookhis_o9101_c271006/outer100_updates10/results.json,complete,5,,False
+tagsam/bookhis_o9101_c271006/outer5000_updates15/results.json,complete,5,,False
+tagsam/bookhis_o9101_c271006/outer500_updates10/results.json,complete,5,,False
+tagsam/sportsfit_o9101_c271006/outer100_updates10/results.json,complete,5,,False
+tagsam/sportsfit_o9101_c271006/outer5000_updates15/results.json,complete,5,,False
+tagsam/sportsfit_o9101_c271006/outer500_updates10/results.json,complete,5,,False
+teacher_budget2048/native_epochs/cora_outer5000/results.json,complete,3,,False
+temporal/cat_cctp_c271006/results.json,complete,5,,False
+temporal/cat_cctp_c271108/results.json,complete,5,,False
+temporal/cat_cctp_c271109/results.json,complete,5,,False
+temporal/gecc_hard_c271006/results.json,complete,5,,False
+temporal/gecc_hard_c271108/results.json,complete,5,,False
+temporal/gecc_hard_c271109/results.json,complete,5,,False
+temporal/uq_dm_edgefree_c271006/results.json,failed,1,"RuntimeError('Sinkhorn failed tolerance 0.0001: row=0.00010639429092407227, col=2.2439395763740322e-07')",False
+temporal/uq_dm_edgefree_c271108/results.json,complete,5,,False
+temporal/uq_dm_edgefree_c271109/results.json,complete,5,,False

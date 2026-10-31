@@ -1,0 +1,85 @@
+{
+ "dataset": "sportsfit",
+ "n": 173055,
+ "n_pool": 138443,
+ "k": 6922,
+ "rate": 0.05,
+ "student_seeds": [
+  700,
+  701,
+  702,
+  703,
+  704,
+  705
+ ],
+ "confirmation_accessed": true,
+ "access_reason": "one-time test read after method freeze (no X optimisation)",
+ "test_rule": "node_id % 10 == 2",
+ "method": "frozen_v1 constructive (no ASM, no jitter)",
+ "dev": {
+  "macro_f1_mean": 26.366479262060007,
+  "macro_f1_std": 2.31157386420548,
+  "accuracy_mean": 29.45510227666705,
+  "accuracy_std": 4.1731461261417895,
+  "n": 17306,
+  "per_student": [
+   {
+    "macro_f1": 27.549202062842316,
+    "accuracy": 33.54327978735699
+   },
+   {
+    "macro_f1": 23.605107584448177,
+    "accuracy": 23.893447359297355
+   },
+   {
+    "macro_f1": 23.325335134429494,
+    "accuracy": 26.632381832890328
+   },
+   {
+    "macro_f1": 26.57739695259772,
+    "accuracy": 25.574945105743673
+   },
+   {
+    "macro_f1": 27.15244926542451,
+    "accuracy": 33.09834739396741
+   },
+   {
+    "macro_f1": 29.989384572617805,
+    "accuracy": 33.988212180746565
+   }
+  ]
+ },
+ "test": {
+  "macro_f1_mean": 25.45060908653828,
+  "macro_f1_std": 2.4664794479748458,
+  "accuracy_mean": 27.522246619669477,
+  "accuracy_std": 6.780269916296946,
+  "n": 17306,
+  "per_student": [
+   {
+    "macro_f1": 30.22666866294014,
+    "accuracy": 41.89298509187565
+   },
+   {
+    "macro_f1": 24.518905399181662,
+    "accuracy": 26.147001040101696
+   },
+   {
+    "macro_f1": 23.231802699948233,
+    "accuracy": 27.111984282907663
+   },
+   {
+    "macro_f1": 26.879901643494435,
+    "accuracy": 22.957355830347854
+   },
+   {
+    "macro_f1": 23.151728606568806,
+    "accuracy": 26.18167109672946
+   },
+   {
+    "macro_f1": 24.6946475070964,
+    "accuracy": 20.842482376054548
+   }
+  ]
+ }
+}

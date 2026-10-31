@@ -1,0 +1,115 @@
+{
+  "datasets": {
+    "sportsfit": {
+      "generator_url": "https://raw.githubusercontent.com/CurryTang/TSGFM/35668513d6da3d16412074fc0244f53c353d0c10/data/single_graph/sportsfit/gen_data.py",
+      "generator_sha256": "d45c3b95a1ba3eb16dbd87f77a28de13892dee0db3225d53811e0477a811c4bd",
+      "csv_url": "https://drive.usercontent.google.com/download?id=1XyI6TbW9sXU0rIDcQLi0UJTrlKWHuabI&export=download",
+      "csv_fields": [
+        "category",
+        "text",
+        "label",
+        "node_id",
+        "neighbour"
+      ],
+      "csv_candidate_fields": {
+        "time_fields": [],
+        "external_id_fields": []
+      },
+      "csv_reported_total_bytes": "39066444",
+      "inspected_prefix_bytes": 8192,
+      "prefix_sha256": "5a6556a10a2327889615c58b3f89c8d9f035e57aec3d8d29554ebac1e28bc95f",
+      "scope": "CSV header and bounded prefix only; no claim to a full CSV join audit"
+    },
+    "bookhis": {
+      "generator_url": "https://raw.githubusercontent.com/CurryTang/TSGFM/35668513d6da3d16412074fc0244f53c353d0c10/data/single_graph/bookhis/gen_data.py",
+      "generator_sha256": "f5ecad32133dcd6182dca5f0e15744f09813b299f0468be830e6e3f25d8cda2c",
+      "csv_url": "https://drive.usercontent.google.com/download?id=1gpBLHC6dbcpy9Ug_cvaEEzEegnRJ9dsQ&export=download",
+      "csv_fields": [
+        "category",
+        "price",
+        "text",
+        "label",
+        "node_id",
+        "neighbour"
+      ],
+      "csv_candidate_fields": {
+        "time_fields": [],
+        "external_id_fields": []
+      },
+      "csv_reported_total_bytes": "63195007",
+      "inspected_prefix_bytes": 8192,
+      "prefix_sha256": "dc320c608316c9231dafcbc3bbaa4b597c83ccdb0fa04c0ac1cf6308338eda15",
+      "scope": "CSV header and bounded prefix only; no claim to a full CSV join audit"
+    }
+  },
+  "upstream_generator_commit": "35668513d6da3d16412074fc0244f53c353d0c10",
+  "official_review_source": {
+    "url": "https://nijianmo.github.io/amazon/index.html",
+    "page_sha256": "e5e02f467381a130a8951e06aa4461933cdf3a63802e9981464e4a5e98a039cc",
+    "documents_review_timestamp": true,
+    "download_links": [
+      {
+        "label": "Books reviews (51,311,621 reviews) metadata (2,935,525 products)",
+        "links": [
+          {
+            "label": "reviews",
+            "url": "https://forms.gle/UEkkJs69e7Z5A5Ps9"
+          },
+          {
+            "label": "metadata",
+            "url": "https://forms.gle/UEkkJs69e7Z5A5Ps9"
+          }
+        ]
+      },
+      {
+        "label": "Sports and Outdoors reviews (12,980,837 reviews) metadata (962,876 products)",
+        "links": [
+          {
+            "label": "reviews",
+            "url": "https://forms.gle/UEkkJs69e7Z5A5Ps9"
+          },
+          {
+            "label": "metadata",
+            "url": "https://forms.gle/UEkkJs69e7Z5A5Ps9"
+          }
+        ]
+      },
+      {
+        "label": "Books 5-core (27,164,983 reviews) ratings only (51,311,621 ratings)",
+        "links": [
+          {
+            "label": "5-core",
+            "url": "https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Books_5.json.gz"
+          },
+          {
+            "label": "ratings only",
+            "url": "https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Books.csv"
+          }
+        ]
+      },
+      {
+        "label": "Sports and Outdoors 5-core (2,839,940 reviews) ratings only (12,980,837 ratings)",
+        "links": [
+          {
+            "label": "5-core",
+            "url": "https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Sports_and_Outdoors_5.json.gz"
+          },
+          {
+            "label": "ratings only",
+            "url": "https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Sports_and_Outdoors.csv"
+          }
+        ]
+      }
+    ]
+  },
+  "mapping_status": "No verified ASIN-to-node and timestamp join obtained",
+  "exclusions": [
+    "sequential node IDs are not dates",
+    "book-description years are not arrival times",
+    "first observed review time, if recovered, is not necessarily product launch time"
+  ],
+  "audited_at_utc": "2026-10-22T00:22:23.064180+00:00",
+  "script_sha256": "db49902524ff7e81c594ef7bb044ee1599ce6021c1cdd2643a242b2d106ff527",
+  "mode": "public",
+  "purpose": "Chronology feasibility only; no downstream outcomes or paper edits"
+}

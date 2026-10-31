@@ -1,0 +1,17 @@
+{
+  "source": "completed_constructions.csv",
+  "sha256": "bd7ae18dc11f5c7572be44dfab171e96f8b95bcadca0da7528878ff08c3a8cb7",
+  "construction_count": 360,
+  "complete_methods": [
+    "cluster_medoid",
+    "gcond_x_core",
+    "herding_coreset",
+    "kcenter_coreset",
+    "random_coreset",
+    "sfgc_core",
+    "stad_native_local",
+    "tagsam"
+  ],
+  "statistic": "Student mean per memory, then sample SD across nine memories.",
+  "partial_groups_are_final": false
+}

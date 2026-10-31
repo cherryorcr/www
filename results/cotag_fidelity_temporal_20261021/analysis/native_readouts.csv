@@ -1,0 +1,5 @@
+dataset,teacher_budget,split,macro_f1,macro_f1_sd,accuracy,accuracy_sd,source,teacher_f1,teacher_updates
+cora,3_epochs,report_dev,15.553639840604056,7.403290347098857,18.45018450184502,9.92201450903967,native_epochs/cora_outer5000/native_student_diagnostic/results.json,12.25633601921082,3
+cora,3_epochs,sealed_test,15.702401995103807,7.571869113785428,17.22017220172202,8.719217022606289,native_epochs/cora_outer5000/native_student_diagnostic/results.json,14.131656451795099,3
+cora,2048,report_dev,30.15684958341933,8.164864852690743,33.702337023370234,8.137626030515666,teacher_budget2048/native_epochs/cora_outer5000/native_student_diagnostic/results.json,27.761529163217013,2048
+cora,2048,sealed_test,29.3896262244871,6.95618835370435,30.873308733087327,7.327611812352511,teacher_budget2048/native_epochs/cora_outer5000/native_student_diagnostic/results.json,23.204673591926124,2048

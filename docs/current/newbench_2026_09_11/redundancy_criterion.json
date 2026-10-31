@@ -1,0 +1,84 @@
+{
+ "rows": [
+  {
+   "dataset": "wikics",
+   "n_pool": 9361,
+   "k": 468,
+   "T_paircos": 0.5503364205360413,
+   "T_p95": 0.7287478446960449,
+   "X_paircos": 0.779630184173584,
+   "k_over_1000": 0.468,
+   "jitter_effect": -32.85,
+   "jitter_wins": 0
+  },
+  {
+   "dataset": "bookhis",
+   "n_pool": 33241,
+   "k": 1662,
+   "T_paircos": 0.22018666565418243,
+   "T_p95": 0.39348337054252625,
+   "X_paircos": 0.2932158410549164,
+   "k_over_1000": 1.662,
+   "jitter_effect": -1.39,
+   "jitter_wins": 1
+  },
+  {
+   "dataset": "bookchild",
+   "n_pool": 61499,
+   "k": 3074,
+   "T_paircos": 0.20126891136169434,
+   "T_p95": 0.39054328203201294,
+   "X_paircos": 0.35357826948165894,
+   "k_over_1000": 3.074,
+   "jitter_effect": -1.86,
+   "jitter_wins": 0
+  },
+  {
+   "dataset": "sportsfit",
+   "n_pool": 138443,
+   "k": 6922,
+   "T_paircos": 0.691872239112854,
+   "T_p95": 0.8600079417228699,
+   "X_paircos": 0.5899863839149475,
+   "k_over_1000": 6.922,
+   "jitter_effect": 3.63,
+   "jitter_wins": 4
+  },
+  {
+   "dataset": "arxiv",
+   "n_pool": 135473,
+   "k": 6773,
+   "T_paircos": 0.13336925208568573,
+   "T_p95": 0.32948940992355347,
+   "X_paircos": 0.16602692008018494,
+   "k_over_1000": 6.773,
+   "jitter_effect": 1.97,
+   "jitter_wins": 4
+  },
+  {
+   "dataset": "cora",
+   "n_pool": 2166,
+   "k": 108,
+   "T_paircos": 0.20931129157543182,
+   "T_p95": 0.4331723749637604,
+   "X_paircos": 0.29400545358657837,
+   "k_over_1000": 0.108
+  },
+  {
+   "dataset": "citeseer",
+   "n_pool": 2548,
+   "k": 127,
+   "T_paircos": 0.13187825679779053,
+   "T_p95": 0.3539084494113922,
+   "X_paircos": 0.2421051561832428,
+   "k_over_1000": 0.127
+  }
+ ],
+ "best_criterion": {
+  "T_paircos_min": 0.3,
+  "k_min": 500,
+  "accuracy": 0.8,
+  "n_evaluated": 5
+ },
+ "test_accessed": false
+}

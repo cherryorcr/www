@@ -1,0 +1,23 @@
+{
+  "stage": 2,
+  "construction_seconds": 0.023573530954308808,
+  "construction_peak_mb": 150.3193359375,
+  "memory_hash": "be5afb0832ce3160a0e2807d4b55ce96f0f64946f29c2d4b4aea3309cdf5c153",
+  "audit": {
+    "method": "dance_adapter",
+    "seed": 7002,
+    "allocation": {
+      "1": 15,
+      "5": 7,
+      "6": 13
+    },
+    "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+    "source_ids_hash": "5b58bb155e8f9e77eac7c083bf63009da3a2d919153038ac165baa8fd735d370",
+    "historical_raw_reads": 0,
+    "external_labels_used_for_selection": false,
+    "official_reproduction": false,
+    "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+    "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+    "refinement": null
+  }
+}

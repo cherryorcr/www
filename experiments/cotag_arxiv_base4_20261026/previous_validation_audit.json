@@ -1,0 +1,77 @@
+{
+  "note": "Read-only revalidation; original receipts, logs, and results are unchanged.",
+  "rows": [
+    {
+      "job": "arxiv_uq_dm_edgefree_o9101_c271006",
+      "original_status": "failed",
+      "valid": true,
+      "result_sha256": "d121bab3264000acc6f8c30fadaa522d1a8eaeb9c05ea401b7364e678891e159"
+    },
+    {
+      "job": "arxiv_cat_cctp_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "1ca128d4e158583a58a2934eb887251bb07486f61c12258a38825642c3adf440"
+    },
+    {
+      "job": "arxiv_gecc_hard_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "ecf3039c67b69a95dc6f0b8e91900cd7eb6e96281725e59fda2c060b833adfd5"
+    },
+    {
+      "job": "arxiv_random_coreset_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "815b71a470736396d91de75476e4b29ff230401f627093e6dc1afe5c090244ac"
+    },
+    {
+      "job": "arxiv_kcenter_coreset_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "8bbc3cc06ecdce03b271f5986566ec27172adc9eaf33d96da7b957f50a59072f"
+    },
+    {
+      "job": "arxiv_cluster_medoid_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "2f2ea8493e1aac5d8e2ed59826c60f13ca752e849f38b6d8d471a5cb4646501d"
+    },
+    {
+      "job": "arxiv_herding_coreset_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "e5b5eaced0bee0799caaaefab743447953aaf25c803e57a38e3760f11d2e94d0"
+    },
+    {
+      "job": "arxiv_gcond_x_core_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "2eb620b21f659e31685057c9f9f995af7f6305d9d3cb05faa3c310154ff5f981"
+    },
+    {
+      "job": "arxiv_sfgc_core_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "96323ec918cdeb1698d6838390d12e8988c414a8b444743e96244d16670adbb5"
+    },
+    {
+      "job": "arxiv_tagsam_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "b78a21ae81fed3d39710b3eb0fcbf64776d6685d9d4f29947f2ad0f13d4b10b7"
+    },
+    {
+      "job": "arxiv_stad_native_local_o9101_c271006",
+      "original_status": "complete",
+      "valid": true,
+      "result_sha256": "c94a0d89c75d3326d5adb6c487dd4247dc64a8644e761359c89625431f2e28d1"
+    },
+    {
+      "job": "arxiv_uq_dm_edgefree_o9101_c271108",
+      "original_status": "failed",
+      "valid": true,
+      "result_sha256": "2dba4f509af05dd69f3cde6477ae68fb3c0f3d4a64be4faffa40c59b139fbc73"
+    }
+  ]
+}

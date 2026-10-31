@@ -1,0 +1,56 @@
+[
+  {
+    "job": "uq_dm_edgefree_c271006",
+    "returncode": 1,
+    "seconds": 6.690264940261841,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_uq_dm_edgefree_c271006.log"
+  },
+  {
+    "job": "cat_cctp_c271006",
+    "returncode": 1,
+    "seconds": 6.462807893753052,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_cat_cctp_c271006.log"
+  },
+  {
+    "job": "gecc_hard_c271006",
+    "returncode": 1,
+    "seconds": 6.485865116119385,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_gecc_hard_c271006.log"
+  },
+  {
+    "job": "uq_dm_edgefree_c271108",
+    "returncode": 1,
+    "seconds": 6.405350208282471,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_uq_dm_edgefree_c271108.log"
+  },
+  {
+    "job": "cat_cctp_c271108",
+    "returncode": 1,
+    "seconds": 6.499118804931641,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_cat_cctp_c271108.log"
+  },
+  {
+    "job": "gecc_hard_c271108",
+    "returncode": 1,
+    "seconds": 6.36499810218811,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_gecc_hard_c271108.log"
+  },
+  {
+    "job": "uq_dm_edgefree_c271109",
+    "returncode": 1,
+    "seconds": 6.37453293800354,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_uq_dm_edgefree_c271109.log"
+  },
+  {
+    "job": "cat_cctp_c271109",
+    "returncode": 1,
+    "seconds": 6.415645122528076,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_cat_cctp_c271109.log"
+  },
+  {
+    "job": "gecc_hard_c271109",
+    "returncode": 1,
+    "seconds": 6.471501350402832,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_gecc_hard_c271109.log"
+  }
+]

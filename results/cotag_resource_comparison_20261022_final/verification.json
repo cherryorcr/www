@@ -1,0 +1,255 @@
+{
+  "memories": 78,
+  "prefixes": 54,
+  "predictions": 126,
+  "independent_metric_checks": 252,
+  "protocol_matches": 18,
+  "cohort_matches": 122,
+  "statuses": [
+    {
+      "dataset": "arxiv",
+      "arm": "cat_cctp",
+      "seed": 271006,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "cat_cctp",
+      "seed": 271108,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "cat_cctp",
+      "seed": 271109,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "full_history",
+      "seed": 271006,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "full_history",
+      "seed": 271108,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "full_history",
+      "seed": 271109,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "gecc_hard",
+      "seed": 271006,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "gecc_hard",
+      "seed": 271108,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "gecc_hard",
+      "seed": 271109,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "incremental_q",
+      "seed": 271006,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "incremental_q",
+      "seed": 271108,
+      "status": "complete"
+    },
+    {
+      "dataset": "arxiv",
+      "arm": "incremental_q",
+      "seed": 271109,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "cat_cctp",
+      "seed": 271006,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "cat_cctp",
+      "seed": 271108,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "cat_cctp",
+      "seed": 271109,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "full_history",
+      "seed": 271006,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "full_history",
+      "seed": 271108,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "full_history",
+      "seed": 271109,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "gecc_hard",
+      "seed": 271006,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "gecc_hard",
+      "seed": 271108,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "gecc_hard",
+      "seed": 271109,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "incremental_q",
+      "seed": 271006,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "incremental_q",
+      "seed": 271108,
+      "status": "complete"
+    },
+    {
+      "dataset": "sportsfit",
+      "arm": "incremental_q",
+      "seed": 271109,
+      "status": "complete"
+    }
+  ],
+  "source_results": [
+    {
+      "run": "arxiv_cat_cctp_c271006",
+      "sha256": "5e801a9ee7ecb855db4e08df167753fe75ab14fa49ef2c982cb3246204dca221"
+    },
+    {
+      "run": "arxiv_cat_cctp_c271108",
+      "sha256": "d6b1adb1294618c04640cc10304bea3fbb384be9410edb2538262a570a5fb61f"
+    },
+    {
+      "run": "arxiv_cat_cctp_c271109",
+      "sha256": "668fc70d4b32c724d1b4bc2e2d4b04b41ffd4aa44d012b45633f96184d22e2c6"
+    },
+    {
+      "run": "arxiv_full_history_c271006",
+      "sha256": "36f599b4ba45e7451937979d3a6146e322c7a09f748e3c75a9f08e63e97f230b"
+    },
+    {
+      "run": "arxiv_full_history_c271108",
+      "sha256": "55254a155a9682036fd87d1328b3a4cf87e4c186bd7551c3f463de0ac3d8a970"
+    },
+    {
+      "run": "arxiv_full_history_c271109",
+      "sha256": "7c8594adf4d610763c9ad24f4f160df3bb768df6f2258673c3d6a8c4ecc94d8c"
+    },
+    {
+      "run": "arxiv_gecc_hard_c271006",
+      "sha256": "6a24d0d221e32b7d1a74d804f2803a00840b7539f5e695e1550ea5b46ead2b5b"
+    },
+    {
+      "run": "arxiv_gecc_hard_c271108",
+      "sha256": "5af53535a1f7a5d121ebaa3447988ee9e83a3c282c1d75cd44d2df694a75fdaf"
+    },
+    {
+      "run": "arxiv_gecc_hard_c271109",
+      "sha256": "49b69b2447618f9e4d969f7161281bffe51003ede5337bbf35f1db9d374723ce"
+    },
+    {
+      "run": "arxiv_combined_c271006",
+      "sha256": "c44a762de656bf1074872f44e37c6f8acded35e6812ecc8e8630949b584bab5f"
+    },
+    {
+      "run": "arxiv_combined_c271108",
+      "sha256": "0c10d9515aeb36d2149092487c693fdebabaa8603c5154b5733a1991a60cc4ee"
+    },
+    {
+      "run": "arxiv_combined_c271109",
+      "sha256": "b65e129bd82fad4ed6d153a70de131793ab21e186c042a3b0a31f7143d3c539a"
+    },
+    {
+      "run": "sportsfit_cat_cctp_c271006",
+      "sha256": "a6a3c66f9603366ffe05dfa2ca5bb274fac4533290bf9fd72c38b012ee4d6f58"
+    },
+    {
+      "run": "sportsfit_cat_cctp_c271108",
+      "sha256": "ef066059e96eff0fc3d01e3a158e1d469b9da7d60f88ac1bc8b10bfbf1052e77"
+    },
+    {
+      "run": "sportsfit_cat_cctp_c271109",
+      "sha256": "b50ae5d47518aba1232568dd15f83829bf8eee8a5cfcc5c2db1e3151d958ac21"
+    },
+    {
+      "run": "sportsfit_full_history_c271006",
+      "sha256": "b3a7e2d36d088c2719c9ff1127f51e18629749229096f15deb6725ad851b9829"
+    },
+    {
+      "run": "sportsfit_full_history_c271108",
+      "sha256": "8553b7b8d291940b9f2303187b90c5d4232ae351f35f9b16e4d8aa0704de2f61"
+    },
+    {
+      "run": "sportsfit_full_history_c271109",
+      "sha256": "97ee14199eca9278ef0afba5602b35b82af4bffefe03ffe058cc2014861d218f"
+    },
+    {
+      "run": "sportsfit_gecc_hard_c271006",
+      "sha256": "5b4aeae29138d2ad6570b1807f2ff405813b97e55d5196b309f3da210d98776e"
+    },
+    {
+      "run": "sportsfit_gecc_hard_c271108",
+      "sha256": "a3869cb92dc6ecf5223fbd856a4fdb44aaf2a299d1eee6a2e17120fee4df22c2"
+    },
+    {
+      "run": "sportsfit_gecc_hard_c271109",
+      "sha256": "ea78d872c2dcdcaae0dc6b5e627da9f742dea4392b774a3669bce640f8eb099b"
+    },
+    {
+      "run": "sportsfit_combined_c271006",
+      "sha256": "17c7f8398f5f53b25506a5806d8875e708570c252b599c028ed999f61370c0a7"
+    },
+    {
+      "run": "sportsfit_combined_c271108",
+      "sha256": "3137110b24b5b457a3d4eaf4cda6ac5a65b071a482966ff91265dad3029b8af2"
+    },
+    {
+      "run": "sportsfit_combined_c271109",
+      "sha256": "750b6f8aed0a78a01a26e724c818838dd7bd0a76aed681825e98efc4cff94059"
+    }
+  ],
+  "complete_runs": 24,
+  "new_complete_runs": 18,
+  "failed_runs": 0
+}

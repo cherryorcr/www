@@ -1,0 +1,19 @@
+{
+  "generated": "2026-10-02",
+  "card_count": 13,
+  "card_audit": "EXTERNAL_BASELINE_CARD_AUDIT_20261002.md",
+  "summary_rows": 180,
+  "comparison_rows": 42,
+  "adapted_reference_rows": 4,
+  "entries": [
+    {"scope": "external_continual_adapters_20260927_v2", "source_locality": "passed", "budget": "passed", "prefix": "passed", "checkpoint_reload": "passed"},
+    {"scope": "external_continual_order19613_20261001", "source_locality": "passed", "budget": "passed", "prefix": "passed", "checkpoint_reload": "passed"},
+    {"scope": "external_continual_order19614_20261001_cora + 20261002_citeseer", "source_locality": "passed", "budget": "passed", "prefix": "passed", "checkpoint_reload": "passed"},
+    {"scope": "external_continual_order19615_20261002", "source_locality": "passed", "budget": "passed", "prefix": "passed", "checkpoint_reload": "passed", "fit_count_per_dataset": 36, "maximum_metric_error_pp": 0.0},
+    {"scope": "puma_adapter_formal_20261002", "source_locality": "passed", "budget": "passed", "prefix": "passed_by_stage_manifest", "checkpoint_reload": "passed_in_runner_audits"},
+    {"scope": "tagsam_graphclip_comparison_2026_09_16", "source_locality": "recorded", "budget": "passed", "prefix": "recorded", "checkpoint_reload": "passed", "fit_count_per_dataset": 72, "maximum_metric_error_pp": 0.0},
+    {"scope": "external_tag_stad_2026_09_17", "source_locality": "passed", "budget": "passed", "prefix": "passed", "checkpoint_reload": "passed"},
+    {"scope": "GCond/SFGC/GCondenser", "source_locality": "repository_only", "budget": "not_applicable", "prefix": "not_applicable", "checkpoint_reload": "not_applicable"},
+    {"scope": "official_graphclip_report_2026_09_17", "source_locality": "reference_complete_graph", "budget": "not_applicable", "prefix": "not_applicable", "checkpoint_reload": "strict_load_recorded"}
+  ]
+}

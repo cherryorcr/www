@@ -1,0 +1,22 @@
+{
+  "method": "GECC-hard-TAG",
+  "classification": "mechanism-adapted continual baseline",
+  "paper_title": "GECC: Scalable and Structure-free Graph Condensation with Evolving Capabilities",
+  "paper_year": 2026,
+  "paper_venue": "KDD 2026",
+  "paper_url": "https://github.com/Emory-Melody/GECC",
+  "upstream": "rockcor/GECC@d731be00cc3beb7585e8fa7b60ca21a6c3cb4e3f",
+  "result_root": "/home/pc/research/TAG_condensation/results/external_continual_adapters_20260927_v2",
+  "orders": ["order19611", "order19612", "order19613 partial", "order19614 cora partial"],
+  "access": "current delta only; cumulative-raw and fuzzy variants excluded from strict table",
+  "memory": "edge-free synthetic rows with TAG text",
+  "student": "canonical scratch GCN/MiniLM/bidirectional InfoNCE",
+  "adaptation": "hard hop-weight branch, sklearn Lloyd, fixed TAG text attachment",
+  "student_seeds": [150,151,152,153,154,155],
+  "construction_seed": 270927,
+  "source_hashes": {"upstream_commit": "d731be00cc3beb7585e8fa7b60ca21a6c3cb4e3f", "protocol": "65474d2d667fb70925f763a8deae7134f54cd23aa255f0d9588499953d874269"},
+  "teacher": "hard-hop teacher/current-delta candidate statistics",
+  "audits": {"source_locality": "passed; current delta only", "budget": "passed", "prefix": "passed", "checkpoint_reload": "passed"},
+  "native_reproduction": false,
+  "main_table_eligibility": "eligible for covered orders; order19613/19614 coverage is partial"
+}

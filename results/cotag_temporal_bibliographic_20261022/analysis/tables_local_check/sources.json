@@ -1,0 +1,80 @@
+{
+  "files": [
+    {
+      "path": "runs/acm/cat_cctp_c271006/results.json",
+      "sha256": "54b51188701dd5d9455ebbc6371e5cbb8939d203eb9e5ed562c05fab9bbd8589"
+    },
+    {
+      "path": "runs/acm/cat_cctp_c271108/results.json",
+      "sha256": "128d8a26fff114ae17c7cfc2c7b385cf6d7944f7cef05282b36bf08b9d18c8db"
+    },
+    {
+      "path": "runs/acm/cat_cctp_c271109/results.json",
+      "sha256": "6d20c1667c77014282b684ab10704a34c302d17e2fbbdac9d5465fe8557ff0dc"
+    },
+    {
+      "path": "runs/acm/gecc_hard_c271006/results.json",
+      "sha256": "e369d1e100f1858ebd55161e3f21fe62162c66bd8cd5893fed894870679919dc"
+    },
+    {
+      "path": "runs/acm/gecc_hard_c271108/results.json",
+      "sha256": "39c7387824b6d1561ee78971d33c550c530a0f21e39765a23a3fc9d7dee39fbc"
+    },
+    {
+      "path": "runs/acm/gecc_hard_c271109/results.json",
+      "sha256": "c5f1c5f0af7ded14981432734f35c89dbe04002974ee016f7a94d0847022c214"
+    },
+    {
+      "path": "runs/acm/uq_dm_edgefree_c271006/results.json",
+      "sha256": "f6d0595e219f03f50c1baf0a8469823f5286b688d284a77f412156e6c6b86228"
+    },
+    {
+      "path": "runs/acm/uq_dm_edgefree_c271108/results.json",
+      "sha256": "1f62e859c6cd07826d01e11ddd79e375d22b2e2afbcd59ff268bc976dcc5bf26"
+    },
+    {
+      "path": "runs/acm/uq_dm_edgefree_c271109/results.json",
+      "sha256": "d769004197739287059a714c62283eac143c41d6cea6f2cbf878156446366933"
+    },
+    {
+      "path": "runs/dblp/cat_cctp_c271006/results.json",
+      "sha256": "5d0ed167a33b9a29313e7c02577ffa376aa87d21e11a685b50ce69f8f96d6065"
+    },
+    {
+      "path": "runs/dblp/cat_cctp_c271108/results.json",
+      "sha256": "113b694be483d9b819aed15411a080704975125a482bb90f97f74d9de044a601"
+    },
+    {
+      "path": "runs/dblp/cat_cctp_c271109/results.json",
+      "sha256": "dce4f0b3ebcfad7e18af02ce21a1ab2dc12fdb24b3b47136147c2aa45d617cb2"
+    },
+    {
+      "path": "runs/dblp/gecc_hard_c271006/results.json",
+      "sha256": "3a37e52dc74ba9be9e913cf72872c7bde7b6b21102086bb4cb44c4ce527bf81b"
+    },
+    {
+      "path": "runs/dblp/gecc_hard_c271108/results.json",
+      "sha256": "b757a8fd0d7c5e6cf104fbb5cc4ff940d7b50626fd7db8ecb0b7380e6e6144ae"
+    },
+    {
+      "path": "runs/dblp/gecc_hard_c271109/results.json",
+      "sha256": "2743c83424b22663a21b19e3fdb60b3f766274f95c12a114d9833bb3118ba0e6"
+    },
+    {
+      "path": "runs/dblp/uq_dm_edgefree_c271006/results.json",
+      "sha256": "49ddee39871527267eb0491d4223602eb1a636126d14a4cd6e5b5785ac22e093"
+    },
+    {
+      "path": "runs/dblp/uq_dm_edgefree_c271108/results.json",
+      "sha256": "4b1b6c34cac36d41eec89bcb8c3e464d2ef73d827e6f196c1ecbdb9eb8fd0355"
+    },
+    {
+      "path": "runs/dblp/uq_dm_edgefree_c271109/results.json",
+      "sha256": "8248938288f774efea5e5350a8269caa1438ca8887852d8b35b6826a97b654cf"
+    }
+  ],
+  "summary_code_sha256": "bec025d69c3a564ec7e356c6f9720b89fedc0cecf49c17e562461117de82f431",
+  "uncertainty": "Student average within memory, sample SD and unadjusted paired t95% CI over 3 construction seeds. Same fixed chronology and split; not 9 independent constructions.",
+  "stage_mean": "Equal mean of five stage metrics within each construction, then average constructions; not pooled node-level F1.",
+  "resource_scope": "PyTorch allocated/reserved peaks include the resident frozen encoder, exclude CPU archives and untracked CUDA allocations. No matched full-history/static resource control."
+}

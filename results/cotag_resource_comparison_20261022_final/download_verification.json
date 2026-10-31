@@ -1,0 +1,11 @@
+{
+  "manifest_files": 200,
+  "byte_identical_tables": [
+    "evaluation.csv",
+    "paired.csv",
+    "runs.csv",
+    "stages.csv",
+    "summary.csv"
+  ],
+  "verification_identical": true
+}

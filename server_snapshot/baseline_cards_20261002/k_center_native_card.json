@@ -1,0 +1,28 @@
+{
+  "method": "k-center/FPS",
+  "classification": "mechanism-adapted continual baseline",
+  "paper_title": "k-center/Farthest Point Sampling coreset reference",
+  "paper_year": null,
+  "paper_venue": "algorithmic reference",
+  "paper_url": null,
+  "result_roots": [
+    "/home/pc/research/TAG_condensation/results/external_continual_adapters_20260927_v2",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19613_20261001_cora",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19613_20261001_citeseer",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19614_20261001_cora",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19614_20261002_citeseer",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19615_20261002"
+  ],
+  "orders": ["order19611", "order19612", "order19613", "order19614", "order19615"],
+  "access": "current legal pool for farthest-point selection; no historical raw constructor access",
+  "memory": "real-node coreset selected in joint feature/text space",
+  "student": "canonical scratch GCN/MiniLM/bidirectional InfoNCE",
+  "adaptation": "TAG text and fixed cumulative 5% stream",
+  "student_seeds": [150,151,152,153,154,155],
+  "construction_seed": 270927,
+  "source_hashes": {"protocol_cora_order19611": "65474d2d667fb70925f763a8deae7134f54cd23aa255f0d9588499953d874269"},
+  "teacher": "none; farthest-point selection in joint feature/text space",
+  "audits": {"source_locality": "passed; current legal pool only", "budget": "passed", "prefix": "passed", "checkpoint_reload": "passed"},
+  "native_reproduction": false,
+  "main_table_eligibility": "eligible as mechanism-adapted coreset reference"
+}

@@ -1,0 +1,610 @@
+{
+  "passed": true,
+  "completed": 10,
+  "expected": 10,
+  "missing": [],
+  "memory_artifacts_verified": true,
+  "summarizer_sha256": "211d8acbfd3368cd33a35f8c517444c3bda840164ca6cc752f6b382fb076b32d",
+  "sources": [
+    {
+      "dataset": "cora",
+      "arm": "tagsam_native_bounded",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019_repair_v2/cora/tagsam_native_bounded/results.json",
+      "source_sha256": "d5367898a940115843377df73ccc4f579d444dfa3d469e1b94c6b02262c85a83",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/cora_o9101_c271006/results.json",
+      "matched_sha256": "ac0b3fbf99353474b59a5269bde97d1c27fd6ede17912a988b84b0e1d658711c",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "c1f34adeec770c3b3481595b9096986f5c7d81a058aa63cb46a49fef84d57d21",
+          "construction_sha256": "cedf29c6f94693754234baa64df247c5de4e44e17a43350b3def8e7b1772f2ea",
+          "memory_hash": "5ac0a482469f0585448a531d73970462d0fa7a4fd2d15445c1c89a06d3094743",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "3517e1a8912ae189ed4ad3cff103ad78fa3af5f2c0bea4e7e8e86fadf56eb52c",
+          "construction_sha256": "5eb39cb49efcab4fee49553b06c9f460e37226773a96d467fb886a21c4514b14",
+          "memory_hash": "5246f6982e6046af6ad5809a3b56b14c07061e7c2ae1fd22d7c26230d2a6654a",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "cd5e9332d2a2a602fed606a4994bc12583687caff1f8d5f29c3af890b659a062",
+          "construction_sha256": "a66947156be02cc670c84d0a3c95102ddfaa7acb1436bf3a310e792f738e66ed",
+          "memory_hash": "c3aa604e3d74947c4e6f73c4116845ba809778957e75ffb015896a048abb7bd7",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "arm": "stad_native_local",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019_repair_v2/cora/stad_native_local/results.json",
+      "source_sha256": "87654b758e0102b5fdbfe5cd4699b8132211453dc90bcc4e13c7a73dcacc40c1",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/cora_o9101_c271006/results.json",
+      "matched_sha256": "ac0b3fbf99353474b59a5269bde97d1c27fd6ede17912a988b84b0e1d658711c",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "b3bafbee98d95e17a17b8cb7b58f9c350445b9a49dd35a0762ad447039eeaa3d",
+          "construction_sha256": "a901ebb64dbff62f8a293f2b90ce105922042d94ef1b0e40abc286156b8e768f",
+          "memory_hash": "c68536788f1989d53ebe1b083fd5d9c8c13f74cda8af29a1cee518a437bddeb2",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "33b461fc38503ddf0d5e8827a827b764e6d694f71c043465a8d8bfd353c6ba25",
+          "construction_sha256": "177574ee33581cf18c24c3b64f49181435cce27ca7a216816d7ec5958e4a3007",
+          "memory_hash": "ce9ebfe7b7bca1901ce8f7eb9122eda0ed25c3999c759d1b2bd6fdb68b505499",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "068ea3f1a6b15c99d6a0fc21b29dc33cdde5cf30984ec068a7fe37f8166af451",
+          "construction_sha256": "87e49de22afc31e0bcecbaa3cb9565f7bc4338f0533b65f5ce0237d032aba1be",
+          "memory_hash": "8ad29c25bf019f7d6d907673e60e410bf93fa2ab910fb48b06543caf82af5a85",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "arm": "dance_adapter",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019/cora/dance_adapter/results.json",
+      "source_sha256": "139ce1fd0e8c36d981725d3bcd06454b5ddefc422b6ec33bea5f9732aa69923c",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/cora_o9101_c271006/results.json",
+      "matched_sha256": "ac0b3fbf99353474b59a5269bde97d1c27fd6ede17912a988b84b0e1d658711c",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "0ce55d12e17ac0da4250d673e07590d369dbdb9dd9bae9928cc3d20e6bee9fba",
+          "construction_sha256": "f5ab5eb3b757e6b5bf6167349ec1279f63bafb42223fd69736c5f3e3ab2500e9",
+          "memory_hash": "0b7fc51c79508c0c51fd22572e65295cb691b2c783c79030e75cf199b283ce8f",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "298af30e74c549ba3e172b838aaaeb0def3c3d80df805e48427c7290e2509fa4",
+          "construction_sha256": "0e56b0f8e204ce88048514e3d7cf581ab11cc91d650cc0a6069694169107953c",
+          "memory_hash": "08ffa152bd7857e80e43dd0a1b29e624d1ab0204ef4521552d2fb39c73e71514",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "09953624ee7f12b9d51f040b956c72c5165a1b667e8504f099421f6457221ac4",
+          "construction_sha256": "9d2106551590efcb5e560ed4142766ade498cc3aa0670d77b8adbf9745960e12",
+          "memory_hash": "be5afb0832ce3160a0e2807d4b55ce96f0f64946f29c2d4b4aea3309cdf5c153",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "arm": "sr_gm_adapter",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019/cora/sr_gm_adapter/results.json",
+      "source_sha256": "ee7b166d989a313001b3157e740334f7ccbdf7c7b7abf27dbe9d0bd77d73197b",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/cora_o9101_c271006/results.json",
+      "matched_sha256": "ac0b3fbf99353474b59a5269bde97d1c27fd6ede17912a988b84b0e1d658711c",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "f640f45d682a25931608476230c1cf438b0614a27d3c75eb9f5e6250ae2b3ec2",
+          "construction_sha256": "0b2345416bb949dfa954abd2efc09a4660868f498bbfdf87442280b406a60c61",
+          "memory_hash": "c5918f6374b5c53ab55273f80b01f50663dc0ab0dd16990a2c1788bd3e1742e9",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "92deb2829287067d686359a4e16e8c2633fe438ddd74632abb3d95392cf59d39",
+          "construction_sha256": "716d10a858cac8c79d809442dfe64b8df4e766b96c75be86464515d65a4e3fd1",
+          "memory_hash": "254e9d50ac7785087d55b429ddf953f30895640732118c67cc893f052a5a701d",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "692d23ba45b5417deeb382e1f08fa94511ff1351394a7923870a881ec536a1a0",
+          "construction_sha256": "cf2779a8b6afa8da676429ba731cdb1f8a3827cf355fd67fd7f62713d0393081",
+          "memory_hash": "bf3ee173bb6328d78e7c830c1e835d01c64855eb9c53f110ce4fc548632557c9",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "arm": "stad_adapter",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019/cora/stad_adapter/results.json",
+      "source_sha256": "65f64dabdeb5709a8910c138c2825275b4665aa3d62aac8891fc704d70fb514a",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/cora_o9101_c271006/results.json",
+      "matched_sha256": "ac0b3fbf99353474b59a5269bde97d1c27fd6ede17912a988b84b0e1d658711c",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "3530e99ad783de05bd0703a88b2d08446b3720748b5625c50f731963a80ed16e",
+          "construction_sha256": "6d6a1a182eafe43383510dc0000e1dab232506be28fda1a827a08a504adb381b",
+          "memory_hash": "ab745877fe2219178de41def1e6efb601fb23312b4ab9723075a72117c24fc38",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "82677cdac6cc5361e7307724e97b7e4cb8c87b675c6aee73274447f6c2eb5ca6",
+          "construction_sha256": "331ca690b5f12b467da66e53a8c68417de92a678f8878499e564c37706487f5d",
+          "memory_hash": "3c997af668a25244fe2ee04e69b54c25bb20a90552f5b8330cca40c6b09faee5",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "aabae4aa0e0eeba27a2bd53dee0e1ce3c28af42cd394c5b628409fc99e9b54e6",
+          "construction_sha256": "83a9f36d6eda90e3f2ba6c78deb3de6d04f4cca78d37a943b453e4dac5ca515a",
+          "memory_hash": "0f26827e7fa7393355a6ca2f8c9fe32283fb00f2d361c2a4e09e35c5f0d6a0a4",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "arm": "tagsam_native_bounded",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019_repair_v2/citeseer/tagsam_native_bounded/results.json",
+      "source_sha256": "7fa7b2b572d9938bc981596ce5c69c6ef4453439de1bfdb21d7a7a93a19899d0",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/citeseer_o9101_c271006/results.json",
+      "matched_sha256": "4dc4aeb37b9caf1ba27d3b395ae49eb2206d77a584dc27491fac97a1d4f40aef",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "967d14785446ba76c93c769466ee2fc3126d1fc489ccb9b94e834af7e107efb3",
+          "construction_sha256": "21cd5f6663f20ac65a94999c43752c3782b50564d62d18d69b5804f070c8a2ff",
+          "memory_hash": "e8c4a2dfab4edbf108fd87e9e2f3ab2ae9da9992a6bbe732bfa82b187b9db5da",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "2e62a306ab4b70a08f6cf9bed71d5b4be17144859ac1b89d091c99c379241834",
+          "construction_sha256": "0e98688ca91d0249a0f891ef5182623ce8cded5761a4e665df5e209947e95fa2",
+          "memory_hash": "5d5ade3d1c10fbebe810f40cbb77d6a9ca81e7cbd3a3253c2f02367347134a0c",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "4485e01787d3e4daeab239729d734dd89853f84189c4e4226ec11a993df28431",
+          "construction_sha256": "b8ca6e8277eb95cb0b0f207c16bd0bb6e8f45c19b8baf60a41fa95e4a2e25ee8",
+          "memory_hash": "bd790854a47a1f4fe302ac4124e173cff16e0f6b0485db6f21c65d08415a04b7",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "arm": "stad_native_local",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019_repair_v2/citeseer/stad_native_local/results.json",
+      "source_sha256": "e526c781146b2b2890c45975aab4f4c3a184ee0e51c59530757d11e3ddf5e878",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/citeseer_o9101_c271006/results.json",
+      "matched_sha256": "4dc4aeb37b9caf1ba27d3b395ae49eb2206d77a584dc27491fac97a1d4f40aef",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "9883b56c8f10b798ad9df9105e07b51b189f865056d10708dda5e52dbf642b6b",
+          "construction_sha256": "0b7a03feea1087a65d561439219bcadbd42858aeadc3d610bdfcd6181daf7b35",
+          "memory_hash": "51a99cac226f87b49575ce8f5b18ef1d60c537c590e1c6ad014627c9ea69b007",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "d9eecc2a664c208bb9e3b841ce0594d170ecf6319b4c3821290fc9b12269e245",
+          "construction_sha256": "7f69508a30ffecddff635ac56644eeef17f0494e9d384cb328b0d21363be6344",
+          "memory_hash": "4dcbbc247fde36c22ffd78569836d4a992cd018b5e882a831b590eb0a207914f",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "aa45b9a95cdb70508c8bd7ec5d3d3cb1a352808ea9e6fc9a493e8a817acd1f79",
+          "construction_sha256": "409fb42e431aa78d5486cdc8c64659d51edec7610f95db29cb9adcbbf6638b1e",
+          "memory_hash": "3a36db868b77b6dd17780bea1a8730f6aea931118b9524e72c244bf06fbfa658",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "arm": "dance_adapter",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019/citeseer/dance_adapter/results.json",
+      "source_sha256": "9b5300d63ef690b4d82474b5f095026b2982336bcc89784e79542d1b3accca2d",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/citeseer_o9101_c271006/results.json",
+      "matched_sha256": "4dc4aeb37b9caf1ba27d3b395ae49eb2206d77a584dc27491fac97a1d4f40aef",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "7e67584704ccd6580d13d165f8da3a6154b7128fefaadb03d7435178de259803",
+          "construction_sha256": "bb1af5723cd2c3ad10cb2aaf710c27b27031924c7dd73990163460e94dce91dc",
+          "memory_hash": "478e3042354c15831aa8747f6d27ab35ab9fe548c9a8b9183ed0729f8b571d35",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "1f546d01584209fefb536cfe63cf1e94cb71f1c75c030d78f139a3ac245924ad",
+          "construction_sha256": "0fa344e4100019f6ee15b36a1b1900cd12ed0581684c3433b7badbcbfa3e8f7a",
+          "memory_hash": "49b8a1cef960d6adb735d7a3d453d2161f659627c90ffc4824a3e3fb01b5b3f5",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "55bc872215722131687930271ae68425a27778931d801495da5b65ba42674bf0",
+          "construction_sha256": "8bf0eae1d9464888cc248aff3b6297152926dd3aade0fb10c32822a9b2c8717b",
+          "memory_hash": "05630326eb0208d181a0a2633c242e13922eab6d26af4ac070f942e066a40273",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "arm": "sr_gm_adapter",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019/citeseer/sr_gm_adapter/results.json",
+      "source_sha256": "57ee426b75d6406f47522ed33e8e90c986fdd07b7e811d36a79d3fe969a71aec",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/citeseer_o9101_c271006/results.json",
+      "matched_sha256": "4dc4aeb37b9caf1ba27d3b395ae49eb2206d77a584dc27491fac97a1d4f40aef",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "41b3356c870f0a6ad1e5dcf4e86b278730dde3688d3fe22bbb1da580fbbb8da1",
+          "construction_sha256": "4b897d82448fdb1540e66e4998b48106f94a19e2a2fe3dd634e43a21f2bce4e7",
+          "memory_hash": "5149fdc7b3048b25701e012a46b21cc5bc5ab09d2c9269d309a9c4892de10e79",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "20350dda15552f2980a009ebd6463b8f707b9f1b06eaf0124cb0424bb7493b83",
+          "construction_sha256": "ebd0edb5922f35f2d16f1c516e774503c5ee6bc744761f6f13de2a7be0a5d383",
+          "memory_hash": "d0a60b30373bb363c5174584203d03061d778690cbd7e1775197436e715299c3",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "fae6e9aac176049a7ba9ef6639d4346d2e2f63a483816607c72112565db34bfc",
+          "construction_sha256": "be82ae098099a55fc0fef0afb4434aaffec221d29833281da068645c8b0e16b8",
+          "memory_hash": "fe87a43ecc1b8d5e8a60682a32a026ded08625f8dd0d476977d144f4e3404125",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "arm": "stad_adapter",
+      "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019/citeseer/stad_adapter/results.json",
+      "source_sha256": "b2700e290aa289d09a736036ef91022f6ef5ee7585415eaa52b7534b0d4af12d",
+      "matched_protocol_source": "/home/pc/research/TAG_condensation/results/cotag_q_small_9cell_20261019/cells/citeseer_o9101_c271006/results.json",
+      "matched_sha256": "4dc4aeb37b9caf1ba27d3b395ae49eb2206d77a584dc27491fac97a1d4f40aef",
+      "protocol_fields_verified": [
+        "dataset",
+        "groups",
+        "budgets",
+        "stage_raw_rows",
+        "order_seed",
+        "student_seeds",
+        "student_batch",
+        "encoder",
+        "memory_rate",
+        "actual_final_rate",
+        "pool_mask_hash",
+        "report_mask_hash",
+        "test_mask_hash",
+        "stage_id_hashes"
+      ],
+      "means_and_sample_sd_recomputed": true,
+      "artifacts": [
+        {
+          "stage": 0,
+          "block_sha256": "c2bc1d75d792eb37e54e57d1d208b64295ad5615fa13b2d3e9d154ecf28d3858",
+          "construction_sha256": "f6055f3c9adbade890b5ab4e2fbb169a32f7d34956b5b3d17454d33265a7ddd8",
+          "memory_hash": "50a34a3e479cd8885b7a5d564046e3505d8920da08c7e6c5ce5af510440d8fae",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 1,
+          "block_sha256": "3ccf003274b9a2928ec92f04c85ae80018e3284b7f54aa3487b661519b7e1931",
+          "construction_sha256": "6974a36621e07f8166993c632185f161c30ef32acbc904e84ea399109bf80bc6",
+          "memory_hash": "8c8b5385094b6b8fde2a3885b83b1f7e81cbe0093152a5918597779652c08cb7",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        },
+        {
+          "stage": 2,
+          "block_sha256": "81231487f13fb54ce3cdd62684bd9e7d0bcdacb32d408506052a9f1d145e605c",
+          "construction_sha256": "fad050785fe786360c157391e7f973e850bf725901828b9e7bbd5c9eb7e4c654",
+          "memory_hash": "84708d64934a6d85a5d4f2b0646c99a85e720246d9a3fbbbf2cda7c8aa981f95",
+          "checks": {
+            "budget_ok": true,
+            "prefix_ok": true,
+            "finite_ok": true
+          }
+        }
+      ]
+    }
+  ]
+}

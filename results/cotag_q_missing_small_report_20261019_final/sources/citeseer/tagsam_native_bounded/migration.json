@@ -1,0 +1,96 @@
+{
+  "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019/citeseer/tagsam_native_bounded",
+  "source_results_sha256": "8c7497b8a20ab992df94ce24e3e38c42284509c913c7a4ffdf2e113f1e672e0b",
+  "source_protocol": {
+    "name": "cotag-q-missing-small-baselines-20261019-v1",
+    "dataset": "citeseer",
+    "arm": "tagsam_native_bounded",
+    "groups": [
+      [
+        0,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "budgets": [
+      44,
+      84,
+      111
+    ],
+    "stage_raw_rows": [
+      874,
+      801,
+      554
+    ],
+    "class_floor_adjustments": [],
+    "memory_rate": 0.05,
+    "actual_final_rate": 0.04979811574697174,
+    "order_seed": 9101,
+    "construction_seed": 271006,
+    "construction_seed_rule": "271006, native stage offsets",
+    "student_seeds": [
+      150,
+      151,
+      152
+    ],
+    "student_steps": 2048,
+    "student_batch": 24,
+    "student": {
+      "name": "GraphTextPromptStudent",
+      "graph_encoder": "two-layer symmetric-normalized GCN",
+      "text_encoder": "frozen MiniLM embeddings",
+      "classifier_head": "none; prompt cosine only",
+      "pair_loss": "symmetric multi-positive graph-text InfoNCE",
+      "prompt_loss": "cross-entropy over encoded class prompts",
+      "margin_loss": "multiclass prompt margin",
+      "lambda_pair": 0.5,
+      "lambda_prompt": 1.0,
+      "lambda_margin": 0.1,
+      "margin": 0.2,
+      "same_class_rows_are_positive": true
+    },
+    "encoder": "/home/pc/research/TAGSAM/graphclip_native_work/minilm_from_graphclip",
+    "pool_mask_hash": "dc0a6f0b55bc2afed720ad745f1403c8f23d4bcde6f22ee4ca6c8597800d1829",
+    "report_mask_hash": "22bd5c78bc6fd4c3c461a66170fe1ae5024073e2a5b8e64b46423b2d0ada3169",
+    "test_mask_hash": "8867701ef126f654f7c579f6e778d994e4b4777e56f2521da7800a81cf4b0f3f",
+    "stage_id_hashes": [
+      "db7c5c92ac6cf691638bec7b74da89eab8ad3b01853ff3b71d03e8ef502832f1",
+      "3bd22d0c88f856b613c7e9d824ae0906a0435f741b2e8c96a90f1ef3bd431939",
+      "aef6ac5ac501ce09964cea4dd7dcea2f446a75c5ea1056606ef93a9035685d1f"
+    ],
+    "source_hashes": {
+      "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+      "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+      "run_uq_baseline_expansion_20261013.py": "09d6047c53797412a7c7282c2e7801c839086dfb89c7ce53117f6439176b92be",
+      "uq_stad_native_core_20261012.py": "75af643e7a856077a9d56cb910db3bf5846e90ad4b533ac35ef0bd5931f89fc5",
+      "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+      "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+      "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+      "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+      "uq_tagsam_native_selector_20261012.py": "b2e2b28138b22cfa9e387024799a1d992d7db58fe28af2ea9290cc6acf99164d"
+    },
+    "runner_hash": "2ebc9bb4c16205c4032d7268f7c347d676a461de3f3b6491328ba26d98b62bfb",
+    "official_reproduction": false,
+    "access": "current delta only; frozen synthetic prefix; no historical raw reads",
+    "evaluation": "report-dev; additionally historical test mask for common-Student arms",
+    "test_status": "previously inspected dataset masks; not a newly blind sealed confirmation",
+    "method_selection_from_test": false,
+    "rank_with_common_student": true,
+    "dispersion": "sample SD across three Students; one order/construction cell",
+    "stage_evaluation": "every stage",
+    "adaptations": "native GPT2-large PMI selector; bounded 100x10 response; shared MiniLM/Student"
+  },
+  "stage": 0,
+  "memory_hash": "e8c4a2dfab4edbf108fd87e9e2f3ab2ae9da9992a6bbe732bfa82b187b9db5da",
+  "artifact_sha256": "967d14785446ba76c93c769466ee2fc3126d1fc489ccb9b94e834af7e107efb3",
+  "source_audit_sha256": "21cd5f6663f20ac65a94999c43752c3782b50564d62d18d69b5804f070c8a2ff",
+  "reason": "stage zero has no old prefix; updated STAD append returns the same block",
+  "reused_student_metrics": true
+}

@@ -1,0 +1,78 @@
+{
+ "dataset": "cora",
+ "k": 108,
+ "raw_text_len": 988.9949215143121,
+ "results": {
+  "orig_320_64": {
+   "macro_f1": 33.30260359491448,
+   "macro_f1_std": 3.6079010375224754,
+   "accuracy": 39.11439114391144,
+   "fused_len": 323.05555555555554,
+   "example": "Title: Factorial Hidden Markov Models  \nAbstract: One of the bas Title: Speech Recognition with Dynamic Bayesian Networks  \nAbstr Title: Probabilistic Independe",
+   "scores": [
+    32.34801215062294,
+    26.965089968337715,
+    36.996303025427835,
+    36.496752405260416,
+    33.706860424923505
+   ]
+  },
+  "adaptive_300": {
+   "macro_f1": 35.64329556805853,
+   "macro_f1_std": 1.525974862239461,
+   "accuracy": 36.82656826568266,
+   "fused_len": 1319.0185185185185,
+   "example": "Title: Factorial Hidden Markov Models  \nAbstract: One of the basic probabilistic tools used for time series modeling is the hidden Markov model (HMM). In an HMM",
+   "scores": [
+    36.00322320848922,
+    36.75933277790157,
+    37.13203107093544,
+    35.51313841604026,
+    32.80875236692615
+   ]
+  },
+  "adaptive_600": {
+   "macro_f1": 32.75461806467994,
+   "macro_f1_std": 3.1833318532106367,
+   "accuracy": 38.96678966789667,
+   "fused_len": 2563.7685185185187,
+   "example": "Title: Factorial Hidden Markov Models  \nAbstract: One of the basic probabilistic tools used for time series modeling is the hidden Markov model (HMM). In an HMM",
+   "scores": [
+    26.889634722147036,
+    32.08510915118606,
+    34.15431084714587,
+    35.90490455837097,
+    34.73913104454976
+   ]
+  },
+  "sent_cut": {
+   "macro_f1": 32.12649517036921,
+   "macro_f1_std": 2.9029628079894385,
+   "accuracy": 38.966789667896684,
+   "fused_len": 1086.4351851851852,
+   "example": "Title: Factorial Hidden Markov Models  \nAbstract: One of the basic probabilistic tools used for time series modeling is the hidden Markov model (HMM). In an HMM",
+   "scores": [
+    30.22047721989174,
+    28.40158284211768,
+    31.247472819390982,
+    36.53595559687439,
+    34.22698737357125
+   ]
+  },
+  "textfull": {
+   "macro_f1": 27.305299552457534,
+   "macro_f1_std": 1.4200830215463387,
+   "accuracy": 32.103321033210335,
+   "fused_len": 1091.8796296296296,
+   "example": "Title: Factorial Hidden Markov Models  \nAbstract: One of the basic probabilistic tools used for time series modeling is the hidden Markov model (HMM). In an HMM",
+   "scores": [
+    25.657868490442088,
+    27.908897143126048,
+    29.633873921000394,
+    27.27826706326399,
+    26.04759114445513
+   ]
+  }
+ },
+ "test_accessed": false
+}

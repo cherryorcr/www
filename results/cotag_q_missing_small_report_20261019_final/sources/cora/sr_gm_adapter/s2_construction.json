@@ -1,0 +1,53 @@
+{
+  "stage": 2,
+  "construction_seconds": 0.04245881095994264,
+  "construction_peak_mb": 143.5791015625,
+  "memory_hash": "bf3ee173bb6328d78e7c830c1e835d01c64855eb9c53f110ce4fc548632557c9",
+  "audit": {
+    "method": "sr_gm_adapter",
+    "seed": 7002,
+    "allocation": {
+      "1": 15,
+      "5": 7,
+      "6": 13
+    },
+    "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+    "source_ids_hash": "5b58bb155e8f9e77eac7c083bf63009da3a2d919153038ac165baa8fd735d370",
+    "historical_raw_reads": 0,
+    "external_labels_used_for_selection": false,
+    "official_reproduction": false,
+    "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+    "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+    "refinement": {
+      "steps": 3,
+      "active_rows": 35,
+      "projection_space": "shared 128-D latent outputs",
+      "reason": "source X and MiniLM dimensions differ; coordinatewise raw-gradient projection is undefined",
+      "optimized": "X only; fixed real-source text payload",
+      "trajectory": [
+        {
+          "update": 1,
+          "objective": 0.6952138543128967,
+          "gradient_matching": 0.6952112317085266,
+          "damping": 5.240352766122669e-05,
+          "feature_gradient_norm": 0.680568516254425
+        },
+        {
+          "update": 2,
+          "objective": 0.7098636031150818,
+          "gradient_matching": 0.7098475694656372,
+          "damping": 0.00014028303849045187,
+          "feature_gradient_norm": 0.12302997708320618
+        },
+        {
+          "update": 3,
+          "objective": 0.666022539138794,
+          "gradient_matching": 0.6659886837005615,
+          "damping": 0.0002102511061821133,
+          "feature_gradient_norm": 0.08208878338336945
+        }
+      ],
+      "official_reproduction": false
+    }
+  }
+}

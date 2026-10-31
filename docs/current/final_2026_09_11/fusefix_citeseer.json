@@ -1,0 +1,78 @@
+{
+ "dataset": "citeseer",
+ "k": 127,
+ "raw_text_len": 1018.8473312401884,
+ "results": {
+  "orig_320_64": {
+   "macro_f1": 47.59132264929542,
+   "macro_f1_std": 1.4650789588653943,
+   "accuracy": 50.90909090909091,
+   "fused_len": 320.74015748031496,
+   "example": "An Overview of the Multiagent Systems Engineering Methodology .  Design Issues for Mixed-Initiative Agent Systems This paper addr Design Issues for Mixed-Initia",
+   "scores": [
+    45.92685238384084,
+    49.837716805511086,
+    48.67775919283804,
+    46.34272948810806,
+    47.17155537617908
+   ]
+  },
+  "adaptive_300": {
+   "macro_f1": 37.76955814751999,
+   "macro_f1_std": 7.320214610599822,
+   "accuracy": 40.31347962382445,
+   "fused_len": 1307.6535433070867,
+   "example": "An Overview of the Multiagent Systems Engineering Methodology . To solve complex problems, agents work cooperatively with other  agents in heterogeneous environ",
+   "scores": [
+    32.79521881036913,
+    28.585978833314424,
+    49.21925693288821,
+    35.653603299574414,
+    42.59373286145375
+   ]
+  },
+  "adaptive_600": {
+   "macro_f1": 31.404707446178623,
+   "macro_f1_std": 1.7190816397707056,
+   "accuracy": 32.03761755485893,
+   "fused_len": 2589.818897637795,
+   "example": "An Overview of the Multiagent Systems Engineering Methodology . To solve complex problems, agents work cooperatively with other  agents in heterogeneous environ",
+   "scores": [
+    31.77005436470155,
+    29.27982132962306,
+    32.9343033273699,
+    29.549718633226636,
+    33.48963957597196
+   ]
+  },
+  "sent_cut": {
+   "macro_f1": 34.61197103321869,
+   "macro_f1_std": 2.5816031781902633,
+   "accuracy": 36.55172413793103,
+   "fused_len": 1039.724409448819,
+   "example": "An Overview of the Multiagent Systems Engineering Methodology . To solve complex problems, agents work cooperatively with other  agents in heterogeneous environ",
+   "scores": [
+    33.328982667036975,
+    35.09273983276116,
+    35.43923914400951,
+    38.52127610597201,
+    30.67761741631375
+   ]
+  },
+  "textfull": {
+   "macro_f1": 47.85173790550998,
+   "macro_f1_std": 1.9020502728145559,
+   "accuracy": 53.542319749216304,
+   "fused_len": 1070.6220472440946,
+   "example": "An Overview of the Multiagent Systems Engineering Methodology . To solve complex problems, agents work cooperatively with other  agents in heterogeneous environ",
+   "scores": [
+    47.21727266768072,
+    45.29448480502036,
+    49.67171787131372,
+    50.394180075297946,
+    46.68103410823716
+   ]
+  }
+ },
+ "test_accessed": false
+}

@@ -1,0 +1,23 @@
+{
+  "dataset": "acm",
+  "dataset_manifest_sha256": "001dfa47071fac96a0a3b61a71c71f3d2c3aba6c1b732908276f1a2998278a2c",
+  "encoded_data_sha256": "855038b8e0a28b1a75a40968afdfe675010b022032f8d2db03a90fee64e3a341",
+  "nodes": 16928,
+  "dimension": 384,
+  "encoder_path": "/home/pc/research/TAGSAM/graphclip_native_work/minilm_from_graphclip",
+  "encoder_hashes": {
+    "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+    "pytorch_model.bin": "95a4b2a0fd3948ad40795c63fdd461d4b2bcf26840656225441219b1caf9484d",
+    "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+    "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+  },
+  "encoder_code_sha256": "cf7aa5b08f44974ba8c1d08cd71ef70ffd13d1c48a4931576eb235306bfa46b5",
+  "encoding_code_sha256": "e4e82bc9fbc1999f9d71db178d18fa0ba769d47c96f6771b0e8832ff687370e4",
+  "pointwise_frozen": true,
+  "graph_propagation": false,
+  "max_tokens": 256,
+  "training_on_future_or_heldout_nodes": false,
+  "heldout_features": "pointwise CPU features for inference only; masked out of construction text cache"
+}

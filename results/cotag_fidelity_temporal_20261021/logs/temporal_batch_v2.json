@@ -1,0 +1,56 @@
+[
+  {
+    "job": "uq_dm_edgefree_c271006",
+    "returncode": 1,
+    "seconds": 556.9707000255585,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_uq_dm_edgefree_c271006_v2.log"
+  },
+  {
+    "job": "cat_cctp_c271006",
+    "returncode": 0,
+    "seconds": 316.9428904056549,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_cat_cctp_c271006_v2.log"
+  },
+  {
+    "job": "gecc_hard_c271006",
+    "returncode": 0,
+    "seconds": 183.96237802505493,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_gecc_hard_c271006_v2.log"
+  },
+  {
+    "job": "uq_dm_edgefree_c271108",
+    "returncode": 0,
+    "seconds": 1755.6481130123138,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_uq_dm_edgefree_c271108_v2.log"
+  },
+  {
+    "job": "cat_cctp_c271108",
+    "returncode": 0,
+    "seconds": 644.9205412864685,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_cat_cctp_c271108_v2.log"
+  },
+  {
+    "job": "gecc_hard_c271108",
+    "returncode": 0,
+    "seconds": 231.86946058273315,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_gecc_hard_c271108_v2.log"
+  },
+  {
+    "job": "uq_dm_edgefree_c271109",
+    "returncode": 0,
+    "seconds": 1825.291827917099,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_uq_dm_edgefree_c271109_v2.log"
+  },
+  {
+    "job": "cat_cctp_c271109",
+    "returncode": 0,
+    "seconds": 652.0153071880341,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_cat_cctp_c271109_v2.log"
+  },
+  {
+    "job": "gecc_hard_c271109",
+    "returncode": 0,
+    "seconds": 233.77709531784058,
+    "log": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/logs/temporal_gecc_hard_c271109_v2.log"
+  }
+]

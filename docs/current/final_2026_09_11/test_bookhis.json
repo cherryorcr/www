@@ -1,0 +1,85 @@
+{
+ "dataset": "bookhis",
+ "n": 41551,
+ "n_pool": 33241,
+ "k": 1662,
+ "rate": 0.05,
+ "student_seeds": [
+  700,
+  701,
+  702,
+  703,
+  704,
+  705
+ ],
+ "confirmation_accessed": true,
+ "access_reason": "one-time test read after method freeze (no X optimisation)",
+ "test_rule": "node_id % 10 == 2",
+ "method": "frozen_v1 constructive (no ASM, no jitter)",
+ "dev": {
+  "macro_f1_mean": 14.375784074933847,
+  "macro_f1_std": 1.8247661577791392,
+  "accuracy_mean": 21.203369434416363,
+  "accuracy_std": 3.6695994061702484,
+  "n": 4155,
+  "per_student": [
+   {
+    "macro_f1": 12.844374675290446,
+    "accuracy": 18.84476534296029
+   },
+   {
+    "macro_f1": 12.47308410826489,
+    "accuracy": 17.496991576413958
+   },
+   {
+    "macro_f1": 14.64264063535701,
+    "accuracy": 20.89049338146811
+   },
+   {
+    "macro_f1": 17.226852228381613,
+    "accuracy": 25.054151624548737
+   },
+   {
+    "macro_f1": 12.836325390976459,
+    "accuracy": 17.809867629362213
+   },
+   {
+    "macro_f1": 16.231427411332653,
+    "accuracy": 27.123947051744885
+   }
+  ]
+ },
+ "test": {
+  "macro_f1_mean": 16.434043596602958,
+  "macro_f1_std": 0.8715410366412287,
+  "accuracy_mean": 24.376253509827517,
+  "accuracy_std": 2.4463415065631082,
+  "n": 4155,
+  "per_student": [
+   {
+    "macro_f1": 16.983133056847567,
+    "accuracy": 22.719614921780988
+   },
+   {
+    "macro_f1": 17.26849288382417,
+    "accuracy": 28.567990373044527
+   },
+   {
+    "macro_f1": 14.649114115538739,
+    "accuracy": 20.98676293622142
+   },
+   {
+    "macro_f1": 16.238326259977228,
+    "accuracy": 23.104693140794225
+   },
+   {
+    "macro_f1": 17.012910199227484,
+    "accuracy": 25.10228640192539
+   },
+   {
+    "macro_f1": 16.452285064202563,
+    "accuracy": 25.776173285198556
+   }
+  ]
+ }
+}

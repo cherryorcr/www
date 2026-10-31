@@ -1,0 +1,232 @@
+{
+  "protocol": {
+    "name": "cotag-q-missing-small-baselines-20261019-v1",
+    "dataset": "cora",
+    "arm": "stad_adapter",
+    "groups": [
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        5,
+        6,
+        1
+      ]
+    ],
+    "budgets": [
+      43,
+      60,
+      95
+    ],
+    "stage_raw_rows": [
+      858,
+      352,
+      685
+    ],
+    "class_floor_adjustments": [],
+    "memory_rate": 0.05,
+    "actual_final_rate": 0.05013192612137203,
+    "order_seed": 9101,
+    "construction_seed": 7000,
+    "construction_seed_rule": "7000 + stage",
+    "student_seeds": [
+      150,
+      151,
+      152
+    ],
+    "student_steps": 1024,
+    "student_batch": 24,
+    "student": "run_multiscale_asm single-positive legacy",
+    "encoder": "/home/pc/research/TAGSAM/graphclip_native_work/minilm_from_graphclip",
+    "pool_mask_hash": "e77c9f642e2ec7740b4bd232875755691cbbb154b0180ab9fc9884f7ad429923",
+    "report_mask_hash": "82f26d441da76357ff9308bdf8b37f4fdcb024ad77de3cc9d2d536e34404f841",
+    "test_mask_hash": "8d6117a2c8382285baf5a1358a134de8f1cd53c6f12caeaa68fd5bd85ba13214",
+    "stage_id_hashes": [
+      "ead2b7f516b3ac58f95ee130645dd83b368a83f12682ec3cb7d9bc0b01321f35",
+      "c5f8c085bec3db5ad5924737639d73f3707eb9811c47caa833aa7942d60a7c2f",
+      "5b58bb155e8f9e77eac7c083bf63009da3a2d919153038ac165baa8fd735d370"
+    ],
+    "source_hashes": {
+      "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+      "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+      "run_uq_baseline_expansion_20261013.py": "09d6047c53797412a7c7282c2e7801c839086dfb89c7ce53117f6439176b92be",
+      "uq_stad_native_core_20261012.py": "75af643e7a856077a9d56cb910db3bf5846e90ad4b533ac35ef0bd5931f89fc5",
+      "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+      "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+      "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+      "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+      "run_external_large_adapters_20261011.py": "05a648133cb50773d7e71d03317808b45ce42c1ef52b39b860948f66f50cb205"
+    },
+    "runner_hash": "2ebc9bb4c16205c4032d7268f7c347d676a461de3f3b6491328ba26d98b62bfb",
+    "official_reproduction": false,
+    "access": "current delta only; frozen synthetic prefix; no historical raw reads",
+    "evaluation": "report-dev; additionally historical test mask for common-Student arms",
+    "test_status": "previously inspected dataset masks; not a newly blind sealed confirmation",
+    "method_selection_from_test": false,
+    "rank_with_common_student": false,
+    "dispersion": "sample SD across three Students; one order/construction cell",
+    "stage_evaluation": "final only",
+    "adaptations": "legacy inspired constructor and Student; exact shared row quotas"
+  },
+  "rows": [
+    {
+      "arm": "stad_adapter",
+      "stage": 0,
+      "raw_rows": 858,
+      "new_rows": 43,
+      "memory_rows": 43,
+      "scores": null,
+      "score": null,
+      "construction_seconds": 0.10293771093711257,
+      "construction_peak_mb": 167.845703125,
+      "student_seconds": 4.1345017962157726e-05,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "ab745877fe2219178de41def1e6efb601fb23312b4ab9723075a72117c24fc38",
+      "audit": {
+        "method": "stad_adapter",
+        "seed": 7000,
+        "allocation": {
+          "2": 28,
+          "3": 15
+        },
+        "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+        "source_ids_hash": "ead2b7f516b3ac58f95ee130645dd83b368a83f12682ec3cb7d9bc0b01321f35",
+        "historical_raw_reads": 0,
+        "external_labels_used_for_selection": false,
+        "official_reproduction": false,
+        "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+        "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+        "refinement": null
+      }
+    },
+    {
+      "arm": "stad_adapter",
+      "stage": 1,
+      "raw_rows": 352,
+      "new_rows": 17,
+      "memory_rows": 60,
+      "scores": null,
+      "score": null,
+      "construction_seconds": 0.01389940397348255,
+      "construction_peak_mb": 122.49853515625,
+      "student_seconds": 3.628910053521395e-05,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "3c997af668a25244fe2ee04e69b54c25bb20a90552f5b8330cca40c6b09faee5",
+      "audit": {
+        "method": "stad_adapter",
+        "seed": 7001,
+        "allocation": {
+          "0": 10,
+          "4": 7
+        },
+        "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+        "source_ids_hash": "c5f8c085bec3db5ad5924737639d73f3707eb9811c47caa833aa7942d60a7c2f",
+        "historical_raw_reads": 0,
+        "external_labels_used_for_selection": false,
+        "official_reproduction": false,
+        "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+        "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+        "refinement": null
+      }
+    },
+    {
+      "arm": "stad_adapter",
+      "stage": 2,
+      "raw_rows": 685,
+      "new_rows": 35,
+      "memory_rows": 95,
+      "scores": {
+        "report_dev": {
+          "stage": 2,
+          "rows": 95,
+          "per_seed": [
+            {
+              "seed": 150,
+              "macro_f1": 29.91043932986632,
+              "accuracy": 35.79335793357934
+            },
+            {
+              "seed": 151,
+              "macro_f1": 28.020312874603214,
+              "accuracy": 30.627306273062732
+            },
+            {
+              "seed": 152,
+              "macro_f1": 31.601026375462464,
+              "accuracy": 35.42435424354243
+            }
+          ],
+          "macro_f1": 29.843926193310665,
+          "macro_f1_std": 1.7912831411616033,
+          "accuracy": 33.94833948339484,
+          "accuracy_std": 2.8820109505190588
+        }
+      },
+      "score": {
+        "stage": 2,
+        "rows": 95,
+        "per_seed": [
+          {
+            "seed": 150,
+            "macro_f1": 29.91043932986632,
+            "accuracy": 35.79335793357934
+          },
+          {
+            "seed": 151,
+            "macro_f1": 28.020312874603214,
+            "accuracy": 30.627306273062732
+          },
+          {
+            "seed": 152,
+            "macro_f1": 31.601026375462464,
+            "accuracy": 35.42435424354243
+          }
+        ],
+        "macro_f1": 29.843926193310665,
+        "macro_f1_std": 1.7912831411616033,
+        "accuracy": 33.94833948339484,
+        "accuracy_std": 2.8820109505190588
+      },
+      "construction_seconds": 0.02338420902378857,
+      "construction_peak_mb": 156.58740234375,
+      "student_seconds": 6.538179410039447,
+      "checks": {
+        "budget_ok": true,
+        "prefix_ok": true,
+        "finite_ok": true
+      },
+      "memory_hash": "0f26827e7fa7393355a6ca2f8c9fe32283fb00f2d361c2a4e09e35c5f0d6a0a4",
+      "audit": {
+        "method": "stad_adapter",
+        "seed": 7002,
+        "allocation": {
+          "1": 15,
+          "5": 7,
+          "6": 13
+        },
+        "quota_rule": "shared exact ratio_allocation; repairs legacy saturated-class underfill",
+        "source_ids_hash": "5b58bb155e8f9e77eac7c083bf63009da3a2d919153038ac165baa8fd735d370",
+        "historical_raw_reads": 0,
+        "external_labels_used_for_selection": false,
+        "official_reproduction": false,
+        "identity": "inspired reference; legacy Student; excluded from common-Student ranking",
+        "topology": "new-block text kNN degree 4; frozen block-diagonal prefix",
+        "refinement": null
+      }
+    }
+  ],
+  "status": "complete"
+}

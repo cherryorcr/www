@@ -1,0 +1,174 @@
+{
+  "dataset": "acm",
+  "nodes": 16928,
+  "classes": [
+    "databases",
+    "data mining",
+    "computer networks"
+  ],
+  "class_counts": {
+    "data mining": 4894,
+    "computer networks": 3354,
+    "databases": 8680
+  },
+  "boundary_years": [
+    2005,
+    2008,
+    2010,
+    2012,
+    2015
+  ],
+  "deduplicated_across_datasets": 0,
+  "nodes_before_cap": 16928,
+  "abstract_present": 14293,
+  "directed_citations": 66303,
+  "symmetric_edges": 132378,
+  "edge_filter_counts": {
+    "references_outside_retained_nodes": 151150,
+    "forward_year_references_removed": 73,
+    "self_references_removed": 100
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "year_end": 2005,
+      "nodes": 7259,
+      "train_nodes": 5099,
+      "train_class_counts": {
+        "databases": 3107,
+        "computer networks": 992,
+        "data mining": 1000
+      },
+      "split_counts": {
+        "7": 723,
+        "4": 756,
+        "5": 706,
+        "8": 754,
+        "1": 759,
+        "0": 741,
+        "2": 675,
+        "6": 708,
+        "3": 726,
+        "9": 711
+      }
+    },
+    {
+      "stage": 1,
+      "year_end": 2008,
+      "nodes": 3003,
+      "train_nodes": 2088,
+      "train_class_counts": {
+        "data mining": 758,
+        "computer networks": 442,
+        "databases": 888
+      },
+      "split_counts": {
+        "5": 297,
+        "4": 314,
+        "1": 301,
+        "2": 308,
+        "0": 311,
+        "7": 278,
+        "3": 306,
+        "8": 296,
+        "9": 309,
+        "6": 283
+      }
+    },
+    {
+      "stage": 2,
+      "year_end": 2010,
+      "nodes": 2345,
+      "train_nodes": 1624,
+      "train_class_counts": {
+        "data mining": 723,
+        "databases": 613,
+        "computer networks": 288
+      },
+      "split_counts": {
+        "2": 229,
+        "9": 239,
+        "7": 201,
+        "0": 241,
+        "6": 240,
+        "8": 244,
+        "1": 252,
+        "3": 240,
+        "4": 209,
+        "5": 250
+      }
+    },
+    {
+      "stage": 3,
+      "year_end": 2012,
+      "nodes": 1900,
+      "train_nodes": 1311,
+      "train_class_counts": {
+        "data mining": 503,
+        "computer networks": 301,
+        "databases": 507
+      },
+      "split_counts": {
+        "6": 184,
+        "5": 195,
+        "8": 191,
+        "7": 187,
+        "2": 197,
+        "4": 175,
+        "3": 199,
+        "9": 187,
+        "0": 192,
+        "1": 193
+      }
+    },
+    {
+      "stage": 4,
+      "year_end": 2015,
+      "nodes": 2421,
+      "train_nodes": 1726,
+      "train_class_counts": {
+        "computer networks": 384,
+        "databases": 916,
+        "data mining": 426
+      },
+      "split_counts": {
+        "9": 264,
+        "7": 251,
+        "1": 226,
+        "4": 226,
+        "3": 239,
+        "5": 232,
+        "0": 258,
+        "6": 230,
+        "2": 230,
+        "8": 265
+      }
+    }
+  ],
+  "venue_rules": {
+    "databases": [
+      "sigmod",
+      "vldb",
+      "very large data bases",
+      "transactions on database systems"
+    ],
+    "data mining": [
+      "sigkdd",
+      "knowledge discovery and data mining",
+      "transactions on knowledge discovery from data"
+    ],
+    "computer networks": [
+      "sigcomm",
+      "mobicom",
+      "mobile computing and networking",
+      "computer communication review"
+    ]
+  },
+  "source_url": "https://lfs.aminer.cn/lab-datasets/citation/acm.v9.zip",
+  "archive_bytes": 686542584,
+  "archive_sha256": "fc6bb51fb6ef2b0a06e09e0cdc7d12b260cc976a25c31577cf4207ca6749deeb",
+  "preparation_code_sha256": "7b0dffcf9aeb84682b5b4f3e1ad374edf0157623278f4e9a029bcafdbd59af56",
+  "created_at_utc": "2026-10-22T00:41:19.354396+00:00",
+  "records_sha256": "e8a557a47e377fc3e8bb52071dd4c93ac333b58449acc95b5cd0efebc8ce8d2a",
+  "edges_sha256": "5dfa079014832068d873dbe7d64ed45067baf8dc994e51387cf3cb1bd1569096"
+}

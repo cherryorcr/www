@@ -1,0 +1,31 @@
+{
+  "methods": ["semantic_recursive", "CaT-MMD-TAG", "GECC-hard-TAG", "k-center/FPS", "medoid"],
+  "classification": "source-checked mechanism adaptations",
+  "paper_title": "External continual adapter bundle",
+  "paper_year": 2026,
+  "paper_venue": "internal handoff index",
+  "paper_url": null,
+  "result_roots": [
+    "/home/pc/research/TAG_condensation/results/external_continual_adapters_20260927_v2",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19613_20261001_cora",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19613_20261001_citeseer",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19614_20261001_cora",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19614_20261002_citeseer",
+    "/home/pc/research/TAG_condensation/results/external_continual_order19615_20261002"
+  ],
+  "coverage": ["cora", "citeseer", "order19611", "order19612", "order19613", "order19614", "order19615 (CaT/k-center)"],
+  "upstream": {"CaT": "superallen13/CaT-CGL@43d6fcfd7b1754fe53b9f911492d7cb0c113a2eb", "GECC": "rockcor/GECC@d731be00cc3beb7585e8fa7b60ca21a6c3cb4e3f"},
+  "source_access": "current delta passed to constructors; no cumulative raw access by protocol, with offline fixture used for slicing/evaluation",
+  "labels": "current legal pool labels allowed; no test labels",
+  "memory": "CaT/GECC edge-free synthetic rows; k-center/medoid real-node coreset; semantic-recursive sealed artifact",
+  "student": "two-layer GCN, frozen MiniLM/text projection, bidirectional InfoNCE, scratch per stage",
+  "adaptation": ["TAG text attachment", "5% cumulative stream", "shared scratch InfoNCE replaces upstream supervised/distilled student", "GECC hard variant and current-delta restriction"],
+  "seeds": {"construction": [270927], "student": [150, 151, 152, 153, 154, 155]},
+  "construction_seed": 270927,
+  "teacher": "method-specific teacher/statistics; see each method card",
+  "source_hashes": {"protocol_cora_order19611": "65474d2d667fb70925f763a8deae7134f54cd23aa255f0d9588499953d874269", "protocol_order19613_cora": "d9e61d5c617a95ddf2743c7b5d1d222b478b541cd58f5e99b4001318206ff9b5"},
+  "audits": {"source_locality": "protocol records physical fixture limitation", "budget": "results include memory_rows", "prefix": "existing per-stage artifacts", "checkpoint_reload": "independent audit passed for all formal continual roots; order19615 maximum metric error 0.0"},
+  "native_reproduction": false,
+  "main_table": "mechanism-adapted table",
+  "main_table_eligibility": "eligible by method and covered order; see method cards"
+}

@@ -1,0 +1,114 @@
+{
+  "manifest_files": 211,
+  "matching_analysis_tables": 7,
+  "byte_identical_tables": [
+    "evaluation.csv",
+    "paired.csv",
+    "pilot.csv",
+    "runs.csv",
+    "stages.csv",
+    "summary.csv"
+  ],
+  "float32_norm_rounding": [
+    {
+      "dataset": "arxiv",
+      "variant": "combined",
+      "construction_seed": "271108",
+      "stage": "1",
+      "remote": 0.00025939219631254673,
+      "local": 0.0002593921672087163,
+      "absolute_difference": 2.9103830456733704e-11
+    },
+    {
+      "dataset": "arxiv",
+      "variant": "combined",
+      "construction_seed": "271109",
+      "stage": "1",
+      "remote": 0.00026328832609578967,
+      "local": 0.0002632882969919592,
+      "absolute_difference": 2.9103830456733704e-11
+    },
+    {
+      "dataset": "sportsfit",
+      "variant": "cache_offload",
+      "construction_seed": "271006",
+      "stage": "0",
+      "remote": 0.0003863769816234708,
+      "local": 0.00038637701072730124,
+      "absolute_difference": 2.9103830456733704e-11
+    },
+    {
+      "dataset": "sportsfit",
+      "variant": "class_blocks",
+      "construction_seed": "271006",
+      "stage": "0",
+      "remote": 0.00022656130022369325,
+      "local": 0.00022656131477560848,
+      "absolute_difference": 1.4551915228366852e-11
+    },
+    {
+      "dataset": "sportsfit",
+      "variant": "combined",
+      "construction_seed": "271006",
+      "stage": "0",
+      "remote": 0.00028987418045289814,
+      "local": 0.0002898742095567286,
+      "absolute_difference": 2.9103830456733704e-11
+    },
+    {
+      "dataset": "sportsfit",
+      "variant": "combined",
+      "construction_seed": "271108",
+      "stage": "4",
+      "remote": 0.0014971633208915591,
+      "local": 0.001497163437306881,
+      "absolute_difference": 1.1641532182693481e-10
+    }
+  ],
+  "replay_predictions": 6,
+  "replay_metric_checks": 12,
+  "replay_comparisons": [
+    {
+      "variant": "original",
+      "student_seed": 150,
+      "f1_change": 0.0,
+      "accuracy_change": 0.0,
+      "prediction_agreement": 1.0
+    },
+    {
+      "variant": "original",
+      "student_seed": 151,
+      "f1_change": 0.0,
+      "accuracy_change": 0.0,
+      "prediction_agreement": 1.0
+    },
+    {
+      "variant": "original",
+      "student_seed": 152,
+      "f1_change": 0.0,
+      "accuracy_change": 0.0,
+      "prediction_agreement": 1.0
+    },
+    {
+      "variant": "combined",
+      "student_seed": 150,
+      "f1_change": 0.0,
+      "accuracy_change": 0.0,
+      "prediction_agreement": 1.0
+    },
+    {
+      "variant": "combined",
+      "student_seed": 151,
+      "f1_change": 0.0,
+      "accuracy_change": 0.0,
+      "prediction_agreement": 1.0
+    },
+    {
+      "variant": "combined",
+      "student_seed": 152,
+      "f1_change": 0.0,
+      "accuracy_change": 0.0,
+      "prediction_agreement": 1.0
+    }
+  ]
+}

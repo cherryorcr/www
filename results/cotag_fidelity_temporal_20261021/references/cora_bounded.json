@@ -1,0 +1,206 @@
+{
+  "source": "/home/pc/research/TAG_condensation/results/cotag_q_missing_baselines_20261019_repair_v2/cora/tagsam_native_bounded/results.json",
+  "sha256": "d5367898a940115843377df73ccc4f579d444dfa3d469e1b94c6b02262c85a83",
+  "protocol": {
+    "name": "cotag-q-missing-small-baselines-20261019-repair-v2",
+    "dataset": "cora",
+    "arm": "tagsam_native_bounded",
+    "groups": [
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        5,
+        6,
+        1
+      ]
+    ],
+    "budgets": [
+      43,
+      60,
+      95
+    ],
+    "stage_raw_rows": [
+      858,
+      352,
+      685
+    ],
+    "class_floor_adjustments": [],
+    "memory_rate": 0.05,
+    "actual_final_rate": 0.05013192612137203,
+    "order_seed": 9101,
+    "construction_seed": 271006,
+    "construction_seed_rule": "271006, native stage offsets",
+    "student_seeds": [
+      150,
+      151,
+      152
+    ],
+    "student_steps": 2048,
+    "student_batch": 24,
+    "student": {
+      "name": "GraphTextPromptStudent",
+      "graph_encoder": "two-layer symmetric-normalized GCN",
+      "text_encoder": "frozen MiniLM embeddings",
+      "classifier_head": "none; prompt cosine only",
+      "pair_loss": "symmetric multi-positive graph-text InfoNCE",
+      "prompt_loss": "cross-entropy over encoded class prompts",
+      "margin_loss": "multiclass prompt margin",
+      "lambda_pair": 0.5,
+      "lambda_prompt": 1.0,
+      "lambda_margin": 0.1,
+      "margin": 0.2,
+      "same_class_rows_are_positive": true
+    },
+    "encoder": "/home/pc/research/TAGSAM/graphclip_native_work/minilm_from_graphclip",
+    "pool_mask_hash": "e77c9f642e2ec7740b4bd232875755691cbbb154b0180ab9fc9884f7ad429923",
+    "report_mask_hash": "82f26d441da76357ff9308bdf8b37f4fdcb024ad77de3cc9d2d536e34404f841",
+    "test_mask_hash": "8d6117a2c8382285baf5a1358a134de8f1cd53c6f12caeaa68fd5bd85ba13214",
+    "stage_id_hashes": [
+      "ead2b7f516b3ac58f95ee130645dd83b368a83f12682ec3cb7d9bc0b01321f35",
+      "c5f8c085bec3db5ad5924737639d73f3707eb9811c47caa833aa7942d60a7c2f",
+      "5b58bb155e8f9e77eac7c083bf63009da3a2d919153038ac165baa8fd735d370"
+    ],
+    "source_hashes": {
+      "run_unified_q_matrix_20261008.py": "8bf42e7c3153e3346eefe5b9f23a0ffc4c3abd3c45524cb48a19fec714813614",
+      "run_uq_final_confirmation_20261012.py": "ca23d5a268a38a2f19de220850921628ec6c8bde20026dd06f35a54bc05a106a",
+      "run_uq_baseline_expansion_20261013.py": "09d6047c53797412a7c7282c2e7801c839086dfb89c7ce53117f6439176b92be",
+      "uq_stad_native_core_20261012.py": "4c998b331a15bee441817b52d8381f2d138a94760ab2620f9862c21a009562e1",
+      "graphtext_prompt_student.py": "f5ffc8d3c380aeacecfbaaa02ba53d4de331831f7011f552b7192c717e47dd27",
+      "external_continual_mechanisms.py": "a33c8d5c097401da15a62ddc9893bb80354d2fb606d75140d219f705b8c36779",
+      "run_unified_q_large_smoke_20261007.py": "7645d56c3fa4da2bbf6a02d37a74be4dbc0c64e701d250a514300c28c825e924",
+      "run_unified_q_revision_20261007.py": "f3d3bfff75779825c7a58ba9a2d65cad4fc348e99530c3744bcfc8a286570256",
+      "uq_tagsam_native_selector_20261012.py": "b2e2b28138b22cfa9e387024799a1d992d7db58fe28af2ea9290cc6acf99164d"
+    },
+    "runner_hash": "09c937c23f1da18fa76c52fdc2112b12fe352b4712e2721fa018b90be494fc51",
+    "official_reproduction": false,
+    "access": "current delta only; frozen synthetic prefix; no historical raw reads",
+    "evaluation": "report-dev; additionally historical test mask for common-Student arms",
+    "test_status": "previously inspected dataset masks; not a newly blind sealed confirmation",
+    "method_selection_from_test": false,
+    "rank_with_common_student": true,
+    "dispersion": "sample SD across three Students; one order/construction cell",
+    "stage_evaluation": "every stage",
+    "compatibility_repairs": {
+      "stad_module": "explicit tools source; avoids frozen module name shadowing",
+      "tagsam_prefix": {
+        "target": "/home/pc/research/TAG_condensation/code/v2_llm_fusion/run_gate1_continual.py",
+        "rule": "missing shrink_by_mass is identity only when keep equals the full old prefix",
+        "shrinking_allowed": false,
+        "frozen_source_modified": false
+      }
+    },
+    "adaptations": "native GPT2-large PMI selector; bounded 100x10 response; shared MiniLM/Student"
+  },
+  "comparator": "/home/pc/research/TAG_condensation/results/cotag_fidelity_temporal_20261021/native_epochs/cora_outer5000/results.json",
+  "equality_checked": [
+    "groups",
+    "budgets",
+    "stage_id_hashes",
+    "pool_mask_hash",
+    "report_mask_hash",
+    "test_mask_hash",
+    "student_seeds",
+    "student_steps",
+    "student_batch",
+    "order_seed",
+    "construction_seed"
+  ],
+  "rows": [
+    {
+      "arm": "tagsam_native_bounded",
+      "stage": 2,
+      "scores": {
+        "report_dev": {
+          "split": "report_dev",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 271,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 57.893815027855524,
+              "accuracy": 66.78966789667896,
+              "old_f1": 53.963396835898735,
+              "new_f1": 63.13437261713124
+            },
+            {
+              "seed": 151,
+              "final_f1": 61.233236701766614,
+              "accuracy": 69.00369003690037,
+              "old_f1": 57.463042276872066,
+              "new_f1": 66.26016260162602
+            },
+            {
+              "seed": 152,
+              "final_f1": 66.38187050957762,
+              "accuracy": 70.11070110701108,
+              "old_f1": 66.09397537987314,
+              "new_f1": 66.76573068251692
+            }
+          ],
+          "final_f1": 61.836307413066585,
+          "final_f1_std": 4.276042817526391,
+          "accuracy": 68.63468634686348,
+          "accuracy_std": 1.6909873413121246,
+          "old_f1": 59.17347149754798,
+          "old_f1_std": 6.243549474624957,
+          "new_f1": 65.38675530042472,
+          "new_f1_std": 1.9669317693057369
+        },
+        "sealed_test": {
+          "split": "sealed_test",
+          "student_steps": 2048,
+          "student_batch": 24,
+          "student_seeds": [
+            150,
+            151,
+            152
+          ],
+          "eval_rows": 271,
+          "per_student": [
+            {
+              "seed": 150,
+              "final_f1": 56.83632618673096,
+              "accuracy": 65.68265682656826,
+              "old_f1": 53.45366229019382,
+              "new_f1": 61.34654471544715
+            },
+            {
+              "seed": 151,
+              "final_f1": 62.258241824264005,
+              "accuracy": 68.63468634686348,
+              "old_f1": 56.82655907551305,
+              "new_f1": 69.50048548926529
+            },
+            {
+              "seed": 152,
+              "final_f1": 62.554573944825854,
+              "accuracy": 67.52767527675276,
+              "old_f1": 63.89358132652216,
+              "new_f1": 60.769230769230774
+            }
+          ],
+          "final_f1": 60.549713985273605,
+          "final_f1_std": 3.219299595904866,
+          "accuracy": 67.28167281672818,
+          "accuracy_std": 1.4913106584233917,
+          "old_f1": 58.05793423074301,
+          "old_f1_std": 5.32777542234664,
+          "new_f1": 63.872086991314404,
+          "new_f1_std": 4.882875698492211
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "invalid_precision_intervention",
+  "reason": "Wrapper converted inputs to float64, but the frozen inner function coerced scores back to float32. These results do not test float64 arithmetic.",
+  "action": "Exclude from numerical-repair comparisons; preserve results and logs.",
+  "processes": [
+    {
+      "pid": 406759,
+      "command": "/home/pc/miniconda3/envs/tagsam/bin/python -u /home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/batch.py --track precision --gpu 1 --attempt v1 ",
+      "signal": "SIGTERM"
+    },
+    {
+      "pid": 407843,
+      "command": "/home/pc/miniconda3/envs/tagsam/bin/python -u /home/pc/research/TAG_condensation/experiments/cotag_fidelity_temporal_20261021/run_temporal_precise.py --seed 271108 ",
+      "signal": "SIGTERM"
+    }
+  ]
+}

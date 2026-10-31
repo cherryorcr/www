@@ -1,0 +1,40 @@
+%!TEX root = paper.tex
+
+%--------------- TODO Commands --------------
+\newcommand{\todoc}[2]{{\textcolor{#1}{\textbf{#2}}}}
+\newcommand{\wxfgreen}[1]{\textcolor[HTML]{007806}{#1}}
+\newcommand{\todored}[1]{{\todoc{red}{\textbf{[[#1]]}}}}
+\newcommand{\todogreen}[1]{\todoc{green}{\textbf{[[#1]]}}}
+\newcommand{\todoblue}[1]{\todoc{blue}{\textbf{[[#1]]}}}
+\newcommand{\todoorange}[1]{\todoc{orange}{\textbf{[[#1]]}}}
+\newcommand{\todobrown}[1]{\todoc{brown}{\textbf{[[#1]]}}}
+\newcommand{\todogray}[1]{\todoc{gray}{\textbf{[[#1]]}}}
+\newcommand{\todopink}[1]{\todoc{pink}{\textbf{[[#1]]}}}
+\newcommand{\todopurple}[1]{\todoc{purple}{\textbf{[[#1]]}}}
+\newcommand{\todo}[1]{\todored{TODO: #1}}
+\newcommand{\TODO}[1]{\todored{TODO: #1}}
+\newcommand{\update}[1]{\todopurple{#1}}
+
+\newcommand{\xrightarrowpad}[2][4pt]{%
+  \xrightarrow{\hspace{#1}#2\hspace{#1}}%
+}
+
+%% To disable colored comments, just uncomment this line: 
+%\renewcommand{\todoc}[2]{\relax}
+
+%----------- Comment command for each person ------------
+\newcommand{\xf}[1]{\wxfgreen{#1}}
+
+% \newcommand{\eg}[0]{\textit{e.g.}}
+% \newcommand{\ie}[0]{\textit{i.e.}}
+\newcommand{\eg}[0]{e.g.}
+\newcommand{\ie}[0]{i.e.}
+
+\newcounter{finding}
+\newcommand{\finding}[1]{\refstepcounter{finding}
+    \vspace{0.5mm}
+    \begin{mdframed}[linecolor=gray,roundcorner=12pt,backgroundcolor=gray!15,linewidth=3pt,innerleftmargin=2pt, leftmargin=0cm,rightmargin=0cm,topline=false,bottomline=false,rightline = false]
+    \textbf{Finding \arabic{finding}:} #1
+    \end{mdframed}
+    \vspace{0.5mm}
+}

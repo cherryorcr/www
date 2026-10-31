@@ -1,0 +1,33 @@
+\begin{table*}[t]
+\centering
+\caption{Node classification with adapted baselines and a common student. Entries are Macro-F1 / Accuracy in percent, reported as mean $\pm$ SD across nine memories from three class orders and three construction seeds. Each memory averages three student seeds. ArXiv uses the three-stage class schedule (13/14/13), while the other datasets follow the schedules in \autoref{tab:datasets}. Bold and underlined F1 means are the best and second best available results.}
+\label{tab:main_comparison}
+\label{tab:matched_main}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+Method & ArXiv & SportsFit & BookHis & Cora & Citeseer\\
+\midrule
+\multicolumn{6}{c}{\emph{Continual graph condensation}}\\
+CaT & 34.98$\pm$1.79 / 60.41$\pm$2.64 & 74.50$\pm$2.14 / 85.56$\pm$1.22 & 29.16$\pm$1.05 / 79.23$\pm$0.59 & \underline{85.71}$\pm$1.25 / 86.88$\pm$1.07 & \textbf{70.81}$\pm$1.81 / 76.25$\pm$1.20\\
+GECC & \underline{52.68}$\pm$0.45 / 70.94$\pm$0.49 & \textbf{80.57}$\pm$1.16 / 89.01$\pm$0.37 & \underline{45.34}$\pm$0.74 / 81.26$\pm$0.30 & 85.40$\pm$0.83 / 86.28$\pm$0.55 & 69.80$\pm$1.41 / 74.40$\pm$0.80\\
+\midrule
+\multicolumn{6}{c}{\emph{Selection of real nodes}}\\
+Random & 47.72$\pm$0.56 / 69.39$\pm$0.30 & 77.61$\pm$1.13 / 87.10$\pm$0.79 & 34.92$\pm$2.12 / 79.96$\pm$0.23 & 77.75$\pm$2.04 / 80.31$\pm$1.37 & 67.21$\pm$3.27 / 73.12$\pm$1.53\\
+K-center & 30.84$\pm$1.50 / 59.24$\pm$1.26 & 63.10$\pm$2.30 / 78.90$\pm$1.22 & 24.20$\pm$1.41 / 75.16$\pm$1.35 & 68.04$\pm$2.79 / 70.03$\pm$3.27 & 47.16$\pm$3.70 / 52.79$\pm$3.77\\
+Cluster medoid & 48.30$\pm$0.86 / 69.41$\pm$0.27 & 78.52$\pm$1.03 / 87.49$\pm$0.39 & 36.22$\pm$1.60 / 80.39$\pm$0.56 & 83.42$\pm$1.36 / 84.75$\pm$0.96 & 67.99$\pm$1.49 / 72.91$\pm$0.93\\
+Herding & 49.21$\pm$0.18 / 69.63$\pm$0.34 & 77.22$\pm$2.40 / 86.77$\pm$1.14 & 37.76$\pm$0.68 / 80.94$\pm$0.23 & 81.85$\pm$0.86 / 83.39$\pm$0.83 & 67.76$\pm$0.23 / 74.29$\pm$0.31\\
+\midrule
+\multicolumn{6}{c}{\emph{Adaptations of graph condensation}}\\
+GCond-x & 49.64$\pm$1.28 / 66.71$\pm$0.93 & 67.11$\pm$5.22 / 66.01$\pm$12.29 & 31.46$\pm$7.11 / 72.31$\pm$9.26 & 83.73$\pm$0.72 / 84.97$\pm$0.64 & 68.03$\pm$0.97 / 75.00$\pm$0.83\\
+SFGC & 24.23$\pm$2.17 / 49.10$\pm$3.41 & 46.62$\pm$6.42 / 61.08$\pm$7.61 & 15.29$\pm$4.98 / 35.75$\pm$12.56 & 70.98$\pm$2.48 / 73.28$\pm$2.03 & 58.07$\pm$1.51 / 65.82$\pm$1.85\\
+\midrule
+\multicolumn{6}{c}{\emph{Adaptations of TAG condensation}}\\
+TAGSAM & 39.31$\pm$3.11 / 58.92$\pm$3.54 & 61.01$\pm$13.09 / 75.64$\pm$7.39 & 23.90$\pm$9.06 / 71.45$\pm$8.68 & 64.21$\pm$5.26 / 70.48$\pm$3.82 & 64.30$\pm$2.07 / 71.59$\pm$1.20\\
+STAD & 49.76$\pm$0.64 / 66.07$\pm$1.37 & 69.42$\pm$2.56 / 76.31$\pm$2.54 & 39.23$\pm$1.75 / 76.89$\pm$1.85 & 75.61$\pm$2.97 / 77.12$\pm$3.92 & 67.36$\pm$2.87 / 71.16$\pm$3.27\\
+\midrule
+\multicolumn{6}{c}{\emph{Proposed method}}\\
+\method{} & \textbf{52.91}$\pm$0.73 / 71.15$\pm$0.59 & \underline{80.08}$\pm$0.60 / 85.52$\pm$1.31 & \textbf{48.81}$\pm$1.57 / 81.05$\pm$0.53 & \textbf{86.42}$\pm$0.86 / 87.08$\pm$0.90 & \underline{69.99}$\pm$1.40 / 74.67$\pm$0.89\\
+\bottomrule
+\end{tabular}}
+\end{table*}

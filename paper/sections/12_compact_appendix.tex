@@ -1,0 +1,307 @@
+\begingroup
+\small
+\setlength{\textfloatsep}{5pt plus 1pt minus 1pt}
+\setlength{\floatsep}{4pt plus 1pt minus 1pt}
+\setlength{\intextsep}{3pt plus 1pt minus 1pt}
+\setlength{\abovecaptionskip}{2pt}
+\setlength{\belowcaptionskip}{2pt}
+
+This appendix preserves the protocol information and implementation checks that
+are most useful for reproducing the main comparison. The remaining exploratory
+tables and traces are retained in the repository's full appendix sources.
+
+\subsection{Protocol and baseline fidelity}
+
+The fixed $5\%$ rate is a declared compression operating point rather than a
+development-score maximizer. With the student budget fixed, development
+Macro-F1 for the $1\%$, $5\%$, and $10\%$ rates was 51.09, 52.95, and 51.47
+on the three-stage ArXiv stream, and 79.28, 79.25, and out of memory
+on SportsFit. The $10\%$ SportsFit run therefore does not represent a larger
+usable memory under the same hardware limit. Historical memory is kept fixed
+after each stage. This is the access policy used in the main evaluation.
+
+CaT and GECC retain their distribution-matching and propagated-feature
+clustering cores, respectively, and both attach source text for the common
+student. GCond-x uses the official simplified graph convolution and gradient
+distance objective with the continual proxy adapted to this access protocol.
+SFGC uses its trajectory-matching objective with the reduced teacher and
+construction budgets. TAGSAM retains its selector and response-matching core
+with 100 outer iterations and 10 response minibatch updates per iteration.
+the official configuration uses 5,000 outer iterations and 15 full synthetic
+data epochs per iteration, so the two settings are adaptations rather than
+official reproductions. STAD changes supervision, synthetic topology, and
+continual access. These distinctions define the comparison scope and prevent
+adapted rows from being read as native reproductions.
+
+The ArXiv comparison is repeated below for auditability because it contains
+the larger baseline set used in the main table. It uses the same three-stage
+13/14/13 schedule and is not an additional five-stage test. The $1\%$, $5\%$,
+and $10\%$ rate check is retained as a development diagnostic. The fixed
+$5\%$ rate is the common operating point used in the main tables.
+
+\input{tables/arxiv_three_stage_archive}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Archived condensation-rate check on the development partition.
+The student budget is fixed. OOM denotes an out-of-memory failure.}
+\label{tab:compact_rate}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Dataset & $1\%$ & $5\%$ & $10\%$\\
+\midrule
+ArXiv (3 stages) & 51.09 & 52.95 & 51.47\\
+SportsFit & 79.28 & 79.25 & OOM\\
+BookHis & 46.54 & 47.39 & 45.87\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\caption{Selected protocol and implementation evidence. Development results
+are not substituted for the primary test comparison.}
+\label{tab:compact_evidence}
+\begin{tabular}{@{}p{0.26\textwidth}p{0.69\textwidth}@{}}
+\toprule
+Evidence & Result or interpretation \\
+\midrule
+Five-stage ArXiv development check & CaT 35.32$\pm$2.11, GECC 51.31$\pm$0.74, and \method{} 51.93$\pm$1.06 Macro-F1. The paired difference from GECC is +0.62 points with 95\% interval $[-0.45,1.69]$. \\
+Optional class-block storage & Peak construction allocation changes from 11.537 to 5.252 GiB on ArXiv and from 23.802 to 17.514 GiB on SportsFit. The corresponding F1 changes are +0.021 and $-0.268$ points. \\
+Incremental versus one-call construction & With the optional implementation, peak allocation falls from 8.939 to 5.252 GiB on ArXiv, a 41.25\% reduction, and from 18.851 to 17.514 GiB on SportsFit, a 7.09\% reduction. The comparison is about peak working memory because the total update counts differ. \\
+Update sensitivity & Among 65 completed reduced-objective stage traces, 20 satisfy the practical plateau rule of less than 1\% relative absolute loss change in two consecutive 10-update windows. All five BookHis stages satisfy it in the 80--90 and 90--100 windows of the 100-update runs. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Chronological data and prediction scope}
+
+The chronological ArXiv stream uses publication-year cutoffs 2015, 2016,
+2017, 2018, and 2020. The ACM subset contains 16,928 nodes from databases,
+data mining, and networking, with 11,848 construction nodes and 592 final
+memory items. The DBLP subset contains 57,520 nodes from artificial
+intelligence, computer vision, natural language processing, and machine
+learning, with 40,227 construction nodes and 2,011 final memory items. The
+training-year quantiles are 2005/2008/2010/2012/2015 for ACM and
+2008/2010/2012/2014/2015 for DBLP, and papers from one year remain together.
+Five exact normalized-title overlaps with ACM were removed from DBLP. These
+are curated chronological subsets rather than unchanged official benchmark
+splits.
+
+Each method constructs a new block from the current arrival group and its
+induced edges, retains the historical synthetic prefix, and uses the
+cumulative $5\%$ budget. The complete 30-update objective is retained. The
+chronological runs use float64 Sinkhorn normalization with a 16,384 iteration
+cap, tolerance $10^{-4}$, and float32 output. This numerical repair resolves a
+failed transport solve without adding outer construction updates. Cumulative
+prediction uses all observed test nodes and the graph induced by all arrived
+endpoints. A separate current-arrival diagnostic restricts both queries and
+inference edges to the current group. It is reported only as a scope check.
+
+\subsection{Resource and convergence checks}
+
+The constructor keeps the full source graph in the CPU loader, while the
+logical access rule restricts construction to the current increment and the
+historical memory. Dense assignment states and proxy intermediates dominate
+the working set, so a sparse edge-free operator alone yields only a small
+peak reduction. The optional class-block storage and cache offloading reduce
+construction memory without changing the objective, whereas the principal
+resource benefit remains downstream reuse of the small memory. Student
+training with precomputed text embeddings reduces peak CUDA allocation by
+93.8\% on SportsFit and 89.5\% on BookHis relative to training on all
+observed construction nodes.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{Downstream student training. Values average three seeds over 2,048 updates. Text embeddings are precomputed and the encoder is off the GPU.}
+\label{tab:student_resource_audit}
+\begin{tabular}{cccc}
+\toprule
+Dataset & 5\% Memory & Full raw graph & Reduction\\
+ & MiB / s & MiB / s & Memory / Time\\
+\midrule
+ArXiv & 100.7 / 7.75 & 1614.6 / 63.61 & 93.8\% / 87.8\%\\
+SportsFit & 102.2 / 7.73 & 1656.3 / 66.64 & 93.8\% / 88.4\%\\
+BookHis & 43.1 / 7.42 & 411.2 / 15.11 & 89.5\% / 50.9\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The update-sensitivity diagnostic removes GM because the complete objective
+requires second derivatives and can exceed available GPU memory. It therefore
+describes the reduced objective rather than proving convergence of the full
+method. Increasing the reduced objective from 30 to 60 updates changes F1 by
+$-0.142$ points on ArXiv and $-2.249$ points on BookHis. Increasing from 30 to
+100 changes BookHis F1 by $-1.578$ points. These results support the use of 30
+updates as the fixed main-protocol budget while keeping the plateau analysis
+separate from downstream accuracy selection.
+
+For completeness, the two resource audits below preserve the earlier
+implementation evidence in a compact form. The first compares the dense and
+class-block storage variants. The second compares incremental construction
+with one call over all observed nodes. They measure peak construction
+allocation, not downstream training cost, and their update counts are not
+identical.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Archived construction-memory audits. Entries are peak allocated
+GiB. Class blocks include cache offloading.}
+\label{tab:compact_memory}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Audit & ArXiv & SportsFit & BookHis\\
+\midrule
+Dense storage & 11.537 & 23.802 & --\\
+Class blocks & 5.252 & 17.514 & --\\
+Incremental construction & 5.252 & 17.514 & --\\
+One-call full history & 8.939 & 18.851 & --\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+The corresponding reductions are 54.48\% and 26.42\% for class-block
+storage, and 41.25\% and 7.09\% for incremental construction on ArXiv and
+SportsFit, respectively. The complete resource tables, text controls,
+architecture transfer study, and loss traces remain in the repository's
+archived appendix sources for auditability.
+
+\subsection{Additional archived controls}
+
+The following compact tables retain scope and transfer checks from the earlier
+appendix. They are not used to select the main protocol. ``Current'' evaluation
+restricts both the query nodes and inference edges to the last-stage arrivals.
+cumulative evaluation uses the graph observed up to that stage.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Current-arrival evaluation from the chronological audit. Entries are
+final-stage Macro-F1.}
+\label{tab:compact_current}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Method & ArXiv & ACM & DBLP\\
+\midrule
+CaT & 37.46 & 85.14 & 76.59\\
+GECC & 48.10 & 85.10 & 75.30\\
+\method{} & 49.83 & 85.18 & 73.75\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Mechanism and assignment controls on the archived three-stage ArXiv
+development batch. Cost is peak GiB / seconds.}
+\label{tab:compact_controls}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Control & F1 & Accuracy & Cost\\
+\midrule
+\method{} & 52.96 & 70.64 & --\\
+Fixed $Q$ & 40.20 & 55.80 & --\\
+Without DM & 51.05 & 64.19 & --\\
+Without GM & 53.20 & 70.83 & --\\
+Separate assignment & 53.20 & -- & 15.99/292.5\\
+Shared assignment & 53.24 & -- & 12.08/241.3\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Archived update sensitivity without GM. Entries are Macro-F1. OOM and
+failed denote memory and numerical failures, respectively.}
+\label{tab:compact_steps}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Dataset & 30 updates & 60 updates & 100 updates\\
+\midrule
+ArXiv & 51.702 & 51.809 & failed\\
+SportsFit & 79.980 & OOM & OOM\\
+BookHis & 48.020 & 45.685 & 46.356\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Additional evaluation partition. Entries are Macro-F1 averaged over
+three construction seeds and three student seeds per memory.}
+\label{tab:compact_partition}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Dataset & CaT & GECC & \method{}\\
+\midrule
+ArXiv & 35.70$\pm$0.62 & 51.89$\pm$0.63 & 53.40$\pm$0.13\\
+SportsFit & 75.04$\pm$1.90 & 80.30$\pm$0.55 & 79.56$\pm$0.24\\
+BookHis & 26.87$\pm$0.99 & 42.01$\pm$0.24 & 45.16$\pm$2.03\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Archived architecture transfer on three-stage ArXiv. Entries are
+Macro-F1 / Accuracy on fixed memories.}
+\label{tab:compact_architecture}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrr@{}}
+\toprule
+Method & GCN & GraphSAGE\\
+\midrule
+CaT & 34.98 / 60.41 & 50.24 / 70.78\\
+GECC & 52.68 / 70.94 & 52.60 / 70.62\\
+\method{} & 52.91 / 71.15 & 53.93 / 71.27\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{Archived support and text controls. Support diagnostics average
+recorded stages and seeds. The remaining rows report Macro-F1.}
+\label{tab:compact_text}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Diagnostic or control & ArXiv & SportsFit & BookHis\\
+\midrule
+Hard slot coverage & 1.0000 & 0.9998 & 1.0000\\
+Normalized row entropy & 0.1200 & 0.2385 & 0.0827\\
+Unique text ratio & 1.0000 & 0.9995 & 0.9990\\
+Pairwise text cosine & 0.0947 & 0.3988 & 0.1194\\
+Soft/hard cosine gap & 0.3853 & 0.2037 & 0.4693\\
+\midrule
+Primary text control & 52.96 & 80.02 & 48.53\\
+No text initialization & 53.52 & 77.50 & 46.79\\
+No pair feedback & 53.13 & 80.30 & 48.14\\
+Both off & 53.32 & 77.64 & 47.87\\
+\midrule
+Nearest-1 text & 53.14 & 79.68 & 47.86\\
+Nearest-5 texts & 52.59 & 80.75 & 47.98\\
+Random-1 text & 53.23 & 80.33 & 47.56\\
+Random-5 texts & 53.01 & 80.65 & 46.56\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\endgroup

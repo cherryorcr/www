@@ -1,0 +1,79 @@
+We evaluate four research questions (RQs). RQ1 compares classification performance, RQ2 examines the construction mechanisms, RQ3 tests memory reuse across student architectures and relative to training on all observed data, and RQ4 separates construction costs from downstream training costs.
+
+\subsection{Experimental Setup}
+
+\noindent\textbf{Datasets and continual protocol.}
+\input{tables/table1}
+We evaluate \method{} on ArXiv, SportsFit, and BookHis, covering citation
+and product networks, and include Cora and Citeseer as smaller graphs. The
+standard citation sources are described in~\cite{tag_benchmark,cora,citeseer},
+and the academic network subsets are related to the AMiner collection
+~\cite{arnetminer}. Product-network construction is consistent with the
+textual product relations studied in~\cite{amazon_graph,pin_sage}.
+\autoref{tab:datasets} gives the construction pools and class arrival
+schedules. The main class-incremental comparison uses three ArXiv stages with
+13/14/13 classes. SportsFit and BookHis use five stages with the schedules in
+the table. Cora and Citeseer use three stages because they contain only seven
+and six classes. All methods retain a fixed \(5\%\) of the observed
+construction pool. The same class order determines each method's current
+nodes and memory allocation. The ArXiv comparison in the main table uses this
+three-stage schedule.
+
+We also evaluate five stages ordered by publication year on ArXiv and two
+additional citation graphs, ACM and DBLP. Classes can recur, so this is a
+different protocol from the disjoint class-incremental schedules above.
+Construction uses the current arrival group and its induced edges. Cumulative
+prediction uses all nodes observed up to the current stage and the edges
+between them. ArXiv uses year cutoffs of 2015, 2016, 2017, 2018, and 2020.
+ACM and DBLP use quantiles of training publication years, keeping papers from
+the same year together. The year order is fixed across construction seeds.
+These streams capture publication chronology, with edge availability
+determined by the arrival of both endpoints. The final cumulative results
+and their current-arrival diagnostic are reported separately in
+\autoref{sec:main_results} and the compact appendix. Dataset details and
+numerical settings are given above. Dynamic graph studies provide the broader
+context for this chronological protocol~\cite{evolvegcn,tgn,dynamic_survey}.
+
+\noindent\textbf{Baselines.}
+CaT~\cite{cat} uses distribution matching, and GECC~\cite{gecc} uses
+clustering of propagated features with hard assignments. Both attach source
+text to their numerical memories. Random, K-center, cluster medoid, and
+herding select real nodes with their texts. K-center selection follows the
+core-set view of active learning~\cite{kcenter}, medoid selection follows
+the standard cluster representative formulation~\cite{kmedoids}, and
+herding is a common exemplar rule in incremental learning~\cite{icarl}.
+GCond-x~\cite{gcond} uses the simplified graph convolution model~\cite{sgc}
+and a graph condensation objective, while SFGC~\cite{sfgc} adapts trajectory
+matching to graph-free data. TAGSAM~\cite{tagsam} retains text selection and
+response matching with a reduced construction budget. STAD~\cite{stad} uses
+coarsening, self-training, and a local text generator. The method names in
+our tables denote adaptations to common access, memory, and student
+requirements. Implementation and budget changes are specified in the table
+captions and the surrounding text.
+
+\noindent\textbf{Metrics and training.}
+We report the macro-averaged F1 score (Macro-F1), which weights classes
+equally, and Accuracy, both as percentages. The F1 score is the harmonic
+mean of precision and recall. Main comparisons use the same historical test
+partition, with construction and development nodes excluded. This partition
+has been inspected in earlier experiments and is not a fresh blind test. The
+student uses a two-layer graph convolutional network (GCN)~\cite{gcn}, class
+prompt supervision, and a frozen MiniLM text encoder~\cite{minilm}. It trains
+for 2,048 updates with batch size 24. Architecture transfer replaces the
+graph network with a two-layer GraphSAGE model~\cite{graphsage} while reusing
+the same memories. Construction settings, rate sensitivity, and the
+historical memory policy follow the definitions above.
+
+A class order controls class arrival, a construction seed controls memory
+construction, and a student seed controls downstream training. The target
+design crosses three class orders with three construction seeds, giving nine
+memories per method and dataset. Each memory is evaluated with three student
+seeds. We average its three student scores, then report the mean and sample
+standard deviation (SD) across the nine memory scores. SD is used throughout
+the paper for this sample standard deviation. All cells in
+\autoref{tab:main_comparison} use these nine-memory estimates. Paired 95\%
+confidence intervals use differences between matched memory scores. These
+intervals summarize the observed crossed design, whose orders and seeds are
+shared across runs. Chronological and mechanism experiments use one fixed
+order, three construction seeds, and three student seeds per memory unless
+stated otherwise.

@@ -1,0 +1,102 @@
+% WWW 2027 Research Track submission format: anonymous double-blind review.
+\documentclass[sigconf,anonymous,review]{acmart}
+
+\usepackage{amsmath,bm}
+\usepackage{booktabs,multirow,tabularx,array}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+
+\setcopyright{none}
+\settopmatter{printacmref=false,printfolios=true}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\acmConference[WWW '27]{The Web Conference}{May 10--14, 2027}{Dublin, Ireland}
+\acmYear{2027}
+\acmDOI{}
+\acmISBN{}
+\graphicspath{{figures/}}
+\newcommand{\method}{\textsc{CoTAG-Q}}
+\newcommand{\topomethod}{\textsc{CoTAG-Q-T}}
+\newcommand{\promptstudent}{prompt-based student}
+\newcommand{\ours}{\method}
+
+\input{todo}
+
+% Keep appendix floats from triggering the final-page column balancer.
+\makeatletter
+\@ACM@balancefalse
+\makeatother
+
+\title{CoTAG-Q: Shared Graph and Text Support for Continual Text-Attributed Graph Condensation}
+\author{Anonymous Authors}
+
+\begin{document}
+\begin{abstract}
+Web content networks evolve as documents, products, and relations arrive,
+while earlier training snapshots may no longer be available for model
+updates. We study continual condensation of text-attributed graphs under
+this access constraint. Each stage must convert the current graph into a
+small memory that remains useful after release and contains readable text
+for later encoding. CoTAG-Q learns a class-constrained support matrix that
+coordinates graph-aware feature aggregation with the selection of a real
+text source. A straight-through text interface uses the selected text in
+the forward construction and a soft representation to provide optimization
+feedback. Under a fixed 5\% condensation rate and a common finite student
+budget, the largest matched gain is 3.47 Macro-F1 points, or 7.7\% relative,
+on BookHis, with positive differences in all nine order and construction
+seed combinations. The same memories retain 98.23\% and 103.33\% of the
+full-history Macro-F1 on SportsFit and BookHis, respectively, while reducing
+student peak GPU allocation by 93.8\% and 89.5\% and student training time
+by 88.4\% and 50.9\%. Chronological streams on ArXiv, ACM, and DBLP show
+that the interface also handles recurring classes, although the relative
+benefit depends on the arrival stream and available graph context. The
+results identify when shared graph and text support is useful and separate
+downstream reuse gains from the remaining cost of memory construction.
+\footnote{Data and code can be found at \url{https://anonymous.4open.science/status/www-C343}.}
+\end{abstract}
+
+\ccsdesc[500]{Computing methodologies~Learning latent representations}
+\ccsdesc[300]{Information systems~Data stream mining}
+
+\keywords{Text-attributed graphs, continual learning, graph condensation,
+multimodal memory, differentiable assignment}
+
+\maketitle
+
+\section{Introduction}
+\input{sections/01_introduction}
+
+\section{Problem Setting and Evaluation Protocol}
+\label{sec:protocol}
+\input{sections/02_problem_protocol}
+
+\section{Related Work}
+\input{sections/03_related_baselines}
+
+\section{Learning Graph and Text Support}
+\input{sections/04_method}
+
+\section{Experiments}
+\label{sec:setup}
+\input{sections/05_experimental_setup}
+
+\input{sections/06_results}
+
+\input{sections/07_ablation_discussion}
+
+\section{Discussion and Limitations}
+\input{sections/08_limitations}
+
+\section{Conclusion}
+\input{sections/09_conclusion}
+
+\clearpage
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\appendix
+\section{Selected Reproducibility Evidence}
+\label{app:compact}
+\input{sections/12_compact_appendix}
+
+\end{document}

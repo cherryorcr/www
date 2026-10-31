@@ -1,0 +1,111 @@
+We define the graph stream and its access constraints, specify the condensed
+memory and its allocation, and then describe how memory utility is evaluated.
+
+\subsection{Graph Stream and Historical Access}
+\label{sec:stream_setting}
+
+Citation networks and Web product catalogs receive new documents or products
+in successive batches. Storage costs and data retention policies can limit
+access to earlier records for model updates. We model this situation by
+allowing construction access to each raw batch for a limited period, during
+which useful training information must be retained in a smaller memory.
+
+The stream has $T$ stages. The \emph{current increment} at stage $t$ is
+$\Delta_t=(V_t,X_t,T_t,Y_t,E_t)$. Here $V_t$ contains the $n_t=|V_t|$
+\emph{construction nodes}, $X_t\in\mathbb R^{n_t\times d_x}$ contains their
+$d_x$-dimensional features, $T_t=\{t_i:i\in V_t\}$ contains their texts,
+and $Y_t=\{y_i:i\in V_t\}$ contains their available labels. The edges
+$E_t\subseteq V_t\times V_t$ are induced on these nodes, with adjacency
+$A_t\in\{0,1\}^{n_t\times n_t}$. Neighborhood information used in
+construction comes from the current increment. Held-out nodes are excluded from this input so their
+features and texts cannot serve as construction examples.
+
+Let $\mathcal C_t$ denote the classes present in the current increment, and let
+$\mathcal C_{\leq t}=\bigcup_{\tau=1}^t\mathcal C_\tau$ denote all
+classes observed so far. Our primary evaluation uses class-incremental streams,
+following continual graph condensation studies~\cite{cat,puma}. Their class sets
+are disjoint, and a \emph{class order} determines which classes enter each stage.
+This partition tests retention as the label space expands. We also evaluate
+chronological streams, in which publication year determines arrival and
+classes may recur across stages. \autoref{sec:setup} gives both schedules.
+
+At stage $t$, the constructor receives $\Delta_t$ and the
+\emph{historical memory} $M_{t-1}$. Once the new memory is saved, the raw
+nodes, texts, features, and edges of $\Delta_t$ are unavailable to later
+construction stages. Memory therefore carries earlier information into later
+construction. The goal is to retain training information for predicting all
+observed classes using this compact memory. Downstream graph access is
+specified separately below.
+
+\subsection{Condensed Memory and Fixed Condensation Rate}
+\label{sec:memory_setting}
+
+A \emph{memory item} contains a numerical feature, readable text, and a
+class label. A \emph{memory slot} is the position allocated to an item
+before its feature and text are constructed. The new block is
+$M_t^+=\{(x_j^+,t_j^+,y_j)\}_{j=1}^{m_t}$, where $m_t$ is the number of
+new slots and superscript $+$ denotes the new block. Starting from
+$M_0=\varnothing$, the constructor $\mathcal F_t$ at stage $t$ produces
+\begin{equation}
+ M_t=M_{t-1}\oplus M_t^+,
+ \qquad M_t^+=\mathcal F_t(\Delta_t,M_{t-1}),
+\label{eq:continual_memory}
+\end{equation}
+where $\oplus$ appends the new items. Historical memory remains fixed
+during this operation. This design preserves previously constructed features
+and texts when their sources are unavailable, and separates construction of
+new items from historical revision. We use this fixed access policy
+throughout the experiments.
+
+The \emph{fixed condensation rate} $\rho\in(0,1]$ controls the number of retained
+items relative to the number of observed construction nodes. With
+$N_t=\sum_{\tau=1}^{t}n_\tau$, the nominal capacity is
+$\bar K_t=\operatorname{round}(\rho N_t)$. We reserve at least one new
+slot for each class in $\mathcal C_t$, giving actual capacity
+$K_t=\max\{\bar K_t,|M_{t-1}|+|\mathcal C_t|\}$ and
+$m_t=K_t-|M_{t-1}|$. Remaining slots use largest-remainder rounding,
+subject to the number of available nodes in each class. This prevents
+integer rounding from excluding a class in the current increment. We report the
+effective rate $K_t/N_t$ when this coverage requirement changes the nominal
+rate. Following graph condensation with a fixed rate~\cite{cat}, the allocation
+keeps compression comparable as data accumulates. Memory
+size grows with the stream. The rate constrains the number of retained
+nodes rather than bytes or GPU memory. Its numerical value and
+sensitivity study are given with the experiments.
+
+For \method{}, the \emph{support matrix}
+$Q\in\mathbb R_{\geq0}^{n_t\times m_t}$ links current nodes to new slots.
+Its learnable scores are $Z\in\mathbb R^{n_t\times m_t}$, and
+$R\in\mathbb R^{m_t\times d_x}$ denotes the feature residual added to
+the pooled features. Text $\bar t_i$ denotes the cleaned source string,
+and $e_i\in\mathbb R^{d_e}$ its normalized embedding, where $d_e$ is the
+text encoder's output dimension. \emph{Hard text selection} chooses a
+source string for a slot. A \emph{soft text representation} is a weighted embedding mixture
+used to supply gradients. \emph{Materialization} means saving the final
+features, selected strings, labels, and source identifiers. The main
+memory is \emph{edge-free}, storing feature and text items without edges
+between them while incorporating graph context during construction.
+\autoref{sec:method_interface} explains the
+corresponding computations.
+
+\subsection{Downstream Learning and Evaluation}
+\label{sec:evaluation_protocol}
+
+The \emph{student model} is the downstream predictor trained on condensed
+memory using graph and text pairing and class prompt supervision. A \emph{class prompt} is a
+predefined text description of a label. Prediction at stage $t$ compares a
+node's graph representation
+$h_i^g$ with the projected, normalized prompt representation $p_c$ for
+$c\in\mathcal C_{\leq t}$, selecting the largest cosine similarity. This
+readout with class prompts evaluates whether memory supports graph and language
+alignment~\cite{graphclip}. Construction and training use class labels,
+so the task is supervised classification of observed classes. A
+\emph{proxy model} supplies a training signal during memory construction.
+
+Evaluation is transductive. The student model can use the original graph
+structure and node features at inference, while evaluation labels are
+withheld from construction and training. An \emph{evaluation mask}
+specifies which nodes are scored. Matched comparisons use common text
+processing, encoders, class prompts, memory allocation, class orders,
+student models, and downstream training budgets. The implementation,
+metrics, and repetition statistics are specified in~\autoref{sec:setup}.

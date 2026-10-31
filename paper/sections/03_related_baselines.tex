@@ -1,0 +1,51 @@
+\noindent\textbf{Text-attributed graph learning.}
+TAGs encode node semantics through text and relations through edges. Existing
+benchmarks compare language models, graph neural networks, and their joint
+training~\cite{tag_benchmark}. Common graph encoders include convolution,
+attention, message passing, and inductive neighborhood aggregation
+~\cite{gcn,gat,mpnn,graphsage,gin}. Earlier network representation methods
+use random-walk neighborhoods to obtain compact node features
+~\cite{deepwalk,node2vec}, while text encoders and multimodal
+alignment models provide semantic representations~\cite{bert,sbert,clip}.
+GraphCLIP learns transferable representations by contrasting graphs with text
+summaries~\cite{graphclip}, and graph self-supervision provides related ways
+to improve representation quality~\cite{dgi,graphcl}. Continual adaptation
+coordinates modality updates to mitigate forgetting~\cite{g2lora}. These
+studies focus on learning and adapting models. We study the training data
+retained between updates, constructing compact memories that contain both
+numerical features and real text for subsequent encoding.
+
+\noindent\textbf{Graph condensation.}
+Dataset condensation has used gradient matching, distribution matching, and
+training-trajectory matching to preserve the behavior of a larger training
+set~\cite{dataset_gradient,dataset_distribution,trajectory_matching}.
+Graph condensation extends these ideas to relational data~\cite{gcond,sfgc}
+and has developed benchmarks, inductive node mappings, and open-world
+settings~\cite{gcondenser,mcond,opengc}. Structure can guide feature
+construction even when the resulting training set stores no synthetic edges.
+Our setting additionally requires readable text for every memory item. The
+learned support matrix coordinates the contribution of current nodes to
+numerical features and the selection of a real text source, giving these two
+components a common construction variable.
+
+\noindent\textbf{TAG and multimodal graph condensation.}
+TAGSAM combines subgraph text selection with attribute matching~\cite{tagsam}. STAD combines cluster compression with text generation~\cite{stad}, and TaLK optimizes continuous token embeddings~\cite{talk}. DANCE uses training feedback for dynamic neighborhood and text selection in federated learning~\cite{dance}. SR-GM addresses modality conflicts through gradient decoupling and structural regularization~\cite{srgm}. These methods establish several ways to couple text and graph compression. Our focus is constructing successive memory increments after earlier raw data become unavailable. Within each increment, real text selection receives surrogate gradients through the support used for feature aggregation, while historical memory supplies context for the construction objective.
+
+\noindent\textbf{Continual graph learning and evolving condensation.}
+Continual learning studies how to preserve earlier knowledge while new data
+arrive, using replay, parameter regularization, or distillation
+~\cite{icarl,ewc,lwf,continual_survey}. Dynamic graph models instead update
+representations as nodes, attributes, and edges evolve~\cite{evolvegcn,tgn,
+dynamic_survey}. Class-incremental graph learning also exposes the tension
+between retaining earlier classes and adapting to new ones~\cite{qi2024}.
+In graph condensation, replay methods address historical
+coverage and class representativeness~\cite{dslr}, CaT reduces the imbalance
+between incoming data and replay through condensation and training in memory
+~\cite{cat}, PUMA incorporates unlabeled information and reduces repeated
+propagation and condensation costs~\cite{puma}, and GECC inherits clustering
+states of aggregated features for evolving condensation~\cite{gecc}. These
+approaches motivate a compact state that can persist across updates. We extend
+that interface to paired numerical features and readable text, constructing
+new items from the current increment and historical memory. This addresses
+the additional information that a graph and text learner requires after the
+original increment is released.

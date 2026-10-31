@@ -1,0 +1,103 @@
+{
+  "source": "D:/Aprojects/continue_tag_condensation/results/uq_component_ablations_20261014/report_utc_20261013_201811_267213/pairs.csv",
+  "sha256": "52540801d370cc83127b7df5d9d5b6822ead4d0ab39e4820f372c841ba026472",
+  "filter": {
+    "family": "original_loss",
+    "left": "uq_dm_edgefree",
+    "split": "sealed_test",
+    "metric": "final_f1"
+  },
+  "interpretation": "Post-hoc fixed-mask controls; one order, three construction cells; paired t CIs.",
+  "effects": [
+    {
+      "dataset": "arxiv",
+      "control": "uq_no_gm",
+      "cells": 3,
+      "mean": -0.23857245529263812,
+      "low": -1.1700559578741647,
+      "high": 0.6929110472888885,
+      "positive_cells": 1,
+      "scope": "one fixed order; construction-cell paired t CI"
+    },
+    {
+      "dataset": "arxiv",
+      "control": "uq_no_dm",
+      "cells": 3,
+      "mean": 1.9111181040438912,
+      "low": 0.8174881460563892,
+      "high": 3.004748062031393,
+      "positive_cells": 3,
+      "scope": "one fixed order; construction-cell paired t CI"
+    },
+    {
+      "dataset": "arxiv",
+      "control": "uq_fixed_q",
+      "cells": 3,
+      "mean": 12.758384052028097,
+      "low": 11.782693783557136,
+      "high": 13.734074320499058,
+      "positive_cells": 3,
+      "scope": "one fixed order; construction-cell paired t CI"
+    },
+    {
+      "dataset": "sportsfit",
+      "control": "uq_no_gm",
+      "cells": 3,
+      "mean": -0.45087586229173837,
+      "low": -2.213911232095926,
+      "high": 1.312159507512449,
+      "positive_cells": 0,
+      "scope": "one fixed order; construction-cell paired t CI"
+    },
+    {
+      "dataset": "sportsfit",
+      "control": "uq_no_dm",
+      "cells": 3,
+      "mean": 14.739303379169542,
+      "low": 13.263964914194998,
+      "high": 16.214641844144083,
+      "positive_cells": 3,
+      "scope": "one fixed order; construction-cell paired t CI"
+    },
+    {
+      "dataset": "sportsfit",
+      "control": "uq_fixed_q",
+      "cells": 3,
+      "mean": 21.666460150830222,
+      "low": 20.619977264233782,
+      "high": 22.712943037426662,
+      "positive_cells": 3,
+      "scope": "one fixed order; construction-cell paired t CI"
+    },
+    {
+      "dataset": "bookhis",
+      "control": "uq_no_gm",
+      "cells": 3,
+      "mean": 0.06403633415421932,
+      "low": -1.3763815475688916,
+      "high": 1.5044542158773304,
+      "positive_cells": 1,
+      "scope": "one fixed order; construction-cell paired t CI"
+    },
+    {
+      "dataset": "bookhis",
+      "control": "uq_no_dm",
+      "cells": 3,
+      "mean": 1.3023779090617111,
+      "low": 0.5659465499905341,
+      "high": 2.038809268132888,
+      "positive_cells": 3,
+      "scope": "one fixed order; construction-cell paired t CI"
+    },
+    {
+      "dataset": "bookhis",
+      "control": "uq_fixed_q",
+      "cells": 3,
+      "mean": 8.9119681392484,
+      "low": 7.185321085839202,
+      "high": 10.638615192657596,
+      "positive_cells": 3,
+      "scope": "one fixed order; construction-cell paired t CI"
+    }
+  ]
+}

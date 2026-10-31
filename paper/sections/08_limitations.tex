@@ -1,0 +1,29 @@
+\noindent\textbf{Application setting.}
+\method{} targets services that update node classifiers as documents, products,
+or other text-bearing entities arrive. Training retains compact examples after
+raw snapshots are retired, while serving maintains the prediction graph.
+Construction uses the current increment and historical memory. The
+class-incremental evaluation uses the benchmark graph, while the chronological
+evaluation uses the stage-available graph with recurring classes and arrived
+endpoints.
+
+\noindent\textbf{Conditions and scope.}
+Each increment must provide features, text, construction labels, structural
+relations, and retainable source texts. The method assumes compatible
+structural and textual signals, consistent feature coordinates, encoder, and
+class meanings across stages. Under these conditions, learned support and
+class matching improve performance, aggregation through $Q$ with a bounded
+residual is more effective than direct feature optimization on SportsFit, and
+shared support reduces construction cost. The value of gradient matching
+depends on the dataset and budget. The results concern supervised node
+classification with stable labels. Severe drift, revised labels, indefinitely
+long streams under a hard storage limit, and relation-dependent tasks require
+new memory policies or access rules.
+
+\noindent\textbf{Construction and reuse.}
+Class-block storage and cache offloading are optional implementation choices.
+The resulting memory can be reused across updates or student architectures.
+The reported downstream reductions use precomputed text embeddings with the
+encoder off the GPU, so they do not represent end-to-end cost. Construction
+remains an upfront cost, fixed-rate storage grows with the stream, and
+inference must use the current graph when historical nodes are unavailable.

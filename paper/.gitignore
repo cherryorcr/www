@@ -1,0 +1,5 @@
+/build/
+/tmp/
+/tmp_www_body.html
+/tmp_www_page.html
+**/__pycache__/

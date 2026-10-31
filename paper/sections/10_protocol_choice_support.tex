@@ -1,0 +1,49 @@
+\subsection{Condensation Rate and Historical Memory}
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Condensation rate sensitivity on the development partition, measured by Macro-F1. The student training budget is fixed. ArXiv uses the three-stage schedule. OOM denotes an out-of-memory failure.}
+\label{tab:ratio_pilot}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+Dataset & 1\% & 5\% & 10\%\\
+\midrule
+ArXiv (3 stages) & 51.09 & 52.95 & 51.47\\
+SportsFit & 79.28 & 79.25 & OOM\\
+BookHis & 46.54 & 47.39 & 45.87\\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+The prespecified 5\% rate is a common compression operating point, not the
+maximizer of every development score. Increasing the rate changes the amount
+of condensed data seen under a finite student model budget and is not uniformly
+beneficial. Dense support also makes the 10\% SportsFit configuration
+exceed the available memory in this run.
+
+A historical pilot with synthetic topology compared fixed historical memory with bounded
+and unbounded updates (one order and one construction seed). The three
+policies obtained F1 scores of 74.76, 73.94, and 71.22 on WikiCS,
+respectively, and 42.69, 42.13, and 38.96 on BookHis.
+This supports a conservative fixed-memory default in that pilot, not a
+general impossibility of useful refresh. The edge-free main method does not
+reconstruct missing historical raw data.
+
+\subsection{Student Model and Access Controls}
+
+A historical matched readout study found a large absolute shift for all
+three constructors. With the earlier contrastive student model, BookHis F1 ranged from 16.15
+to 17.80. With the student trained using class prompts it ranged from 24.83 to 41.97. On
+SportsFit, the corresponding ranges were 26.37--26.65 and 73.75--78.60.
+These are separate development results. This shift motivates holding the student model fixed in
+the primary comparison and testing architecture transfer with unchanged
+memories.
+
+The primary evaluation partitions were fixed after earlier development and exclude held-out nodes from construction.
+An additional partition instead holds out nodes with original identifier
+modulo 10 equal to 4, retaining the registered selector and development masks.
+Its construction pool is rebuilt, so some formerly held-out nodes can enter training.
+It therefore tests another partition of already studied data, rather than
+evaluating the primary memories on a newly sealed test set. Neither partition is
+used here to select a replacement constructor.

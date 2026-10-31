@@ -1,0 +1,101 @@
+{
+  "sources": [
+    {
+      "path": "results/uq_final_evidence_report_20261013_132047/pairs.csv",
+      "sha256": "37154d1fbbbc4b27451ba7deed437b9b61eb92b245180d7d4e38cd5c121a02c0"
+    },
+    {
+      "path": "results/cotag_q_four_gap_20261015_v1/report_final_20261015T190000/fullhistory_retention.csv",
+      "sha256": "73965a6a6a55a6ac2e9a9ec8231ea08b4f27fe07bed348b3f7bfe12235a032b0"
+    }
+  ],
+  "effects": [
+    {
+      "dataset": "arxiv",
+      "baseline": "cat_cctp",
+      "cells": 9,
+      "mean": 17.926607700759998,
+      "low": 16.80629613343185,
+      "high": 19.046919268088146,
+      "positive_cells": 9
+    },
+    {
+      "dataset": "arxiv",
+      "baseline": "gecc_hard",
+      "cells": 9,
+      "mean": 0.22449205147337084,
+      "low": -0.34315238885061616,
+      "high": 0.7921364917973578,
+      "positive_cells": 4
+    },
+    {
+      "dataset": "bookhis",
+      "baseline": "cat_cctp",
+      "cells": 9,
+      "mean": 19.659488365173484,
+      "low": 18.384662020542297,
+      "high": 20.93431470980467,
+      "positive_cells": 9
+    },
+    {
+      "dataset": "bookhis",
+      "baseline": "gecc_hard",
+      "cells": 9,
+      "mean": 3.473902782945633,
+      "low": 2.2036169754874075,
+      "high": 4.7441885904038585,
+      "positive_cells": 9
+    },
+    {
+      "dataset": "sportsfit",
+      "baseline": "cat_cctp",
+      "cells": 9,
+      "mean": 5.5809989862023315,
+      "low": 3.7681732584233973,
+      "high": 7.393824713981266,
+      "positive_cells": 9
+    },
+    {
+      "dataset": "sportsfit",
+      "baseline": "gecc_hard",
+      "cells": 9,
+      "mean": -0.4933851677409204,
+      "low": -1.503976832659827,
+      "high": 0.5172064971779862,
+      "positive_cells": 2
+    }
+  ],
+  "retention": [
+    {
+      "dataset": "arxiv",
+      "metric": "final_f1",
+      "ratio_of_means_percent": 99.04213648394807
+    },
+    {
+      "dataset": "arxiv",
+      "metric": "accuracy",
+      "ratio_of_means_percent": 97.60486641826901
+    },
+    {
+      "dataset": "sportsfit",
+      "metric": "final_f1",
+      "ratio_of_means_percent": 98.23077190787217
+    },
+    {
+      "dataset": "sportsfit",
+      "metric": "accuracy",
+      "ratio_of_means_percent": 95.58186169868685
+    },
+    {
+      "dataset": "bookhis",
+      "metric": "final_f1",
+      "ratio_of_means_percent": 103.33352543176574
+    },
+    {
+      "dataset": "bookhis",
+      "metric": "accuracy",
+      "ratio_of_means_percent": 99.13669533489706
+    }
+  ],
+  "interpretation": "Historical sealed_test label denotes post-hoc fixed-mask evidence, not a fresh blind test. Effects use 9 paired order/construction cells; each cell averages 3 Student seeds. Retention uses one fixed order and a common finite Student budget; no lines join unrelated datasets."
+}
